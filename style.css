@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,200;0,400;0,600;0,700;1,500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,200;0,400;0,600;0,700;1,500&display=swap");
 :root {
   --color-60-lighter: #fff;
   --color-60-transp: hsla(0, 0%, 100%, 0.75);
@@ -37,7 +36,9 @@
   --placeholder-color: var(--color-60-transp);
   --error-color: #f36;
   --default-color: #d6edff;
-  --success-color: #81e979
+  --success-color: #81e979;
+  --height-100: 100vh;
+  --width-100: 100vw;
 }
 
 * {
@@ -45,25 +46,74 @@
   padding: 0;
 }
 
+body {
+  color: var(--color-60-light);
+  background-color: var(--color-60-medium);
+  scrollbar-color: #535353 #333;
+}
+
+p {
+  color: var(--color-60-transp);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-60-light);
+}
+
+.visible {
+  opacity: 1;
+}
+
+header {
+  -webkit-box-shadow: 0 2px 10px rgba(236, 78, 32, 0.05);
+          box-shadow: 0 2px 10px rgba(236, 78, 32, 0.05);
+}
+
+header nav {
+  background-color: var(--color-60-medium-dark);
+  -webkit-transition: opacity 0.35s ease-out;
+  transition: opacity 0.35s ease-out;
+  color: white;
+}
+
+header nav span {
+  color: #fff;
+}
+
+main section {
+  height: var(--height-100);
+}
+
 .landing {
   background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .get-results {
-  background: rgb(197, 233, 150);
+  background: #c5e996;
 }
 
 .services {
-  background: rgb(233, 221, 150);
+  background: #e9dd96;
+}
+
+.tech-used {
+  background-color: #03cea4;
 }
 
 .benefits {
-  background-color: rgb(161, 112, 112);
+  background-color: #a17070;
 }
 
 .projects {
-  background-color: rgb(100, 212, 90);
+  background-color: #64d45a;
 }
 
 .tech-support {
@@ -73,4 +123,6 @@
 .footer h3 {
   color: #fff !important;
   background-color: #171820;
+  height: 80vh;
 }
+/*# sourceMappingURL=style.css.map */
