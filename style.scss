@@ -45,6 +45,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -53,9 +56,15 @@ body {
   scrollbar-color: #535353 #333;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 p {
   color: var(--color-60-transp);
 }
+
 h1,
 h2,
 h3,
@@ -64,6 +73,7 @@ h5,
 h6 {
   color: var(--color-60-light);
 }
+
 .visible {
   opacity: 1;
 }
@@ -77,30 +87,91 @@ header {
     // visibility: hidden;
     transition: opacity 0.35s ease-out;
     color: white;
+    margin: 0;
+    padding: 1rem;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+    }
 
     span {
       color: #fff;
+    }
+
+    .nav-img {
+      a {
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-left: 0.8rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .nav-item {
+      button {
+        padding: 0.6rem 1.6rem 0.6rem 1.6rem;
+        margin-right: 2rem;
+        margin-top: 0.4rem;
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 1rem;
+        text-transform: uppercase;
+        background-color: var(--color-accent-sec);
+        border: transparent;
+        border-radius: 0.35rem;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #548675;
+        }
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+      }
     }
   }
 }
 
 main {
+  img {
+    height: 400px;
+    width: auto;
+  }
+
   section {
-    height: var(--height-100);
+    height: auto;
+
+    .what-i-do {
+      background-color: #03cea4;
+    }
   }
 }
 
 .landing {
-  background-color: blue;
   display: flex;
+
+  .landing-pic img {
+    height: 400px;
+    width: auto;
+  }
 }
 
 .get-results {
-  background: rgb(197, 233, 150);
+  background: rgb(89, 104, 69);
 }
 
 .services {
-  background: rgb(233, 221, 150);
+  background: rgb(179, 168, 107);
+  height: auto;
 }
 
 .tech-used {

@@ -44,12 +44,21 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
   color: var(--color-60-light);
   background-color: var(--color-60-medium);
   scrollbar-color: #535353 #333;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 p {
@@ -79,29 +88,94 @@ header nav {
   -webkit-transition: opacity 0.35s ease-out;
   transition: opacity 0.35s ease-out;
   color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
 }
 
 header nav span {
   color: #fff;
 }
 
+header nav .nav-img a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .nav-img a span {
+  margin-left: 0.8rem;
+  font-size: 1rem;
+}
+
+header nav .nav-item button {
+  padding: 0.6rem 1.6rem 0.6rem 1.6rem;
+  margin-right: 2rem;
+  margin-top: 0.4rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  background-color: var(--color-accent-sec);
+  border: transparent;
+  border-radius: 0.35rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+header nav .nav-item button:hover {
+  background-color: #548675;
+}
+
+header nav .nav-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+main img {
+  height: 400px;
+  width: auto;
+}
+
 main section {
-  height: var(--height-100);
+  height: auto;
+}
+
+main section .what-i-do {
+  background-color: #03cea4;
 }
 
 .landing {
-  background-color: blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.landing .landing-pic img {
+  height: 400px;
+  width: auto;
+}
+
 .get-results {
-  background: #c5e996;
+  background: #596845;
 }
 
 .services {
-  background: #e9dd96;
+  background: #b3a86b;
+  height: auto;
 }
 
 .tech-used {
