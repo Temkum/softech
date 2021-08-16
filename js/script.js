@@ -31,3 +31,34 @@ function setTheme(mode) {
   }
   localStorage.setItem("theme", mode);
 }
+
+// FAQ dropdown
+
+// Get all .faq-question
+const questions = document.getElementsByClassName("faq-question");
+
+// Assign openQuestion on click
+for (let i = 0; i < questions.length; i++) {
+  questions[i].onclick = openQuestion;
+}
+
+// Apply .hidden to sibling .faq-answer
+// Apply .show to .faq-question
+function openQuestion(e) {
+  const answer = e.target.parentNode.getElementsByClassName("faq-answer")[0];
+  const color = e.target.parentNode.getElementsByClassName("faq-question")[0];
+
+  if (-1 !== answer.className.indexOf("hidden")) {
+    answer.className = answer.className.replace("hidden", "");
+    color.style.color = "green";
+  } else {
+    answer.className += " hidden";
+    color.style.color = "";
+  }
+
+  if (-1 !== e.target.className.indexOf("show")) {
+    e.target.className = e.target.className.replace("show", "");
+  } else {
+    e.target.className += " show";
+  }
+}

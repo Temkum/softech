@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,200;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Montserrat:wght@200;300;400;500;600&display=swap");
 :root {
   --white: #fff;
   --color-60-transp: hsla(0, 0%, 100%, 0.75);
@@ -85,6 +86,7 @@ h6 {
 h1,
 h2 {
   letter-spacing: 0.2rem;
+  font-size: 3rem;
 }
 
 .visible {
@@ -101,6 +103,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.py-1 {
+  padding: 1rem 0 1rem 0;
 }
 
 .py-2 {
@@ -125,6 +131,25 @@ h2 {
 
 .mr-3 {
   margin-right: 3rem;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
 }
 
 /*******************
@@ -269,46 +294,15 @@ main .landing .what-i-do h1 {
 
 .get-results {
   background: #596845;
-  height: 50vh;
 }
 
-.get-results .wrapper {
-  position: relative;
-  width: 500px;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.get-results .wrapper p {
-  margin-top: 0.5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.get-results .wrapper h1 {
+.get-results .results-body h1 {
   font-size: xx-large;
   margin-top: -10rem;
   margin-bottom: 1rem;
 }
 
-.get-results .wrapper button {
+.get-results .project-link button {
   margin-top: 2rem;
   background: transparent;
   font-size: 1rem;
@@ -317,7 +311,7 @@ main .landing .what-i-do h1 {
   border: 1px solid var(--default-color);
 }
 
-.get-results .wrapper button:hover {
+.get-results .project-link button:hover {
   border-color: var(--success-color);
   background-color: #2cdd9b;
   color: #fff;
@@ -498,6 +492,19 @@ main .landing .what-i-do h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.tech-used .frontend svg,
+.tech-used .backend svg,
+.tech-used .general svg {
+  width: 50px;
+  height: 50px;
+}
+
+.tech-used .frontend svg fill,
+.tech-used .backend svg fill,
+.tech-used .general svg fill {
+  color: #0edfb5;
 }
 
 .benefits {
@@ -789,7 +796,180 @@ main .landing .what-i-do h1 {
 }
 
 .tech-support {
-  background-color: #5626a9;
+  background-color: var(--initial-color-overlay);
+  padding-top: 2rem;
+}
+
+.tech-support .support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tech-support .support .details {
+  width: 400px;
+  margin: 2rem;
+  line-height: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tech-support .support .details p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.tech-support .support .details > span {
+  color: red;
+}
+
+.tech-support .support .report-form {
+  width: 450px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.tech-support .support .report-form .form {
+  width: 340px;
+  height: 470px;
+  -webkit-box-shadow: 0 0 70px -10px var(--color-60-medium-dark);
+          box-shadow: 0 0 70px -10px var(--color-60-medium-dark);
+  padding: 20px 30px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  border-radius: 8px;
+}
+
+.tech-support .support .report-form .form input {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+.tech-support .support .report-form .form input:focus {
+  border-bottom: 2px solid #78788c;
+}
+
+.tech-support .support .report-form .form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: var(--card-text-color);
+}
+
+.tech-support .support .report-form .form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: var(--card-text-color);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.tech-support .support .report-form .form button:hover {
+  background: #78788c;
+  color: #fff;
+}
+
+.tech-support .support .report-form .form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #bebed2;
+  margin-top: 5px;
+}
+
+.tech-support .support .report-form .form div {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  -webkit-box-shadow: 10px 10px 40px -14px #000;
+          box-shadow: 10px 10px 40px -14px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tech-support .support .report-form .form div span {
+  margin: 0 5px 0 15px;
+}
+
+.show {
+  display: block !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.faq .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.faq .questions .question {
+  width: 800px;
+  margin: 2rem;
+  background-color: var(--color-60-dark);
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.faq .questions .question .faq-question {
+  padding: 1rem !important;
+  font-size: 1rem;
+  margin-left: 4px;
+  border-radius: 10px;
+}
+
+.faq .questions .question .faq-question:hover {
+  cursor: pointer;
+}
+
+.faq .questions .question .drop-content {
+  font-family: "Montserrat", "Roboto Mono", sans-serif;
+  line-height: 1.7rem;
+  padding: 0.5rem;
+  margin-top: 0.9rem;
 }
 
 .footer h3 {
