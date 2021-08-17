@@ -972,6 +972,252 @@ main .landing .what-i-do h1 {
   margin-top: 0.9rem;
 }
 
+.contact-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-me .container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 700px;
+          flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-me .container .screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.contact-me .container .screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.contact-me .container .screen .screen-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.contact-me .container .screen .screen-header .screen-header-left {
+  margin-right: auto;
+}
+
+.contact-me .container .screen .screen-header .screen-header-left .screen-header-button {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.contact-me .container .screen .screen-header .screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.contact-me .container .screen .screen-header .screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.contact-me .container .screen .screen-header .screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.contact-me .container .screen .screen-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-me .container .screen .screen-body .screen-body-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 50px;
+}
+
+.contact-me .container .screen .screen-body .screen-body-item .app-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  color: var(--color-accent-sec-lighter);
+  font-size: 26px;
+}
+
+.contact-me .container .screen .screen-body .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-me .container .screen .screen-body .app-contact {
+  margin-top: auto;
+  font-size: 10px;
+  color: #888;
+}
+
+.contact-me .container .screen .screen-body .app-contact .email {
+  margin-left: 4.2rem;
+}
+
+.contact-me .container .screen .app-form .app-form-group {
+  margin-bottom: 15px;
+}
+
+.contact-me .container .screen .app-form .app-form-group .app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.contact-me .container .screen .app-form .app-form-group .app-form-control::-webkit-input-placeholder {
+  color: #666;
+}
+
+.contact-me .container .screen .app-form .app-form-group .app-form-control:-ms-input-placeholder {
+  color: #666;
+}
+
+.contact-me .container .screen .app-form .app-form-group .app-form-control::-ms-input-placeholder {
+  color: #666;
+}
+
+.contact-me .container .screen .app-form .app-form-group .app-form-control::placeholder {
+  color: #666;
+}
+
+.contact-me .container .screen .app-form .app-form-group .app-form-control :focus {
+  border-bottom-color: #ddd;
+}
+
+.contact-me .container .screen .app-form .app-form-group .app-form-button {
+  background: none;
+  border: solid 1px var(--project-card-tech-color);
+  color: var(--project-card-tech-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+}
+
+.contact-me .container .screen .app-form .app-form-group .app-form-button:hover {
+  color: var(--color-accent-sec-lighter);
+  border-color: var(--color-accent-sec-lighter);
+  background: transparent;
+}
+
+.contact-me .container .screen .buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+@media screen and (max-width: 520px) {
+  .contact-me .screen-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-me .screen-body-item .left {
+    margin-bottom: 30px;
+  }
+  .contact-me .app-title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-me .app-title:after {
+    display: none;
+  }
+  .contact-me .app-title span {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-me .screen-body {
+    padding: 40px;
+  }
+  .contact-me .screen-body-item {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact-me .container {
+    padding-left: 5rem;
+    width: 600px;
+  }
+  .contact-me .center-item {
+    padding-left: 9rem;
+    margin-left: 3rem;
+    width: 580px;
+    font-size: 2rem;
+  }
+  .contact-me .app-form-button {
+    background: none;
+    border: solid 1px var(--project-card-tech-color);
+    color: var(--project-card-tech-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    margin-top: 0.6rem;
+    width: 100%;
+  }
+}
+
 .footer h3 {
   color: #fff !important;
   background-color: #171820;
