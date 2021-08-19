@@ -41,6 +41,8 @@
   --height-100: 100vh;
   --width-100: 100vw;
   --box-shadow: 8px 8px 50px #000;
+  --box-shadow-2: 0px 0px 40px #000;
+  --bg-transparent: hsla(0, 0%, 100%, 0.144);
 }
 
 * {
@@ -59,11 +61,12 @@ body {
   font-family: "Roboto Mono", monospace;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
+  width: 100%;
 }
 
 a {
-  cursor: pointer;
-  text-decoration: none;
+  cursor: pointer !important;
+  text-decoration: none !important;
 }
 
 p {
@@ -929,6 +932,13 @@ main .landing .what-i-do h1 {
   display: none;
 }
 
+.faq {
+  -webkit-box-shadow: var(--box-shadow-2);
+          box-shadow: var(--box-shadow-2);
+  height: 1400px;
+  position: relative;
+}
+
 .faq .questions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,6 +993,9 @@ main .landing .what-i-do h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 70%;
+  left: 30%;
 }
 
 .contact-me .container {
@@ -1183,16 +1196,13 @@ main .landing .what-i-do h1 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .contact-me .screen-body {
     padding: 40px;
   }
   .contact-me .screen-body-item {
     padding: 0;
   }
-}
-
-@media screen and (max-width: 650px) {
   .contact-me .container {
     padding-left: 5rem;
     width: 600px;
@@ -1218,9 +1228,90 @@ main .landing .what-i-do h1 {
   }
 }
 
-.footer h3 {
-  color: #fff !important;
-  background-color: #171820;
-  height: 80vh;
+.footer {
+  height: 100%;
+  padding-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .about-softech,
+.footer .quick-links {
+  width: 500px;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.footer .about-softech .txt p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer .quick-links li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .quick-links li a {
+  cursor: pointer;
+  margin: 0.5rem;
+  font-family: "Monda", sans-serif;
+  color: var(--width);
+}
+
+.footer .icons {
+  font-size: 0.7rem;
+}
+
+.footer .icons a {
+  margin: 0.5rem;
+}
+
+.footer .icons a svg path {
+  fill: #0edfb5;
+}
+
+.footer .endnote {
+  position: absolute;
+  margin-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 2rem;
+  width: 50%;
+}
+
+.footer .endnote .futer-txt a {
+  color: var(--color-60-light);
+  text-transform: lowercase;
+  padding: .5rem .8rem;
+  border-radius: 5px;
+}
+
+.footer .endnote .futer-txt a:hover {
+  background: rgba(255, 255, 255, 0.144);
 }
 /*# sourceMappingURL=style.css.map */
