@@ -13,6 +13,7 @@
   --color-accent-main-lighter: #ff7370;
   --color-accent-sec: #55c57a;
   --color-accent-sec-lighter: #0edfb5;
+  --color-accent-dark: #4799629a;
   --border-color: #eceeef;
   --color-illustration: #5626a9;
   --color-illustration-light: #6635bb;
@@ -88,7 +89,7 @@ h6 {
 
 h1,
 h2 {
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   font-size: 3rem;
 }
 
@@ -241,47 +242,72 @@ header nav .nav-item img {
   border-radius: 50px;
 }
 
+main {
+  /* .parent {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+
+    align-items: center;
+    justify-content: center;
+
+    .child-1,
+    .child-2,
+    .child-3 {
+      // border: #03cea4 solid 2px;
+      padding: 0.5rem;
+    }
+
+    .child-1 {
+      grid-column: 2/2;
+    }
+
+    .child-2 {
+      grid-column: 3/4;
+    }
+  } */
+  /*  .landing {
+    .what-i-do {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  } */
+}
+
 main img {
   height: 400px;
   width: auto;
-}
-
-main .parent {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 1rem;
-  margin: 1rem;
-  padding: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .parent .child-1,
-main .parent .child-2,
-main .parent .child-3 {
-  padding: 0.5rem;
-}
-
-main .parent .child-1 {
-  -ms-grid-column: 2;
-  grid-column: 2/2;
-}
-
-main .parent .child-2 {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
 }
 
 main section {
   height: auto;
 }
 
-main .landing .what-i-do {
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.landing .landing-info,
+.landing .landing-img {
+  border: 1px solid hotpink;
+}
+
+.landing .landing-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,8 +317,97 @@ main .landing .what-i-do {
           flex-direction: column;
 }
 
-main .landing .what-i-do h1 {
-  font-size: 5rem;
+.landing .landing-info .what-i-do,
+.landing .landing-info .cta-container {
+  border: 1px solid #fff;
+}
+
+.landing .landing-info .hero .what-i-do {
+  padding: .5rem;
+  width: 400px;
+}
+
+.landing .landing-info .hero .what-i-do h1 {
+  font-size: 4rem;
+}
+
+.landing .landing-info .hero .what-i-do p {
+  width: 60%;
+  margin: 2rem 0;
+  line-height: 1.8rem;
+}
+
+.landing .landing-info .cta-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.landing .landing-info .cta-container .cta-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .landing-info .cta-container .cta-btns button {
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.3rem 3rem;
+  font-weight: 600;
+  border: 1px solid var(--success-color);
+  background: transparent;
+  margin: 1rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+.landing .landing-info .cta-container .cta-btns button:hover {
+  color: var(--white);
+  background-color: var(--color-accent-dark);
+}
+
+.landing .landing-info .cta-container .cta-btns button svg {
+  display: none;
+}
+
+.landing .landing-info .cta-container .cta-btns .btn-full {
+  background-color: var(--color-accent-sec);
+}
+
+.landing .landing-info .cta-container .social-icons,
+.landing .landing-info .cta-container .cta-btns {
+  border: 1px solid red;
+}
+
+.landing .landing-info .cta-container .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.landing .landing-info .cta-container .social-icons .landing-icons svg .fa-twitter {
+  color: red;
+}
+
+.landing .landing-info .cta-container .social-icons .landing-icons svg path {
+  color: var(--color-60-light);
+}
+
+.landing .landing-img img {
+  height: 600px;
+  width: auto;
 }
 
 .get-results {
@@ -993,9 +1108,6 @@ main .landing .what-i-do h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 70%;
-  left: 30%;
 }
 
 .contact-me .container {
@@ -1307,7 +1419,7 @@ main .landing .what-i-do h1 {
 .footer .endnote .futer-txt a {
   color: var(--color-60-light);
   text-transform: lowercase;
-  padding: .5rem .8rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 5px;
 }
 
