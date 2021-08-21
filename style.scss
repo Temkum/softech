@@ -405,6 +405,7 @@ main {
       font-size: 1rem;
       box-shadow: 0 2px 5px rgba(94, 91, 91, 0.14);
       border: 1px solid var(--default-color);
+      margin-bottom: 2rem;
 
       &:hover {
         border-color: var(--success-color);
@@ -1331,6 +1332,13 @@ main {
   }
 
   // results section
+  .results-body {
+    margin: 0 1.8rem;
+  }
+
+  .results-body p {
+    font-size: 1.3rem;
+  }
 
 }
 
@@ -1359,10 +1367,24 @@ main {
   .landing-img {
     display: none;
   }
+
+  // results section
+  .results-body {
+    margin: 0 1.8rem;
+  }
+
+  .results-body p {
+    font-size: 1.3rem;
+  }
 }
 
 // laptop
 @media only screen and (min-width: 1024px) {
+
+  section {
+    height: 100vh;
+  }
+
   .landing .landing-info .hero .what-i-do h1 {
     font-size: 5rem;
     line-height: 4.5rem;
@@ -1396,5 +1418,18 @@ main {
     fill: var(--white);
     width: 25px;
     height: 25px;
+  }
+
+  // results section
+  .results-body {
+    flex-direction: column;
+  }
+
+  .results-body p {
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 1rem;
   }
 }

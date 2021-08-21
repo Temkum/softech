@@ -409,6 +409,7 @@ main section {
   -webkit-box-shadow: 0 2px 5px rgba(94, 91, 91, 0.14);
           box-shadow: 0 2px 5px rgba(94, 91, 91, 0.14);
   border: 1px solid var(--default-color);
+  margin-bottom: 2rem;
 }
 
 .get-results .project-link button:hover {
@@ -1464,6 +1465,12 @@ main section {
   .landing-img {
     display: none;
   }
+  .results-body {
+    margin: 0 1.8rem;
+  }
+  .results-body p {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -1485,9 +1492,18 @@ main section {
   .landing-img {
     display: none;
   }
+  .results-body {
+    margin: 0 1.8rem;
+  }
+  .results-body p {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+  section {
+    height: 100vh;
+  }
   .landing .landing-info .hero .what-i-do h1 {
     font-size: 5rem;
     line-height: 4.5rem;
@@ -1520,6 +1536,23 @@ main section {
     fill: var(--white);
     width: 25px;
     height: 25px;
+  }
+  .results-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .results-body p {
+    font-size: 1.3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    margin-bottom: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
