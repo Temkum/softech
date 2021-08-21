@@ -62,7 +62,6 @@ body {
   font-family: "Roboto Mono", monospace;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
-  width: 100%;
 }
 
 a {
@@ -225,7 +224,7 @@ header nav .nav-item button {
   font-size: 0.7rem;
   line-height: 1rem;
   text-transform: uppercase;
-  background-color: var(--color-accent-sec);
+  background-color: var(--color-accent-dark);
   border: transparent;
   border-radius: 0.35rem;
   color: #fff;
@@ -286,6 +285,8 @@ main img {
 
 main section {
   height: auto;
+  width: auto;
+  overflow: hidden;
 }
 
 .landing {
@@ -302,11 +303,6 @@ main section {
       flex-wrap: wrap;
 }
 
-.landing .landing-info,
-.landing .landing-img {
-  border: 1px solid hotpink;
-}
-
 .landing .landing-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,11 +311,6 @@ main section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.landing .landing-info .what-i-do,
-.landing .landing-info .cta-container {
-  border: 1px solid #fff;
 }
 
 .landing .landing-info .hero .what-i-do {
@@ -359,7 +350,7 @@ main section {
   font-family: 'Montserrat', sans-serif;
   padding: 1.3rem 3rem;
   font-weight: 600;
-  border: 1px solid var(--success-color);
+  border: 1px solid var(--color-accent-dark);
   background: transparent;
   margin: 1rem;
   text-transform: uppercase;
@@ -368,7 +359,7 @@ main section {
 
 .landing .landing-info .cta-container .cta-btns button:hover {
   color: var(--white);
-  background-color: var(--color-accent-dark);
+  background-color: #548675;
 }
 
 .landing .landing-info .cta-container .cta-btns button svg {
@@ -377,11 +368,6 @@ main section {
 
 .landing .landing-info .cta-container .cta-btns .btn-full {
   background-color: var(--color-accent-sec);
-}
-
-.landing .landing-info .cta-container .social-icons,
-.landing .landing-info .cta-container .cta-btns {
-  border: 1px solid red;
 }
 
 .landing .landing-info .cta-container .social-icons {
@@ -395,10 +381,6 @@ main section {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-}
-
-.landing .landing-info .cta-container .social-icons .landing-icons svg .fa-twitter {
-  color: red;
 }
 
 .landing .landing-info .cta-container .social-icons .landing-icons svg path {
@@ -1425,5 +1407,119 @@ main section {
 
 .footer .endnote .futer-txt a:hover {
   background: rgba(255, 255, 255, 0.144);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 425px) and (min-device-width: 320px) {
+  section {
+    width: 600px !important;
+  }
+  header {
+    width: 600px;
+  }
+  .nav-item button {
+    visibility: hidden;
+  }
+  .landing {
+    margin-bottom: 3rem;
+  }
+  .landing .landing-info {
+    width: 100%;
+    margin: .5rem .5rem;
+    font-size: 2rem;
+  }
+  .landing .landing-info .hero {
+    width: 100%;
+    margin: .5rem 1rem;
+    font-size: 2rem;
+  }
+  .landing .landing-info .hero .what-i-do {
+    width: 100%;
+  }
+  .landing .landing-info .hero .what-i-do h1 {
+    font-size: 7rem;
+    line-height: 6rem;
+    margin-top: 3rem;
+  }
+  .landing .landing-info .hero .what-i-do p {
+    width: 90%;
+    margin: 2rem 0;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+  }
+  .landing .landing-info .cta-container .cta-btns {
+    width: 60%;
+    margin: .5rem 1rem;
+    margin-right: 4rem;
+  }
+  .landing .landing-info .cta-container .cta-btns button {
+    padding: 2rem 4rem;
+    font-size: 1.2rem;
+  }
+  .landing-icons > svg {
+    fill: var(--white);
+    width: 35px;
+    height: 35px;
+  }
+  .landing-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header {
+    display: none;
+  }
+  .landing {
+    height: 100vh;
+  }
+  .landing .landing-info .hero .what-i-do p {
+    width: 75%;
+    font-size: .9rem;
+  }
+  .landing-icons > svg {
+    fill: var(--white);
+    width: 25px;
+    height: 25px;
+  }
+  .landing-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .landing .landing-info .hero .what-i-do h1 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+  }
+  .landing {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1.5rem;
+  }
+  .landing .landing-info .hero .what-i-do p {
+    width: 75%;
+    font-size: .9rem;
+  }
+  .landing-img {
+    display: block;
+    margin-left: 1.2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .landing-img .landing-pic img {
+    width: 350px;
+    height: 300px;
+  }
+  .landing-icons > svg {
+    fill: var(--white);
+    width: 25px;
+    height: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
