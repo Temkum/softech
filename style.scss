@@ -277,16 +277,15 @@ main {
   } */
 }
 
-
-
+// LANDING SECTION
 .landing {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  height: 100vh;
 
-  background-color: rgba(0, 0, 0, 0.74);
-  background-image: url('assets/img/dark-bg.jpg');
+  background-image: url('assets/img/bg1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -294,11 +293,6 @@ main {
   .landing-info {
     display: flex;
     flex-direction: column;
-
-    // .what-i-do,
-    // .cta-container {
-    //   border: 1px solid #fff;
-    // }
 
     .hero {
       .what-i-do {
@@ -313,6 +307,7 @@ main {
           width: 60%;
           margin: 2rem 0;
           line-height: 1.8rem;
+          font-weight: 400;
         }
       }
     }
@@ -353,11 +348,6 @@ main {
         }
       }
 
-      // .social-icons,
-      // .cta-btns {
-      //   border: 1px solid red;
-      // }
-
       .social-icons {
         display: flex;
         flex-direction: column;
@@ -367,19 +357,20 @@ main {
           svg {
             path {
               color: var(--color-60-light);
-
             }
           }
-
         }
       }
     }
   }
 
   .landing-img {
-    img {
-      height: 600px;
-      width: auto;
+
+    .landing-pic {
+      img {
+        height: 450px;
+        width: auto;
+      }
     }
   }
 }
@@ -394,7 +385,7 @@ main {
     // }
 
     h1 {
-      font-size: xx-large;
+      font-size: 4rem;
       margin-top: -10rem;
       margin-bottom: 1rem;
     }
@@ -537,37 +528,61 @@ main {
   } */
 }
 
+// TECHNOLOGIES
 .tech-used {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  background: rgba(3, 3, 20, 0.945);
+  background-image: url('assets/img/bg1.PNG');
+  padding-bottom: 5rem;
+  height: 100%vh;
+
+  h1 {
+    width: 100%;
+    font-size: 4rem;
+  }
 
   .frontend,
   .backend,
   .general {
-    border: 1px solid red;
     padding: 1rem;
-    margin: 1rem;
+    margin-bottom: 3rem;
     color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
-    h2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    .icon {
+      background: var(--color-60-medium-light);
+      padding: 1rem;
+      margin: 1rem;
+      width: 100px;
+      height: 100px;
+      border-radius: 7px;
 
-    svg {
-      width: 50px;
-      height: 50px;
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 300;
+      }
 
-      fill {
-        color: #0edfb5;
+      svg {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 40px;
+
+        path {
+          fill: #0edfb5;
+        }
       }
     }
   }
 }
 
+// BENEFITS
 .benefits {
   background-color: rgb(161, 112, 112);
 
@@ -1310,7 +1325,7 @@ main {
   }
 
   .landing {
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
   }
 
   .landing .landing-info {
@@ -1411,6 +1426,36 @@ main {
       }
     }
 
+  }
+
+  // Techs used
+  .tech-used {
+
+    .frontend,
+    .backend,
+    .general {
+
+      .icon {
+        flex-wrap: wrap;
+        width: 150px;
+        height: 150px;
+        font-size: 4rem;
+
+        p {
+          font-size: 1.2rem;
+        }
+
+        svg {
+          width: 60px;
+          height: 60px;
+
+          path {
+            fill: var(--color-accent-sec-lighter);
+          }
+        }
+      }
+
+    }
   }
 }
 

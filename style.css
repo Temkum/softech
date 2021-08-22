@@ -305,8 +305,8 @@ main section {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.74);
-  background-image: url("assets/img/dark-bg.jpg");
+  height: 100vh;
+  background-image: url("assets/img/bg1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -335,6 +335,7 @@ main section {
   width: 60%;
   margin: 2rem 0;
   line-height: 1.8rem;
+  font-weight: 400;
 }
 
 .landing .landing-info .cta-container {
@@ -396,8 +397,8 @@ main section {
   color: var(--color-60-light);
 }
 
-.landing .landing-img img {
-  height: 600px;
+.landing .landing-img .landing-pic img {
+  height: 450px;
   width: auto;
 }
 
@@ -406,7 +407,7 @@ main section {
 }
 
 .get-results .results-body h1 {
-  font-size: xx-large;
+  font-size: 4rem;
   margin-top: -10rem;
   margin-bottom: 1rem;
 }
@@ -576,55 +577,83 @@ main section {
 }
 
 .tech-used {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  background: rgba(3, 3, 20, 0.945);
+  background-image: url("assets/img/bg1.PNG");
+  padding-bottom: 5rem;
+  height: 100%vh;
+}
+
+.tech-used h1 {
+  width: 100%;
+  font-size: 4rem;
 }
 
 .tech-used .frontend,
 .tech-used .backend,
 .tech-used .general {
-  border: 1px solid red;
   padding: 1rem;
-  margin: 1rem;
+  margin-bottom: 3rem;
   color: var(--white);
-}
-
-.tech-used .frontend h2,
-.tech-used .backend h2,
-.tech-used .general h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.tech-used .frontend svg,
-.tech-used .backend svg,
-.tech-used .general svg {
+.tech-used .frontend .icon,
+.tech-used .backend .icon,
+.tech-used .general .icon {
+  background: var(--color-60-medium-light);
+  padding: 1rem;
+  margin: 1rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 7px;
+}
+
+.tech-used .frontend .icon p,
+.tech-used .backend .icon p,
+.tech-used .general .icon p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.tech-used .frontend .icon svg,
+.tech-used .backend .icon svg,
+.tech-used .general .icon svg {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50px;
-  height: 50px;
+  height: 40px;
 }
 
-.tech-used .frontend svg fill,
-.tech-used .backend svg fill,
-.tech-used .general svg fill {
-  color: #0edfb5;
+.tech-used .frontend .icon svg path,
+.tech-used .backend .icon svg path,
+.tech-used .general .icon svg path {
+  fill: #0edfb5;
 }
 
 .benefits {
@@ -1441,7 +1470,7 @@ main section {
     visibility: hidden;
   }
   .landing {
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
   }
   .landing .landing-info {
     width: 100%;
@@ -1523,6 +1552,31 @@ main section {
     width: 450px !important;
     height: 450px !important;
     margin-top: 2rem;
+  }
+  .tech-used .frontend .icon,
+  .tech-used .backend .icon,
+  .tech-used .general .icon {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    font-size: 4rem;
+  }
+  .tech-used .frontend .icon p,
+  .tech-used .backend .icon p,
+  .tech-used .general .icon p {
+    font-size: 1.2rem;
+  }
+  .tech-used .frontend .icon svg,
+  .tech-used .backend .icon svg,
+  .tech-used .general .icon svg {
+    width: 60px;
+    height: 60px;
+  }
+  .tech-used .frontend .icon svg path,
+  .tech-used .backend .icon svg path,
+  .tech-used .general .icon svg path {
+    fill: var(--color-accent-sec-lighter);
   }
 }
 
