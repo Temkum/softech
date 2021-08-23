@@ -657,7 +657,8 @@ main section {
 }
 
 .benefits {
-  background-color: #a17070;
+  background-color: var(--color-60-medium);
+  padding-bottom: 5rem;
 }
 
 .benefits h2 {
@@ -692,14 +693,9 @@ main section {
 .benefits .flex-container .benefit-4,
 .benefits .flex-container .benefit-5,
 .benefits .flex-container .benefit-6 {
-  border: 1px solid red;
-  margin: 2rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+  width: 300px;
 }
 
 .benefits .flex-container .benefit-1 span,
@@ -725,7 +721,15 @@ main section {
 .benefits .flex-container .benefit-4 p,
 .benefits .flex-container .benefit-5 p,
 .benefits .flex-container .benefit-6 p {
-  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects .btn-nav button {
@@ -1692,6 +1696,14 @@ main section {
             align-items: center;
     width: 50%;
     margin-bottom: 1rem;
+  }
+  .flex-container .benefit-1,
+  .flex-container .benefit-2,
+  .flex-container .benefit-3,
+  .flex-container .benefit-4,
+  .flex-container .benefit-5,
+  .flex-container .benefit-6 {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
