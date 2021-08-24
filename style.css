@@ -352,7 +352,7 @@ main section {
   font-family: 'Montserrat', sans-serif;
   padding: 1.3rem 3rem;
   font-weight: 600;
-  border: 1px solid var(--color-accent-dark);
+  border: 2px solid var(--color-accent-dark);
   background: transparent;
   margin: 1rem;
   text-transform: uppercase;
@@ -1551,11 +1551,14 @@ main section {
 }
 
 @media screen and (max-width: 768px) {
-  header {
+  /* header {
     display: none;
-  }
+  } */
   .landing {
-    height: 100vh;
+    height: auto;
+    padding-bottom: 2rem;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
   }
   .landing .landing-info .hero .what-i-do p {
     width: 75%;
@@ -1614,6 +1617,7 @@ main section {
   }
 }
 
+/***** landscape on larger screens mobile devices *****/
 @media screen and (max-width: 650px) {
   section {
     width: 650px !important;
@@ -1748,6 +1752,7 @@ main section {
   }
 }
 
+/***** landscape view - mobile devices *****/
 @media screen and (max-width: 520px) {
   section {
     width: 520px !important;
@@ -1866,6 +1871,7 @@ main section {
   }
 }
 
+/******** mobile devices **********/
 @media screen and (max-width: 425px) {
   section {
     width: 500px !important;
@@ -1873,7 +1879,7 @@ main section {
   header {
     width: 500px;
   }
-  .nav-item button {
+  header .navbar .nav-item button {
     visibility: hidden;
   }
   .landing {
