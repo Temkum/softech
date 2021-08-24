@@ -39,11 +39,13 @@
   --error-color: #f36;
   --default-color: #d6edff;
   --success-color: #81e979;
+  --success-color-dark: #548675;
   --height-100: 100vh;
   --width-100: 100vw;
   --box-shadow: 8px 8px 50px #000;
   --box-shadow-2: 0px 0px 40px #000;
   --bg-transparent: hsla(0, 0%, 100%, 0.144);
+  --color-darker: rgba(13, 14, 13, 0.315);
 }
 
 * {
@@ -268,16 +270,6 @@ main {
       grid-column: 3/4;
     }
   } */
-  /*  .landing {
-    .what-i-do {
-      display: flex;
-      flex-direction: column;
-
-      h1 {
-        font-size: 5rem;
-      }
-    }
-  } */
 }
 
 main img {
@@ -369,7 +361,7 @@ main section {
 
 .landing .landing-info .cta-container .cta-btns button:hover {
   color: var(--white);
-  background-color: #548675;
+  background: var(--color-accent-dark);
 }
 
 .landing .landing-info .cta-container .cta-btns button svg {
@@ -378,6 +370,12 @@ main section {
 
 .landing .landing-info .cta-container .cta-btns .btn-full {
   background-color: var(--color-accent-sec);
+  background: var(--color-accent-dark);
+}
+
+.landing .landing-info .cta-container .cta-btns .btn-full:hover {
+  color: var(--white);
+  background-color: #548675;
 }
 
 .landing .landing-info .cta-container .social-icons {
@@ -393,8 +391,10 @@ main section {
           justify-content: space-evenly;
 }
 
-.landing .landing-info .cta-container .social-icons .landing-icons svg path {
-  color: var(--color-60-light);
+.landing .landing-info .cta-container .social-icons .landing-icons > svg {
+  fill: var(--white);
+  width: 25px;
+  height: 25px;
 }
 
 .landing .landing-img .landing-pic img {
@@ -403,28 +403,39 @@ main section {
 }
 
 .get-results {
-  background: rgba(13, 14, 13, 0.315);
+  background: var(--color-60-dark);
 }
 
-.get-results .results-body h1 {
-  font-size: 4rem;
-  margin-top: -10rem;
-  margin-bottom: 1rem;
+.get-results h1 {
+  font-size: 3.5rem;
+}
+
+.get-results .results-body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.get-results .results-body p {
+  width: 450px;
+  line-height: 1.8rem;
+  margin-bottom: .1rem;
 }
 
 .get-results .project-link button {
-  margin-top: 2rem;
+  margin: 2rem 0;
   background: transparent;
   font-size: 1rem;
   -webkit-box-shadow: 0 2px 5px rgba(94, 91, 91, 0.14);
           box-shadow: 0 2px 5px rgba(94, 91, 91, 0.14);
   border: 1px solid var(--default-color);
-  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
 }
 
 .get-results .project-link button:hover {
   border-color: var(--success-color);
-  background-color: #2cdd9b;
+  background-color: var(--color-accent-sec);
   color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -732,6 +743,14 @@ main section {
           align-items: center;
 }
 
+.projects {
+  background-color: var(--color-60-medium-dark);
+  /*  background-image: url('assets/img/bg1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+
 .projects .btn-nav button {
   padding: 1rem 1.5rem;
   color: var(--white);
@@ -950,6 +969,11 @@ main section {
 
 .tech-support {
   background-color: var(--initial-color-overlay);
+  background-color: var(--bg-transparent);
+  background-image: url("assets/img/bg1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 2rem;
 }
 
@@ -977,6 +1001,7 @@ main section {
 .tech-support .support .details p {
   margin-bottom: 1rem;
   font-weight: 300;
+  line-height: 2rem;
 }
 
 .tech-support .support .details > span {
@@ -1013,6 +1038,7 @@ main section {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-bottom: 2px solid #bebed2;
+  color: var(--white);
 }
 
 .tech-support .support .report-form .form input:focus {
@@ -1462,13 +1488,138 @@ main section {
   background: rgba(255, 255, 255, 0.144);
 }
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 425px) and (min-device-width: 320px) {
+/*** MEDIA QUERIES ***/
+@media screen and (max-width: 1024px) {
   section {
-    width: 600px !important;
+    height: 100vh;
+  }
+  .landing .landing-info .hero .what-i-do h1 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+  }
+  .landing {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .landing .landing-info .hero .what-i-do p {
+    width: 75%;
+    font-size: .9rem;
+  }
+  .landing-img {
+    display: block;
+    margin-left: 1.2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .landing-img .landing-pic img {
+    width: 350px;
+    height: 300px;
+  }
+  .landing-icons > svg {
+    fill: var(--white);
+    width: 25px;
+    height: 25px;
+  }
+  .get-results {
+    height: auto;
+  }
+  .get-results .results-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .get-results .results-body p {
+    font-size: 1.3rem;
+    width: 500px;
+    line-height: 2rem;
+    margin-bottom: .2rem;
+  }
+  .flex-container .benefit-1,
+  .flex-container .benefit-2,
+  .flex-container .benefit-3,
+  .flex-container .benefit-4,
+  .flex-container .benefit-5,
+  .flex-container .benefit-6 {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  .landing {
+    height: 100vh;
+  }
+  .landing .landing-info .hero .what-i-do p {
+    width: 75%;
+    font-size: .9rem;
+  }
+  .landing-icons > svg {
+    fill: var(--white);
+    width: 25px;
+    height: 25px;
+  }
+  .landing-img {
+    display: none;
+  }
+  .get-results h1 {
+    font-size: 2.5rem;
+  }
+  .get-results .results-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .get-results .results-body p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    width: 400px;
+    margin-bottom: .1rem;
+  }
+  .services .help-1,
+  .services .help-2,
+  .services .help-3,
+  .services .help-4 {
+    width: 100%;
+  }
+  .services .help-2 .child-1,
+  .services .help-4 .child-1 {
+    width: 300px;
+    margin-left: 5rem;
+  }
+  .services .child-1 {
+    width: 70%;
+  }
+  .services .child-1 p {
+    width: 100%;
+  }
+  .services .child-1 h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  .services .child-2 {
+    width: 20%;
+  }
+  .services .child-2 img {
+    width: 200px !important;
+    height: 150px !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section {
+    width: 650px !important;
   }
   header {
-    width: 600px;
+    width: 520px;
   }
   .nav-item button {
     visibility: hidden;
@@ -1477,28 +1628,26 @@ main section {
     padding-bottom: 3rem;
   }
   .landing .landing-info {
-    width: 100%;
+    width: 520px;
     margin: .5rem .5rem;
-    font-size: 2rem;
   }
   .landing .landing-info .hero {
-    width: 100%;
+    width: 520px;
     margin: .5rem 1rem;
-    font-size: 2rem;
   }
   .landing .landing-info .hero .what-i-do {
-    width: 100%;
+    width: 520px;
   }
   .landing .landing-info .hero .what-i-do h1 {
-    font-size: 7rem;
-    line-height: 6rem;
+    font-size: 5rem;
+    line-height: 5rem;
     margin-top: 3rem;
   }
   .landing .landing-info .hero .what-i-do p {
-    width: 90%;
+    width: 60%;
     margin: 2rem 0;
     line-height: 2.5rem;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
   .landing .landing-info .cta-container .cta-btns {
     width: 60%;
@@ -1506,13 +1655,13 @@ main section {
     margin-right: 4rem;
   }
   .landing .landing-info .cta-container .cta-btns button {
-    padding: 2rem 4rem;
-    font-size: 1.2rem;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.1rem;
   }
   .landing-icons > svg {
     fill: var(--white);
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
   }
   .landing-img {
     display: none;
@@ -1527,6 +1676,21 @@ main section {
   .results-body p {
     font-size: 1.3rem;
     width: 100%;
+  }
+  .get-results h1 {
+    font-size: 2.5rem;
+  }
+  .get-results .results-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .get-results .results-body p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    width: 500px;
+    margin-bottom: .1rem;
   }
   .services .help-1,
   .services .help-2,
@@ -1584,16 +1748,45 @@ main section {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (max-width: 520px) {
+  section {
+    width: 520px !important;
+  }
   header {
-    display: none;
+    width: 520px;
+  }
+  .nav-item button {
+    visibility: hidden;
   }
   .landing {
-    height: 100vh;
+    padding-bottom: 3rem;
+  }
+  .landing .landing-info {
+    width: 100%;
+    margin: .5rem .5rem;
+  }
+  .landing .landing-info .hero {
+    margin: .5rem 1rem;
+  }
+  .landing .landing-info .hero .what-i-do h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    margin-top: 2rem;
   }
   .landing .landing-info .hero .what-i-do p {
-    width: 75%;
-    font-size: .9rem;
+    width: 60%;
+    margin: 2rem 0;
+    line-height: 2.5rem;
+    font-size: 1rem;
+  }
+  .landing .landing-info .cta-container .cta-btns {
+    width: 60%;
+    margin: .5rem 1rem;
+    margin-right: 4rem;
+  }
+  .landing .landing-info .cta-container .cta-btns button {
+    padding: 1.5rem 3.5rem;
+    font-size: 1.1rem;
   }
   .landing-icons > svg {
     fill: var(--white);
@@ -1603,107 +1796,196 @@ main section {
   .landing-img {
     display: none;
   }
-  .results-body {
-    margin: 0 1.8rem;
+  .get-results h1 {
+    font-size: 2.5rem;
+  }
+  .get-results .results-body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .results-body p {
-    font-size: 1.3rem;
-    width: 70%;
+  .get-results .results-body p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    width: 450px;
   }
   .services .help-1,
   .services .help-2,
   .services .help-3,
   .services .help-4 {
     width: 100%;
+    font-size: 1.5rem;
   }
-  .services .help-2 .child-1,
-  .services .help-4 .child-1 {
-    width: 300px;
-    margin-left: 5rem;
+  .services .help-2,
+  .services .help-4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .services .child-1 {
-    width: 70%;
+    width: 100% !important;
   }
   .services .child-1 p {
-    width: 100%;
+    width: 550px;
   }
   .services .child-1 h3 {
     font-size: 1.8rem;
     margin: 1rem 0;
   }
-  .services .child-2 {
-    width: 20%;
-  }
   .services .child-2 img {
-    width: 200px !important;
-    height: 150px !important;
+    width: 450px !important;
+    height: 450px !important;
+    margin-top: 2rem;
+  }
+  .tech-used .frontend .icon,
+  .tech-used .backend .icon,
+  .tech-used .general .icon {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    font-size: 4rem;
+  }
+  .tech-used .frontend .icon p,
+  .tech-used .backend .icon p,
+  .tech-used .general .icon p {
+    font-size: 1.2rem;
+  }
+  .tech-used .frontend .icon svg,
+  .tech-used .backend .icon svg,
+  .tech-used .general .icon svg {
+    width: 60px;
+    height: 60px;
+  }
+  .tech-used .frontend .icon svg path,
+  .tech-used .backend .icon svg path,
+  .tech-used .general .icon svg path {
+    fill: var(--color-accent-sec-lighter);
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media screen and (max-width: 425px) {
   section {
-    height: 100vh;
+    width: 500px !important;
   }
-  .landing .landing-info .hero .what-i-do h1 {
-    font-size: 5rem;
-    line-height: 4.5rem;
-    margin-top: 3rem;
+  header {
+    width: 500px;
+  }
+  .nav-item button {
+    visibility: hidden;
   }
   .landing {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding-bottom: 3rem;
+    height: auto;
+  }
+  .landing .landing-info {
+    width: 100%;
+    margin: .5rem .5rem;
+    font-size: .5rem;
+  }
+  .landing .landing-info .hero {
+    width: 100%;
+    margin: .5rem 1rem;
+    font-size: 2rem;
+  }
+  .landing .landing-info .hero .what-i-do {
+    width: 80%;
+  }
+  .landing .landing-info .hero .what-i-do h1 {
+    font-size: 5.4rem;
+    line-height: 5rem;
+    margin-top: 4rem;
   }
   .landing .landing-info .hero .what-i-do p {
-    width: 75%;
-    font-size: .9rem;
+    width: 90%;
+    margin: 2rem 0;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
   }
-  .landing-img {
-    display: block;
-    margin-left: 1.2rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .landing .landing-info .cta-container .cta-btns {
+    width: 60%;
+    margin: .5rem 1rem;
+    margin-right: 4rem;
   }
-  .landing-img .landing-pic img {
-    width: 350px;
-    height: 300px;
+  .landing .landing-info .cta-container .cta-btns .btn-lg {
+    padding: 1.5rem 1.5rem;
+    font-size: 1rem;
   }
-  .landing-icons > svg {
+  .landing .landing-info .cta-container .landing-icons > svg {
     fill: var(--white);
     width: 25px;
     height: 25px;
   }
-  .results-body {
+  .landing .landing-info .cta-container .landing-img {
+    display: none;
+  }
+  .get-results .results-body {
+    margin: 0 1.8rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .results-body p {
-    font-size: 1.3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50%;
-    margin-bottom: 1rem;
+  .get-results .results-body p {
+    width: 350px;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
   }
-  .flex-container .benefit-1,
-  .flex-container .benefit-2,
-  .flex-container .benefit-3,
-  .flex-container .benefit-4,
-  .flex-container .benefit-5,
-  .flex-container .benefit-6 {
-    width: 200px;
+  .services .help-1,
+  .services .help-2,
+  .services .help-3,
+  .services .help-4 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .services .help-2,
+  .services .help-4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .services .child-1 {
+    width: 100% !important;
+  }
+  .services .child-1 p {
+    width: 550px;
+  }
+  .services .child-1 h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  .services .child-2 img {
+    width: 450px !important;
+    height: 450px !important;
+    margin-top: 2rem;
+  }
+  .tech-used .frontend .icon,
+  .tech-used .backend .icon,
+  .tech-used .general .icon {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    font-size: 4rem;
+  }
+  .tech-used .frontend .icon p,
+  .tech-used .backend .icon p,
+  .tech-used .general .icon p {
+    font-size: 1.2rem;
+  }
+  .tech-used .frontend .icon svg,
+  .tech-used .backend .icon svg,
+  .tech-used .general .icon svg {
+    width: 60px;
+    height: 60px;
+  }
+  .tech-used .frontend .icon svg path,
+  .tech-used .backend .icon svg path,
+  .tech-used .general .icon svg path {
+    fill: var(--color-accent-sec-lighter);
   }
 }
 /*# sourceMappingURL=style.css.map */
