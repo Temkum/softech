@@ -352,7 +352,7 @@ main section {
   font-family: 'Montserrat', sans-serif;
   padding: 1.3rem 3rem;
   font-weight: 600;
-  border: 2px solid var(--color-accent-dark);
+  border: 3px solid var(--color-accent-dark);
   background: transparent;
   margin: 1rem;
   text-transform: uppercase;
@@ -429,7 +429,7 @@ main section {
   font-size: 1rem;
   -webkit-box-shadow: 0 2px 5px rgba(94, 91, 91, 0.14);
           box-shadow: 0 2px 5px rgba(94, 91, 91, 0.14);
-  border: 1px solid var(--default-color);
+  border: 2px solid var(--default-color);
   padding: 1rem 1.5rem;
 }
 
@@ -443,148 +443,86 @@ main section {
 }
 
 .services {
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  /* .help-1,
-  .help-3 {
-    display: grid;
-    grid-gap: 1rem;
-    margin: 1rem;
-    padding: 2rem;
-
-    align-items: center;
-    justify-content: center;
-
-    .child-1,
-    .child-2 {
-      border: red solid 1px;
-      padding: 0.5rem;
-    }
-
-    .child-1 {
-      position: relative;
-      width: 350px;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-    }
-
-    .child-2 {
-      grid-column: 3/4;
-    }
-  }
-
-  .help-2,
-  .help-4 {
-    display: grid;
-    grid-gap: 1rem;
-    margin: 1rem;
-    padding: 2rem;
-
-    align-items: center;
-    justify-content: center;
-
-    .child-1,
-    .child-2 {
-      border: red solid 1px;
-      padding: 0.5rem;
-    }
-
-    .child-2 {
-      grid-column: 3/4;
-    }
-
-    .child-2 {
-      position: relative;
-      width: 350px;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
-    }
-  } */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3rem;
 }
 
 .services h1 {
-  font-size: 3.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 2.5rem;
-  width: 100%;
+  margin: 4.5rem 0;
 }
 
 .services .help-1,
-.services .help-2,
-.services .help-3,
-.services .help-4 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.services .help-2 {
+  width: 60%;
+}
+
+.services .help-1 .child-2,
+.services .help-1 .child-1,
+.services .help-2 .child-2,
+.services .help-2 .child-1 {
   margin: 3rem 0;
 }
 
 .services .help-1 .child-1,
-.services .help-2 .child-1,
-.services .help-3 .child-1,
-.services .help-4 .child-1 {
-  width: 30%;
-  margin: 0 2rem;
+.services .help-2 .child-1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
 }
 
-.services .help-1 .child-2,
-.services .help-2 .child-2,
-.services .help-3 .child-2,
-.services .help-4 .child-2 {
-  margin: 0 2rem;
+.services .help-1 .child-1 p,
+.services .help-2 .child-1 p {
+  width: 400px;
 }
 
-.services .help-1 .child-2 img,
-.services .help-2 .child-2 img,
-.services .help-3 .child-2 img,
-.services .help-4 .child-2 img {
+.services .help-1 .child-1 h3,
+.services .help-2 .child-1 h3 {
+  width: 100%;
+}
+
+.services .help-2 .child-1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10rem;
+}
+
+.services .help-1 .child-1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 10rem;
+}
+
+.services .child-1 p {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.services .child-1 h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.services .child-2 img {
   width: 350px;
-  height: 250px;
+  height: 350px;
 }
 
 .tech-used {
@@ -1548,9 +1486,131 @@ main section {
   .flex-container .benefit-6 {
     width: 200px;
   }
+  /* .services {
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+
+    h1 {
+      font-size: 3.2rem;
+      padding-top: 2.5rem;
+      width: 100%;
+      margin-top: 4rem;
+    }
+
+    .flex-container {
+      flex-direction: column;
+      width: 80%;
+      margin-top: 5rem;
+
+      .help-1,
+      .help-2 {
+        margin: 2rem 0;
+
+        .child-1 {
+          width: 80%;
+
+          h3 {
+            margin-bottom: 1rem;
+          }
+
+          p {
+            width: 100%;
+          }
+        }
+
+        .child-2 {
+
+          img {
+            object-fit: cover;
+            width: 90%;
+            height: 90%;
+            object-position: center center;
+            opacity: 1;
+            transition: opacity 500ms ease 0s;
+          }
+        }
+      }
+
+      .help-1 {
+        .child-2 {
+          margin-left: 10rem;
+        }
+      }
+
+      .help-2 {
+        .child-1 {
+          margin-left: 5rem;
+        }
+      }
+    }
+  } */
+  .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services h1 {
+    margin-bottom: 3rem;
+  }
+  .services .help-1,
+  .services .help-2 {
+    width: 80%;
+  }
+  .services .help-1 .child-2,
+  .services .help-1 .child-1,
+  .services .help-2 .child-2,
+  .services .help-2 .child-1 {
+    margin: 3rem 0;
+  }
+  .services .help-1 .child-1,
+  .services .help-2 .child-1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+  .services .help-1 .child-1 p,
+  .services .help-2 .child-1 p {
+    width: 400px;
+  }
+  .services .help-1 .child-1 h3,
+  .services .help-2 .child-1 h3 {
+    width: 100%;
+  }
+  .services .help-2 .child-1 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 8rem;
+  }
+  .services .child-1 {
+    width: 100%;
+  }
+  .services .child-1 p {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .services .child-1 h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .services .child-2 img {
+    width: 350px;
+    height: 350px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* header {
     display: none;
   } */
@@ -1564,12 +1624,12 @@ main section {
     width: 75%;
     font-size: .9rem;
   }
-  .landing-icons > svg {
+  .landing .landing-icons > svg {
     fill: var(--white);
     width: 25px;
     height: 25px;
   }
-  .landing-img {
+  .landing .landing-img {
     display: none;
   }
   .get-results h1 {
@@ -1587,43 +1647,71 @@ main section {
     width: 400px;
     margin-bottom: .1rem;
   }
+  .services h1 {
+    margin-bottom: 3rem;
+  }
   .services .help-1,
-  .services .help-2,
-  .services .help-3,
-  .services .help-4 {
+  .services .help-2 {
+    width: 680px;
+  }
+  .services .help-1 .child-2,
+  .services .help-1 .child-1,
+  .services .help-2 .child-2,
+  .services .help-2 .child-1 {
+    margin: 3rem 0;
+  }
+  .services .help-1 .child-1,
+  .services .help-2 .child-1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 520px;
+  }
+  .services .help-1 .child-1 p,
+  .services .help-2 .child-1 p {
+    width: 300px;
+  }
+  .services .help-1 .child-1 h3,
+  .services .help-2 .child-1 h3 {
     width: 100%;
   }
-  .services .help-2 .child-1,
-  .services .help-4 .child-1 {
-    width: 300px;
+  .services .help-2 .child-1 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 5rem;
   }
   .services .child-1 {
-    width: 70%;
-  }
-  .services .child-1 p {
     width: 100%;
   }
-  .services .child-1 h3 {
-    font-size: 1.8rem;
-    margin: 1rem 0;
+  .services .child-1 p {
+    width: 420px;
+    font-size: 1.2rem;
   }
-  .services .child-2 {
-    width: 20%;
+  .services .child-1 h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .services .child-2 img {
-    width: 200px !important;
-    height: 150px !important;
+    width: 250px;
+    height: 250px;
   }
 }
 
 /***** landscape on larger screens mobile devices *****/
 @media screen and (max-width: 650px) {
   section {
-    width: 650px !important;
+    width: 650px;
   }
   header {
-    width: 520px;
+    width: 650px;
   }
   .nav-item button {
     visibility: hidden;
@@ -1662,68 +1750,107 @@ main section {
     padding: 1.5rem 3.5rem;
     font-size: 1.1rem;
   }
-  .landing-icons > svg {
+  .landing .landing-info .landing-icons > svg {
     fill: var(--white);
     width: 25px;
     height: 25px;
   }
-  .landing-img {
+  .landing .landing-info .landing-img {
     display: none;
   }
-  .results-body {
+  .get-results h1 {
+    font-size: 2.5rem;
+  }
+  .get-results .results-body {
     margin: 0 1.8rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .results-body p {
-    font-size: 1.3rem;
+  .get-results .results-body p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 400px;
+    margin-bottom: .1rem;
+  }
+  .services h1 {
+    margin-bottom: 3rem;
+  }
+  .services .help-1,
+  .services .help-2 {
     width: 100%;
   }
-  .get-results h1 {
-    font-size: 2.5rem;
-  }
-  .get-results .results-body {
+  .services .help-1,
+  .services .help-2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .get-results .results-body p {
-    font-size: 1.1rem;
-    line-height: 2rem;
-    width: 500px;
-    margin-bottom: .1rem;
+  .services .help-1 .child-1,
+  .services .help-2 .child-1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 520px;
   }
-  .services .help-1,
-  .services .help-2,
-  .services .help-3,
-  .services .help-4 {
-    width: 100%;
-    font-size: 1.5rem;
+  .services .help-1 .child-1 p,
+  .services .help-2 .child-1 p {
+    text-align: center;
+    width: 520px;
   }
-  .services .help-2,
-  .services .help-4 {
+  .services .help-1 .child-1 h3,
+  .services .help-2 .child-1 h3 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .services .help-2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .services .help-2 .child-1 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 0px;
+  }
   .services .child-1 {
-    width: 100% !important;
+    width: 100%;
   }
   .services .child-1 p {
-    width: 550px;
+    width: 420px;
+    font-size: 1.2rem;
   }
   .services .child-1 h3 {
-    font-size: 1.8rem;
-    margin: 1rem 0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .services .child-2 {
+    margin-top: -.8rem !important;
   }
   .services .child-2 img {
-    width: 450px !important;
-    height: 450px !important;
-    margin-top: 2rem;
+    width: 400px;
+    height: 400px;
   }
   .tech-used .frontend .icon,
   .tech-used .backend .icon,
@@ -1793,12 +1920,12 @@ main section {
     padding: 1.5rem 3.5rem;
     font-size: 1.1rem;
   }
-  .landing-icons > svg {
+  .landing .landing-icons > svg {
     fill: var(--white);
     width: 25px;
     height: 25px;
   }
-  .landing-img {
+  .landing .landing-img {
     display: none;
   }
   .get-results h1 {
@@ -1813,36 +1940,75 @@ main section {
   .get-results .results-body p {
     font-size: 1.1rem;
     line-height: 2rem;
-    width: 450px;
+    width: 400px;
+  }
+  .services h1 {
+    margin-bottom: 3rem;
   }
   .services .help-1,
-  .services .help-2,
-  .services .help-3,
-  .services .help-4 {
+  .services .help-2 {
     width: 100%;
-    font-size: 1.5rem;
   }
-  .services .help-2,
-  .services .help-4 {
+  .services .help-1,
+  .services .help-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services .help-1 .child-1,
+  .services .help-2 .child-1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 420px;
+  }
+  .services .help-1 .child-1 p,
+  .services .help-2 .child-1 p {
+    text-align: justify;
+    width: 400px;
+  }
+  .services .help-2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .services .help-2 .child-1 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .services .child-1 {
-    width: 100% !important;
+    width: 100%;
   }
   .services .child-1 p {
-    width: 550px;
+    width: 420px;
+    font-size: 1.2rem;
   }
   .services .child-1 h3 {
-    font-size: 1.8rem;
-    margin: 1rem 0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .services .child-2 {
+    margin-bottom: 3rem;
   }
   .services .child-2 img {
-    width: 450px !important;
-    height: 450px !important;
-    margin-top: 2rem;
+    width: 250px;
+    height: 250px;
+    margin-top: 3rem;
   }
   .tech-used .frontend .icon,
   .tech-used .backend .icon,
@@ -1940,33 +2106,68 @@ main section {
     font-size: 1.1rem;
   }
   .services .help-1,
-  .services .help-2,
-  .services .help-3,
-  .services .help-4 {
+  .services .help-2 {
     width: 100%;
-    font-size: 1.5rem;
   }
-  .services .help-2,
-  .services .help-4 {
+  .services .help-1,
+  .services .help-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services .help-1 .child-1,
+  .services .help-2 .child-1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 420px;
+  }
+  .services .help-1 .child-1 p,
+  .services .help-2 .child-1 p {
+    text-align: center;
+    width: 400px;
+  }
+  .services .help-2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .services .help-2 .child-1 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .services .child-1 {
-    width: 100% !important;
+    width: 100%;
   }
   .services .child-1 p {
-    width: 550px;
+    width: 420px;
+    font-size: 1.2rem;
   }
   .services .child-1 h3 {
-    font-size: 1.8rem;
-    margin: 1rem 0;
+    font-size: 1.4rem;
+  }
+  .services .child-2 {
+    margin-bottom: 3rem;
   }
   .services .child-2 img {
-    width: 450px !important;
-    height: 450px !important;
-    margin-top: 2rem;
+    width: 250px;
+    height: 250px;
+    margin-top: 3rem;
   }
   .tech-used .frontend .icon,
   .tech-used .backend .icon,
