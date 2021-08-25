@@ -1093,6 +1093,7 @@ main section {
 }
 
 .contact-me {
+  background: var(--color-60-medium-dark);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,20 +1104,108 @@ main section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  /* @media screen and (max-width: 650px) {
+    .screen-body {
+      padding: 40px;
+    }
+
+    .screen-body-item {
+      padding: 0;
+    }
+
+    .container {
+      padding-left: 5rem;
+      width: 600px;
+    }
+
+    .center-item {
+      padding-left: 9rem;
+      margin-left: 3rem;
+      width: 580px;
+      font-size: 2rem;
+    }
+
+    .app-form-button {
+      background: none;
+      border: solid 1px var(--project-card-tech-color);
+      color: var(--project-card-tech-color);
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      outline: none;
+      padding: 0.8rem 1.8rem;
+      border-radius: 5px;
+      margin-top: 0.6rem;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+
+    .contact-me {
+      h1 {
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        padding-bottom: 3rem;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    .screen-body {
+      flex-direction: column;
+    }
+
+    .screen-body-item {
+      .left {
+        margin-bottom: 30px;
+      }
+    }
+
+    .app-title {
+      flex-direction: row;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .app-title span {
+      margin-right: 12px;
+    }
+  } */
+}
+
+.contact-me h1 {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  width: 100%;
 }
 
 .contact-me .container {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 700px;
-          flex: 0 1 700px;
   margin: auto;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
 }
 
 .contact-me .container .screen {
-  position: relative;
   background: #3e3e3e;
   border-radius: 15px;
 }
@@ -1131,7 +1220,6 @@ main section {
   border-radius: 15px;
   -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  z-index: 1;
 }
 
 .contact-me .container .screen .screen-header {
@@ -1196,6 +1284,16 @@ main section {
   position: relative;
   color: var(--color-accent-sec-lighter);
   font-size: 26px;
+  /* &:after {
+              content: "";
+              display: block;
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              width: 25px;
+              height: 4px;
+              background: var(--color-accent-sec-lighter);
+            } */
 }
 
 .contact-me .container .screen .screen-body .left {
@@ -1277,62 +1375,6 @@ main section {
 .contact-me .container .screen .buttons {
   margin-bottom: 0;
   text-align: right;
-}
-
-@media screen and (max-width: 520px) {
-  .contact-me .screen-body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact-me .screen-body-item .left {
-    margin-bottom: 30px;
-  }
-  .contact-me .app-title {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .contact-me .app-title:after {
-    display: none;
-  }
-  .contact-me .app-title span {
-    margin-right: 12px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .contact-me .screen-body {
-    padding: 40px;
-  }
-  .contact-me .screen-body-item {
-    padding: 0;
-  }
-  .contact-me .container {
-    padding-left: 5rem;
-    width: 600px;
-  }
-  .contact-me .center-item {
-    padding-left: 9rem;
-    margin-left: 3rem;
-    width: 580px;
-    font-size: 2rem;
-  }
-  .contact-me .app-form-button {
-    background: none;
-    border: solid 1px var(--project-card-tech-color);
-    color: var(--project-card-tech-color);
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    outline: none;
-    padding: 0.8rem 1.8rem;
-    border-radius: 5px;
-    margin-top: 0.6rem;
-    width: 100%;
-  }
 }
 
 .footer {
@@ -1663,6 +1705,31 @@ main section {
   .faq .question .drop-content {
     margin-top: 0.7rem;
   }
+  .contact-me {
+    padding-top: 2rem;
+  }
+  .contact-me h1 {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2.3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+  .contact-me .container {
+    width: 600px;
+  }
+  .contact-me .container .screen .screen-body .screen-body-item {
+    padding: 2rem;
+  }
 }
 
 /***** landscape on larger screens mobile devices *****/
@@ -1860,6 +1927,32 @@ main section {
   .faq .question .drop-content {
     margin-top: 0.7rem;
   }
+  .contact-me {
+    padding-top: 2rem;
+  }
+  .contact-me h1 {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+  .contact-me .container {
+    padding: 20px;
+    width: 600px;
+  }
+  .contact-me .container .screen .screen-body .screen-body-item {
+    padding: 2rem;
+  }
 }
 
 /***** landscape view - mobile devices *****/
@@ -2042,6 +2135,41 @@ main section {
     text-align: justify;
     margin-top: 0.7rem;
   }
+  .contact-me {
+    padding-top: 2rem;
+  }
+  .contact-me h1 {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+  }
+  .contact-me .container {
+    padding: 20px;
+    width: 500px;
+  }
+  .contact-me .container .screen .screen-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-me .container .screen .screen-body .screen-body-item {
+    padding: 3rem;
+  }
 }
 
 /******** mobile devices **********/
@@ -2212,7 +2340,7 @@ main section {
   }
   .faq h1 {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .faq .question {
     width: 420px !important;
@@ -2226,21 +2354,36 @@ main section {
     margin-top: 0.7rem;
   }
   .contact-me {
-    width: 450px !important;
-    z-index: 10;
+    padding-top: 2rem;
   }
-  .contact-me .center-item {
-    padding-top: 3rem;
-    font-size: 1rem;
-    padding-left: .2rem;
+  .contact-me h1 {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 100%;
   }
   .contact-me .container {
-    width: auto;
-    margin: auto;
-    padding: 10px;
+    padding: 20px;
+    width: 435px;
   }
   .contact-me .container .screen {
-    width: 420px;
+    width: auto;
+  }
+  .contact-me .container .screen .screen-body {
+    padding: 0;
+  }
+  .contact-me .container .screen .screen-body .screen-body-item {
+    padding: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
