@@ -2444,11 +2444,11 @@ main {
 }
 
 /******** mobile devices **********/
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
 
-  section {
-    width: 500px !important;
-  }
+  // section {
+  //   width: 100%;
+  // }
 
   header {
     width: 500px;
@@ -2466,7 +2466,7 @@ main {
 
   .landing {
     padding-bottom: 3rem;
-    height: auto;
+    height: 100vh;
 
     .landing-info {
       width: 100%;
@@ -2537,12 +2537,13 @@ main {
 
   // services
   .services {
+
     h1 {
       margin-bottom: 1rem;
     }
 
     .help-1 {
-      width: 100%;
+      width: 420px;
       flex-direction: column;
 
       .child-1 {

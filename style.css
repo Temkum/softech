@@ -2390,10 +2390,7 @@ main section {
 }
 
 /******** mobile devices **********/
-@media screen and (max-width: 425px) {
-  section {
-    width: 500px !important;
-  }
+@media only screen and (max-width: 425px) {
   header {
     width: 500px;
   }
@@ -2402,7 +2399,7 @@ main section {
   }
   .landing {
     padding-bottom: 3rem;
-    height: auto;
+    height: 100vh;
   }
   .landing .landing-info {
     width: 100%;
@@ -2461,7 +2458,7 @@ main section {
     margin-bottom: 1rem;
   }
   .services .help-1 {
-    width: 100%;
+    width: 420px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
