@@ -1378,11 +1378,13 @@ main section {
 }
 
 .footer {
-  height: 100%;
-  padding-top: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1393,7 +1395,7 @@ main section {
 .footer .about-softech,
 .footer .quick-links {
   width: 500px;
-  margin: 2rem;
+  margin: 1rem 2rem;
   padding: 1rem;
 }
 
@@ -1437,8 +1439,6 @@ main section {
 }
 
 .footer .endnote {
-  position: absolute;
-  margin-top: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1587,6 +1587,44 @@ main section {
     width: 350px;
     height: 350px;
   }
+  .footer .about-softech {
+    width: 450px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer .about-softech .txt p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+  }
+  .footer .about-softech .icons {
+    margin-top: 2rem;
+  }
+  .footer .about-softech .icons > a {
+    margin-right: 2rem;
+  }
+  .footer .quick-links {
+    width: 100px;
+  }
+  .footer .quick-links .nav-items {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .quick-links .nav-items > li {
+    margin: .7rem .2rem;
+  }
+  .footer .endnote {
+    width: 100%;
+    margin: 3rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1690,6 +1728,7 @@ main section {
   }
   .tech-support .support .details p {
     font-size: 1.2rem;
+    text-align: center;
   }
   .faq h1 {
     width: 100%;
@@ -1729,6 +1768,47 @@ main section {
   }
   .contact-me .container .screen .screen-body .screen-body-item {
     padding: 2rem;
+  }
+  .footer {
+    width: 750px;
+  }
+  .footer .endnote {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .footer .about-softech {
+    width: 450px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer .about-softech .txt p {
+    font-size: .9rem;
+    line-height: 1.7rem;
+  }
+  .footer .about-softech .icons {
+    margin-top: 2rem;
+  }
+  .footer .about-softech .icons > a {
+    margin-right: 2rem;
+  }
+  .footer .quick-links {
+    width: 100px;
+  }
+  .footer .quick-links .nav-items {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .quick-links .nav-items > li {
+    margin: 0 .2rem;
   }
 }
 
@@ -1953,6 +2033,42 @@ main section {
   .contact-me .container .screen .screen-body .screen-body-item {
     padding: 2rem;
   }
+  .footer {
+    width: 600px;
+  }
+  .footer .about-softech {
+    width: 100%;
+  }
+  .footer .about-softech .txt p {
+    font-size: 1.3rem !important;
+    line-height: 1.7rem;
+  }
+  .footer .about-softech .icons {
+    margin-top: 2.5rem;
+  }
+  .footer .about-softech .icons > a {
+    margin-right: 2rem;
+  }
+  .footer .quick-links {
+    width: 100%;
+  }
+  .footer .quick-links .nav-items {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .quick-links .nav-items > li {
+    margin: 0 1rem;
+  }
+  .footer .endnote {
+    width: 100%;
+    margin-top: 3rem;
+  }
 }
 
 /***** landscape view - mobile devices *****/
@@ -2170,6 +2286,35 @@ main section {
   .contact-me .container .screen .screen-body .screen-body-item {
     padding: 3rem;
   }
+  .footer {
+    width: 500px;
+  }
+  .footer .endnote {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .footer .about-softech {
+    width: 100%;
+  }
+  .footer .about-softech .txt p {
+    font-size: 1.3rem !important;
+    line-height: 1.7rem;
+  }
+  .footer .about-softech .icons {
+    margin-top: 2.5rem;
+  }
+  .footer .about-softech .icons > a {
+    margin-right: 2rem;
+  }
+  .footer .quick-links .nav-items {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .footer .quick-links .nav-items > li {
+    margin: 0 .8rem;
+  }
 }
 
 /******** mobile devices **********/
@@ -2384,6 +2529,41 @@ main section {
   }
   .contact-me .container .screen .screen-body .screen-body-item {
     padding: 3rem;
+  }
+  .footer {
+    width: 420px;
+    margin: 1rem;
+  }
+  .footer .about-softech {
+    width: 100%;
+  }
+  .footer .about-softech .txt p {
+    width: 420px;
+    font-size: 1.1rem !important;
+    line-height: 1.7rem;
+  }
+  .footer .about-softech .icons {
+    margin-top: 2.5rem;
+  }
+  .footer .quick-links {
+    width: 100%;
+  }
+  .footer .quick-links .nav-items {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .quick-links .nav-items > li {
+    margin: 0 .8rem;
+  }
+  .footer .endnote {
+    width: 100%;
+    margin-top: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

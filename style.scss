@@ -1224,17 +1224,17 @@ main {
 
 .footer {
   // background: rgb(44, 100, 100);
-  height: 100%;
-  padding-top: 10rem;
+  // padding-top: 10rem;
   display: flex;
+  align-items: center;
+  height: auto;
   justify-content: center;
   flex-wrap: wrap;
 
   .about-softech,
   .quick-links {
-    // border: #0edfb5 2px solid;
     width: 500px;
-    margin: 2rem;
+    margin: 1rem 2rem;
     padding: 1rem;
   }
 
@@ -1277,9 +1277,6 @@ main {
   }
 
   .endnote {
-    // border: #0edfb5 2px solid;
-    position: absolute;
-    margin-top: 20%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1348,7 +1345,6 @@ main {
       height: 25px;
     }
   }
-
 
   // results section
   .get-results {
@@ -1442,6 +1438,53 @@ main {
         width: 350px;
         height: 350px;
       }
+    }
+  }
+
+  // Footer
+  .footer {
+    // width: 750px;
+
+    .about-softech {
+      width: 450px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .about-softech {
+      .txt {
+        p {
+          font-size: .9rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      .icons {
+        margin-top: 2rem;
+
+        &>a {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .quick-links {
+      width: 100px;
+
+      .nav-items {
+        display: inline-flex;
+        flex-direction: column;
+
+        &>li {
+          margin: .7rem .2rem;
+        }
+
+      }
+    }
+
+    .endnote {
+      width: 100%;
+      margin: 3rem;
     }
   }
 }
@@ -1576,6 +1619,7 @@ main {
 
         p {
           font-size: 1.2rem;
+          text-align: center;
         }
       }
     }
@@ -1628,6 +1672,53 @@ main {
             padding: 2rem;
           }
         }
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    width: 750px;
+
+    .endnote {
+      width: 100%;
+      margin-top: 3rem;
+    }
+
+    .about-softech {
+      width: 450px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .about-softech {
+      .txt {
+        p {
+          font-size: .9rem;
+          line-height: 1.7rem;
+        }
+      }
+
+      .icons {
+        margin-top: 2rem;
+
+        &>a {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .quick-links {
+      width: 100px;
+
+      .nav-items {
+        display: inline-flex;
+        flex-direction: column;
+
+        &>li {
+          margin: 0 .2rem;
+        }
+
       }
     }
   }
@@ -1890,6 +1981,50 @@ main {
     }
   }
 
+  // Footer
+  .footer {
+    width: 600px;
+
+    .about-softech {
+      width: 100%;
+
+      .txt {
+        p {
+          font-size: 1.3rem !important;
+          line-height: 1.7rem;
+        }
+      }
+
+      .icons {
+        margin-top: 2.5rem;
+
+        &>a {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .quick-links {
+      width: 100%;
+
+      .nav-items {
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+
+        &>li {
+          margin: 0 1rem;
+        }
+
+      }
+    }
+
+    .endnote {
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+
 }
 
 /***** landscape view - mobile devices *****/
@@ -2137,6 +2272,48 @@ main {
             padding: 3rem;
           }
         }
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    width: 500px;
+
+    .endnote {
+      width: 100%;
+      margin-top: 3rem;
+    }
+
+    .about-softech {
+      width: 100%;
+
+      .txt {
+        p {
+          font-size: 1.3rem !important;
+          line-height: 1.7rem;
+        }
+      }
+
+      .icons {
+        margin-top: 2.5rem;
+
+        &>a {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .quick-links {
+
+      .nav-items {
+        width: 100%;
+        display: inline-flex;
+
+        &>li {
+          margin: 0 .8rem;
+        }
+
       }
     }
   }
@@ -2396,7 +2573,48 @@ main {
         }
       }
     }
-
-
   }
+
+  // Footer
+  .footer {
+    width: 420px;
+    margin: 1rem;
+
+    .about-softech {
+      width: 100%;
+
+      .txt {
+        p {
+          width: 420px;
+          font-size: 1.1rem !important;
+          line-height: 1.7rem;
+        }
+      }
+
+      .icons {
+        margin-top: 2.5rem;
+      }
+    }
+
+    .quick-links {
+      width: 100%;
+
+      .nav-items {
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+
+        &>li {
+          margin: 0 .8rem;
+        }
+
+      }
+    }
+
+    .endnote {
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+
 }
