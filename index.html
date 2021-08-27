@@ -13,6 +13,9 @@
     href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,200;0,400;0,600;0,700;1,500&display=swap"
     rel="stylesheet">
 
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <!-- main style -->
   <!-- <link rel="stylesheet" href="css/theme.css" type="text/css"> -->
   <link rel="stylesheet" href="style.css" type="text/css">
@@ -48,10 +51,78 @@
         </ul>
       </nav>
     </div>
+
+    <section class="menu menu--circle">
+      <div id="circularMenu" class="circular-menu">
+        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- <menu class="items-wrapper">
+          <a href="#" class="menu-item fab fa-facebook"></a>
+          <a href="#" class="menu-item fab fa-twitter"></a>
+          <a href="#" class="menu-item fab fa-google-plus"></a>
+          <a href="#" class="menu-item fab fa-linkedin"></a>
+        </menu> -->
+        <menu class="items-wrapper">
+          <a href="#" class="menu-item fa fa-home"></a>
+          <a href="#contact_me" class="menu-item fa fa-envelope"></a>
+          <a href="#services" class="menu-item fa fa-hand-holding-heart"></a>
+          <a href="#projects" class="menu-item fa fa-folder"></a>
+          <!-- <a href="#projects" class="menu-item fa fa-folder"></a> -->
+        </menu>
+      </div>
+
+      <!-- <div id="circularMenu1" class="circular-menu circular-menu-left active">
+        <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <menu class="items-wrapper">
+          <a href="#" class="menu-item fa fa-home"></a>
+          <a href="#" class="menu-item fa fa-user"></a>
+          <a href="#" class="menu-item fa fa-pie-chart"></a>
+          <a href="#" class="menu-item fa fa-cog"></a>
+        </menu>
+      </div> -->
+    </section>
   </header>
 
   <!-- MAIN -->
   <main>
+    <!-- MOBILE NAV -->
+    <!-- <section class="menu menu--circle">
+      <div id="circularMenu" class="circular-menu">
+
+        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+          <i class="fa fa-plus"></i>
+        </a>
+
+        <menu class="items-wrapper">
+          <a href="#" class="menu-item fa fa-facebook"></a>
+          <a href="#" class="menu-item fa fa-twitter"></a>
+          <a href="#" class="menu-item fa fa-google-plus"></a>
+          <a href="#" class="menu-item fa fa-linkedin"></a>
+        </menu>
+      </div>
+
+
+      <div id="circularMenu1" class="circular-menu circular-menu-left active">
+
+        <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <menu class="items-wrapper">
+          <a href="#" class="menu-item fa fa-home"></a>
+          <a href="#" class="menu-item fa fa-user"></a>
+          <a href="#" class="menu-item fa fa-pie-chart"></a>
+          <a href="#" class="menu-item fa fa-cog"></a>
+        </menu>
+
+      </div>
+    </section> -->
+
+    <!-- LANDING -->
     <section class="landing" id="landing">
       <div class="landing-info">
         <div class="hero">
