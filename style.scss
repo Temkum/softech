@@ -64,6 +64,7 @@ body {
   scrollbar-color: #535353 #333;
   font-family: "Roboto Mono", sans-serif;
   transition: 0.2s ease-out;
+  height: 100vh;
 }
 
 a {
@@ -158,9 +159,7 @@ button {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.25rem;
-  color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14);
-  transition: 0s;
+  color: var(--white);
 }
 
 header {
@@ -173,7 +172,7 @@ header {
     background-color: var(--color-60-medium-dark);
     // opacity: 0;
     transition: opacity 0.35s ease-out;
-    color: white;
+    color: var(--white);
     margin: 0;
     padding: 0.8rem;
 
@@ -184,7 +183,7 @@ header {
     }
 
     span {
-      color: #fff;
+      color: var(--white);
     }
 
     .nav-img {
@@ -212,7 +211,7 @@ header {
         background-color: var(--color-accent-dark);
         border: transparent;
         border-radius: 0.35rem;
-        color: #fff;
+        color: var(--white);
         cursor: pointer;
 
         &:hover {
@@ -321,6 +320,7 @@ main {
         .btn-full {
           background-color: var(--color-accent-sec);
           background: var(--color-accent-dark);
+          width: 85%;
 
           &:hover {
             color: var(--white);
@@ -386,7 +386,7 @@ main {
       &:hover {
         border-color: var(--success-color);
         background-color: var(--color-accent-sec);
-        color: #fff;
+        color: var(--white);
         transition: 0.2s;
         cursor: pointer;
       }
@@ -2434,10 +2434,6 @@ main {
 /******** mobile devices **********/
 @media only screen and (max-width: 425px) {
 
-  // section {
-  //   width: 100%;
-  // }
-
   header {
     width: 500px;
 
@@ -2448,13 +2444,12 @@ main {
           visibility: hidden;
         }
       }
-
     }
   }
 
   .landing {
     padding-bottom: 3rem;
-    height: 100vh;
+    min-height: 100vh;
 
     .landing-info {
       width: 100%;
@@ -2491,7 +2486,7 @@ main {
           margin-right: 4rem;
 
           .btn-lg {
-            padding: 1.5rem 1.5rem;
+            // padding: 1.5rem 1.5rem;
             font-size: 1rem;
           }
         }

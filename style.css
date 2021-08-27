@@ -64,6 +64,7 @@ body {
   font-family: "Roboto Mono", sans-serif;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
+  height: 100vh;
 }
 
 a {
@@ -170,11 +171,7 @@ button {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.25rem;
-  color: #fff;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14);
-  -webkit-transition: 0s;
-  transition: 0s;
+  color: var(--white);
 }
 
 header {
@@ -186,7 +183,7 @@ header nav {
   background-color: var(--color-60-medium-dark);
   -webkit-transition: opacity 0.35s ease-out;
   transition: opacity 0.35s ease-out;
-  color: white;
+  color: var(--white);
   margin: 0;
   padding: 0.8rem;
 }
@@ -202,7 +199,7 @@ header nav ul {
 }
 
 header nav span {
-  color: #fff;
+  color: var(--white);
 }
 
 header nav .nav-img a {
@@ -231,7 +228,7 @@ header nav .nav-item button {
   background-color: var(--color-accent-dark);
   border: transparent;
   border-radius: 0.35rem;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -352,6 +349,7 @@ main section {
 .landing .landing-info .cta-container .cta-btns .btn-full {
   background-color: var(--color-accent-sec);
   background: var(--color-accent-dark);
+  width: 85%;
 }
 
 .landing .landing-info .cta-container .cta-btns .btn-full:hover {
@@ -418,7 +416,7 @@ main section {
 .get-results .project-link button:hover {
   border-color: var(--success-color);
   background-color: var(--color-accent-sec);
-  color: #fff;
+  color: var(--white);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
@@ -2385,7 +2383,7 @@ main section {
   }
   .landing {
     padding-bottom: 3rem;
-    height: 100vh;
+    min-height: 100vh;
   }
   .landing .landing-info {
     width: 100%;
@@ -2417,7 +2415,6 @@ main section {
     margin-right: 4rem;
   }
   .landing .landing-info .cta-container .cta-btns .btn-lg {
-    padding: 1.5rem 1.5rem;
     font-size: 1rem;
   }
   .landing .landing-info .cta-container .landing-icons > svg {
