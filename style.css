@@ -259,7 +259,7 @@ header nav .nav-item img {
 }
 
 main {
-  width: 100% !important;
+  width: 100%;
 }
 
 main img {
@@ -2562,7 +2562,7 @@ main section {
 }
 
 /******** mobile devices **********/
-@media only screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   header .navbar .nav-item button {
     visibility: hidden;
   }
