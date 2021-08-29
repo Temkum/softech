@@ -62,3 +62,10 @@ function openQuestion(e) {
     e.target.className += " show";
   }
 }
+
+// contact me form
+function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);

@@ -1448,15 +1448,38 @@ main {
 }
 
 // PROJECT DETAILS
-.project_details--header {
+/* .project_details--header {
   nav {
     margin-top: -100px;
   }
-}
-#project_details {
+} */
+
+#project_body {
   .back-btn {
-    background-color: #fff;
-    margin: 100px;
+    margin: 100px 100px 0 100px;
+    padding: 1rem;
+    display: inline-flex;
+    cursor: pointer;
+
+    span {
+      .fa {
+        font-size: 1.5rem;
+        color: var(--color-accent-sec);
+      }
+    }
+
+    a {
+      margin-left: 1.5rem;
+      font-weight: bold;
+      visibility: hidden;
+      color: var(--white);
+    }
+
+    &:hover {
+      a {
+        visibility: visible;
+      }
+    }
   }
 
   .details-container {
@@ -1474,25 +1497,185 @@ main {
     .pro-desc {
       border: turquoise solid;
       margin: 2rem;
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
     }
 
     .pro-desc {
       width: 30%;
-      // margin-left: 300px;
+      margin-left: 300px;
+
+      .btns {
+        margin: 2rem 0;
+
+        button {
+          padding: 1rem 2rem;
+          color: var(--white);
+          background-color: var(--color-illustration);
+          border: 1px solid var(--color-illustration);
+          border-radius: 5px;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          margin-right: 1rem;
+
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
     }
   }
 
   .pro-details {
-    background-color: var(--faq-bg-color);
     margin: 100px;
-
     height: auto;
+
+    .skills-details {
+      display: flex;
+      margin: 50px;
+
+      .skill {
+        background-color: var(--faq-bg-color);
+        padding: 1rem;
+        margin: 1rem;
+
+        h4 {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
   }
 
   .pro-image {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background: var(--color-60-medium-light);
+  }
+
+  .pro-screenshots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+
+    div {
+      img {
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
+/*** contact me **/
+.contact {
+  height: 600px;
+
+  form {
+    // background-color: var(--color-60-dark);
+
+    color: #fff;
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    animation: bounce 1.5s infinite;
+  }
+
+  /* .card-item__bg{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    transform: translate(0px, 50px);
+    z-index: 5;
+  } */
+
+  /* form animation starts */
+  ::-webkit-input-placeholder {
+    font-size: 1.3em;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .name,
+  .email,
+  .message {
+    background: transparent;
+    color: var(--color-60-light);
+    border-bottom: solid var(--color-60-light) 0.52px !important;
+
+    &:hover {
+      width: 380px;
+      transition: ease 0.5s;
+    }
+  }
+
+  .title {
+    display: block;
+    font-family: "Monda", sans-serif;
+    margin: 10px auto 5px;
+    width: 300px;
+  }
+
+  .pageTitle {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    color: var(--white);
+
+    transition: all 0.5s ease 0s;
+  }
+
+  .submit {
+    width: 200px;
+    color: white;
+    background-color: var(--color-accent-sec);
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .submit:hover {
+    // box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    // border-top: 5px solid #0e3750;
+    border-radius: 2px;
+    border: solid var(--color-accent-sec) 0.8px;
+    background: transparent;
+  }
+
+  @keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 8px);
+    }
   }
 }
 
@@ -1502,8 +1685,6 @@ main {
 @media only screen and (min-width: 1025px) {
   // Footer
   .footer {
-    // width: 1224px;
-
     .about-softech {
       width: 450px;
       justify-content: start;
