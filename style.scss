@@ -1447,6 +1447,55 @@ main {
   }
 }
 
+// PROJECT DETAILS
+.project_details--header {
+  nav {
+    margin-top: -100px;
+  }
+}
+#project_details {
+  .back-btn {
+    background-color: #fff;
+    margin: 100px;
+  }
+
+  .details-container {
+    background-color: var(--faq-bg-color);
+    // background: transparent;
+    margin: 100px;
+    height: auto;
+    width: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .year,
+    .tech,
+    .pro-desc {
+      border: turquoise solid;
+      margin: 2rem;
+    }
+
+    .pro-desc {
+      width: 30%;
+      // margin-left: 300px;
+    }
+  }
+
+  .pro-details {
+    background-color: var(--faq-bg-color);
+    margin: 100px;
+
+    height: auto;
+  }
+
+  .pro-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 /*** MEDIA QUERIES ***/
 
 /*** Desktops and laptops ****/

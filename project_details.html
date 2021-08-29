@@ -1,70 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Softech | Projects</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Details | Softech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,200;0,400;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
-</head>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-<body>
+    <!-- main style -->
+    <!-- <link rel="stylesheet" href="css/theme.css" type="text/css"> -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
 
-  <header>
-    <!-- top nav -->
-    <div class="nav-wrapper">
-      <nav class="navbar">
-        <ul>
-          <li class="nav-item">
-            <a href="">
-              <img src="" alt="">
-              <span>Kum Jude Tem</span>
-            </a>
+    <!-- theme -->
+    <link rel="stylesheet" href="" id="theme-style" />
+  </head>
+
+  <body>
+    <header class="project_details--header">
+      <!-- top nav -->
+      <div class="nav-wrapper">
+        <nav class="navbar">
+          <ul>
+            <li class="nav-item nav-img">
+              <a href="#">
+                <img src="assets/img/tem.jpg" alt="Tem" />
+                <span>Kum Jude Tem</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <!-- <h5 class="per-theme">Personalized Themes</h5> -->
+              <div id="theme-options-wrapper" class="">
+                <div class="theme-dot" id="light-mode" data-mode="light"></div>
+                <div class="theme-dot" id="blue-mode" data-mode="blue"></div>
+                <div class="theme-dot" id="green-mode" data-mode="green"></div>
+                <div
+                  class="theme-dot"
+                  id="purple-mode"
+                  data-mode="purple"
+                ></div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#contact_me"><button>Hire me</button></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="project_details">
+      <div class="back-btn">
+        <a href="index.html">Back to projects</a>
+      </div>
+
+      <div class="details-container">
+        <div class="year">
+          <h4>Year</h4>
+          <p>2021</p>
+        </div>
+
+        <div class="tech">
+          <h4>Technologies</h4>
+          <p>Javascript</p>
+          <p>Bootstrap</p>
+          <p>HTML5</p>
+          <p>CSS3</p>
+        </div>
+
+        <div class="pro-desc">
+          <h3>Project title</h3>
+          <div class="short-desc">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              ducimus magni nesciunt, quisquam minima dolores maiores tempore
+              vero sint! Dignissimos nobis facere obcaecati iste explicabo
+              veritatis, reprehenderit illum fugit dolorum?
+            </p>
+          </div>
+          <div class="btns">
+            <a href=""
+              ><button class="btn-full btn-lg">Launch project</button></a
+            >
+            <a href=""><button class="btn-full btn-lg">View Code</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro-image" id="pro_img">
+        <img src="assets/portfolio/p2.PNG" alt="" />
+      </div>
+
+      <div class="pro-screenshots">
+        <div class="screenshot-1">
+          <img src="" alt="" />
+        </div>
+        <div class="screenshot-2">
+          <img src="" alt="" />
+        </div>
+        <div class="screenshot-3">
+          <img src="" alt="" />
+        </div>
+      </div>
+
+      <div class="pro-details">
+        <div class="skill1">
+          <h4>title</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus quod, dolores eius reiciendis repudiandae veniam nam
+            non hic praesentium deserunt.
+          </p>
+        </div>
+        <div class="skill2">
+          <h4>title</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus quod, dolores eius reiciendis repudiandae veniam nam
+            non hic praesentium deserunt.
+          </p>
+        </div>
+        <div class="skill3">
+          <h4>title</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus quod, dolores eius reiciendis repudiandae veniam nam
+            non hic praesentium deserunt.
+          </p>
+        </div>
+        <div class="skill4">
+          <h4>title</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus quod, dolores eius reiciendis repudiandae veniam nam
+            non hic praesentium deserunt.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer py-4" id="footer">
+      <div class="about-softech">
+        <h3 class="py-1">About me</h3>
+        <div class="txt">
+          <p>
+            I love building new features, squashing bugs and continuously
+            improving quality. I have a knack for teamwork with people from
+            different backgrounds and skills. I'm friendly, in love with web
+            performance, modular reusable code libraries, and got the zeal to
+            join an awesome development team.
+          </p>
+        </div>
+        <div class="icons">
+          <a
+            href="https://twitter.com/KumJude?s=09"
+            target="_blank"
+            class="twitter"
+            ><svg
+              aria-labelledby="svg-inline--fa-title-mnujoeI6QjfG"
+              data-prefix="fab"
+              data-icon="twitter"
+              class="svg-inline--fa fa-twitter fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              style="width: 20px; height: 20px"
+            >
+              <title id="svg-inline--fa-title-mnujoeI6QjfG">
+                Find Kum on Twitter
+              </title>
+              <path
+                fill="currentColor"
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              ></path></svg
+          ></a>
+          <a href="https://github.com/TemKum" class="github" target="_blank"
+            ><svg
+              aria-labelledby="svg-inline--fa-title-uUzFuiBXEKUH"
+              data-prefix="fab"
+              data-icon="github"
+              class="svg-inline--fa fa-github fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 512"
+              style="width: 20px; height: 20px"
+            >
+              <title id="svg-inline--fa-title-uUzFuiBXEKUH">
+                See Kum's code on Github
+              </title>
+              <path
+                fill="currentColor"
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path></svg
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/kum-jude-tem-031433a5"
+            target="_blank"
+            class="linkedin"
+            target="_blank"
+            ><svg
+              aria-labelledby="svg-inline--fa-title-wInvJPvR5hsb"
+              data-prefix="fab"
+              data-icon="linkedin"
+              class="svg-inline--fa fa-linkedin fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              style="width: 20px; height: 20px"
+            >
+              <title id="svg-inline--fa-title-wInvJPvR5hsb">
+                Find Kum on LinkedIn
+              </title>
+              <path
+                fill="currentColor"
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              ></path></svg
+          ></a>
+          <a href="https://wa.me/675827455" class="whatsapp" target="_blank">
+            <?xml version="1.0"?><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2489"
+              height="2500"
+              viewBox="0 0 737.509 740.824"
+            >
+              <title>Chat directly with Jude</title>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M630.056 107.658C560.727 38.271 468.525.039 370.294 0 167.891 0 3.16 164.668 3.079 367.072c-.027 64.699 16.883 127.855 49.016 183.523L0 740.824l194.666-51.047c53.634 29.244 114.022 44.656 175.481 44.682h.151c202.382 0 367.128-164.689 367.21-367.094.039-98.088-38.121-190.32-107.452-259.707m-259.758 564.8h-.125c-54.766-.021-108.483-14.729-155.343-42.529l-11.146-6.613-115.516 30.293 30.834-112.592-7.258-11.543c-30.552-48.58-46.689-104.729-46.665-162.379C65.146 198.865 202.065 62 370.419 62c81.521.031 158.154 31.81 215.779 89.482s89.342 134.332 89.311 215.859c-.07 168.242-136.987 305.117-305.211 305.117m167.415-228.514c-9.176-4.591-54.286-26.782-62.697-29.843-8.41-3.061-14.526-4.591-20.644 4.592-6.116 9.182-23.7 29.843-29.054 35.964-5.351 6.122-10.703 6.888-19.879 2.296-9.175-4.591-38.739-14.276-73.786-45.526-27.275-24.32-45.691-54.36-51.043-63.542-5.352-9.183-.569-14.148 4.024-18.72 4.127-4.11 9.175-10.713 13.763-16.07 4.587-5.356 6.116-9.182 9.174-15.303 3.059-6.122 1.53-11.479-.764-16.07-2.294-4.591-20.643-49.739-28.29-68.104-7.447-17.886-15.012-15.466-20.644-15.746-5.346-.266-11.469-.323-17.585-.323-6.117 0-16.057 2.296-24.468 11.478-8.41 9.183-32.112 31.374-32.112 76.521s32.877 88.763 37.465 94.885c4.587 6.122 64.699 98.771 156.741 138.502 21.891 9.45 38.982 15.093 52.307 19.323 21.981 6.979 41.983 5.994 57.793 3.633 17.628-2.633 54.285-22.19 61.932-43.616 7.646-21.426 7.646-39.791 5.352-43.617-2.293-3.826-8.41-6.122-17.585-10.714"
+              /></svg
+          ></a>
+        </div>
+      </div>
+
+      <div class="quick-links">
+        <ul class="nav-items">
+          <li>
+            <a href="#" id="home">Home</a>
           </li>
-          <li class="nav-item">
-            <!-- <h5 class="per-theme">Personalized Themes</h5> -->
-            <div id="theme-options-wrapper" class="">
-              <div class="theme-dot" id="light-mode" data-mode="light"></div>
-              <div class="theme-dot" id="blue-mode" data-mode="blue"></div>
-              <div class="theme-dot" id="green-mode" data-mode="green"></div>
-              <div class="theme-dot" id="purple-mode" data-mode="purple"></div>
-            </div>
+          <li>
+            <a href="#projects" id="projects">Projects</a>
           </li>
-          <li class="nav-item">
-            <a href=""><button>Hire me</button></a>
+          <li>
+            <a href="#services" id="services">Services</a>
+          </li>
+          <li>
+            <a href="#contact_me" id="contact">Contact</a>
           </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="back-btn">
-      <a href="index.html">Back to projects</a>
-    </div>
-    <div class="year"></div>
-    <div class="tech"></div>
-    <div class="pro-details">
-      <div class="desc"></div>
-      <a href=""><button>Launch project</button></a>
-      <a href=""><button>View Code</button></a>
-    </div>
-
-    <div class="pro-screenshots">
-      <div class="screenshot-1">
-        <img src="" alt="">
       </div>
-      <div class="screenshot-2">
-        <img src="" alt="">
-      </div>
-      <div class="screenshot-3">
-        <img src="" alt="">
-      </div>
-    </div>
-  </main>
 
-</body>
+      <div class="endnote">
+        <div class="futer-txt"><a href="#" target="_blank">Softech</a></div>
+        <div class="futer-txt">
+          <p>&copy; 2021 | All rights reserved</p>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // .scroll() creates an event when the user scrolls
+        $(window).scroll(function () {
+          // .scrollTop() retrieves vertical position of the scroll bar for the first element in a set of matched elements
+
+          const scroll = $(window).scrollTop();
+
+          const objectSelect = $("#pro_img");
+
+          // .offset() retrieves current position of element relative to document
+          let objectPosition = objectSelect.offset().top;
+
+          if (scroll > objectPosition) {
+            $("header").addClass("display-nav");
+          } else {
+            $("header").removeClass("display-nav");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
