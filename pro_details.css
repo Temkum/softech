@@ -296,6 +296,7 @@ header nav .nav-item img {
   .project-body .back-btn a {
     margin: 2rem;
     color: var(--white);
+    font-family: 'Monda', sans-serif;
   }
   .project-body .back-btn a .fa {
     color: var(--color-accent-sec);
@@ -330,6 +331,9 @@ header nav .nav-item img {
   .project-body .details-container .pro-desc p {
     margin-bottom: 5px;
     font-size: small;
+  }
+  .project-body .details-container .pro-desc .short-desc {
+    width: 95%;
   }
   .project-body .pro-image {
     background: var(--project-card-tech-border-color);
@@ -368,10 +372,11 @@ header nav .nav-item img {
     margin: 1rem;
   }
   .project-body .contact form {
-    width: 90%;
+    width: 100%;
     padding: 1rem;
     -webkit-animation: bounce 1.5s infinite;
             animation: bounce 1.5s infinite;
+    margin-left: 15px;
   }
   .project-body .contact form .name,
   .project-body .contact form .email,
@@ -385,13 +390,403 @@ header nav .nav-item img {
   .project-body .contact form .name:hover,
   .project-body .contact form .email:hover,
   .project-body .contact form .message:hover {
-    width: 100%;
+    width: 90%;
     -webkit-transition: ease 0.5s;
     transition: ease 0.5s;
   }
   .project-body .contact form .title {
     font-family: "Monda", sans-serif;
-    margin: 10px auto 5px;
+    width: 100%;
+  }
+  .project-body .contact form .pageTitle {
+    font-size: 1.5em;
+    margin: 10px 0px;
+    font-weight: bold;
+  }
+  .project-body .contact form .formEntry {
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    color: var(--white);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .project-body .contact form .message {
+    height: 10%;
+  }
+  .project-body .contact form .submit {
+    width: 80%;
+    color: white;
+    background-color: var(--color-accent-sec);
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .about-me {
+    margin: 0px 2rem;
+  }
+  footer .about-me .icons {
+    margin: 3rem 0rem;
+    font-size: 0.7rem;
+  }
+  footer .about-me .icons a {
+    margin: 0.5rem;
+  }
+  footer .about-me .icons a svg {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+  }
+  footer .about-me .icons a svg path {
+    fill: var(--color-60-light);
+  }
+  footer .endnote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 90px;
+  }
+  footer .endnote .futer-txt a {
+    color: var(--color-60-light);
+  }
+  footer .endnote .futer-txt span {
+    margin-left: .5rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  header nav .nav-img a {
+    margin-left: 1rem;
+  }
+  header .navbar .nav-item span {
+    font-size: 12px;
+  }
+  header .navbar .nav-item button {
+    visibility: visible;
+    margin-right: 15px;
+  }
+  main {
+    overflow-x: hidden;
+  }
+  .project-body {
+    width: 100%;
+    /*end project body **/
+  }
+  .project-body .back-btn {
+    padding-top: 1.5rem;
+  }
+  .project-body .back-btn a {
+    margin: 2rem;
+    color: var(--white);
+    font-family: 'Monda', sans-serif;
+  }
+  .project-body .back-btn a .fa {
+    color: var(--color-accent-sec);
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
+  .project-body .details-container {
+    margin: 1.5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .project-body .details-container .year,
+  .project-body .details-container .tech,
+  .project-body .details-container .pro-desc {
+    margin: 1rem;
+  }
+  .project-body .details-container .year h4,
+  .project-body .details-container .tech h4,
+  .project-body .details-container .pro-desc h4 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--color-accent-sec);
+  }
+  .project-body .details-container .year p,
+  .project-body .details-container .tech p,
+  .project-body .details-container .pro-desc p {
+    margin-bottom: 5px;
+    font-size: medium;
+  }
+  .project-body .details-container .pro-desc .short-desc {
+    width: 95%;
+  }
+  .project-body .pro-image {
+    background: var(--project-card-tech-border-color);
+    margin-bottom: 2rem;
+  }
+  .project-body .pro-image img {
+    width: 400px;
+    height: auto;
+  }
+  .project-body .skills-used {
+    margin: 2rem 0rem;
+  }
+  .project-body .skills-used .skill {
+    background: var(--color-60-dark);
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 5px;
+  }
+  .project-body .skills-used .skill h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .project-body .pro-screenshots {
+    margin-bottom: 3rem;
+  }
+  .project-body .pro-screenshots div {
+    margin: 1rem;
+  }
+  .project-body .pro-screenshots div img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .project-body .contact {
+    width: 100%;
+    margin: 1rem;
+  }
+  .project-body .contact form {
+    width: 100%;
+    padding: 1rem;
+    -webkit-animation: bounce 1.5s infinite;
+            animation: bounce 1.5s infinite;
+    margin-left: 15px;
+  }
+  .project-body .contact form .name,
+  .project-body .contact form .email,
+  .project-body .contact form .message {
+    background: transparent;
+    color: var(--color-60-light);
+    border-bottom: solid var(--color-60-light) 0.52px !important;
+    letter-spacing: .1em;
+    font-family: 'Montserrat';
+  }
+  .project-body .contact form .name:hover,
+  .project-body .contact form .email:hover,
+  .project-body .contact form .message:hover {
+    width: 90%;
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+  }
+  .project-body .contact form .title {
+    font-family: "Monda", sans-serif;
+    width: 100%;
+  }
+  .project-body .contact form .pageTitle {
+    font-size: 1.5em;
+    margin: 10px 0px;
+    font-weight: bold;
+  }
+  .project-body .contact form .formEntry {
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    color: var(--white);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .project-body .contact form .message {
+    height: 10%;
+  }
+  .project-body .contact form .submit {
+    width: 80%;
+    color: white;
+    background-color: var(--color-accent-sec);
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .about-me {
+    margin: 0px 2rem;
+  }
+  footer .about-me .icons {
+    margin: 3rem 0rem;
+    font-size: 0.7rem;
+  }
+  footer .about-me .icons a {
+    margin: 0.5rem;
+  }
+  footer .about-me .icons a svg {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+  }
+  footer .about-me .icons a svg path {
+    fill: var(--color-60-light);
+  }
+  footer .endnote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 90px;
+  }
+  footer .endnote .futer-txt a {
+    color: var(--color-60-light);
+  }
+  footer .endnote .futer-txt span {
+    margin-left: .5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header nav .nav-img a {
+    margin-left: 1rem;
+  }
+  header .navbar .nav-item span {
+    font-size: 12px;
+  }
+  header .navbar .nav-item button {
+    visibility: visible;
+    margin-right: 15px;
+  }
+  main {
+    overflow-x: hidden;
+  }
+  .project-body {
+    width: 100%;
+    /*end project body **/
+  }
+  .project-body .back-btn {
+    padding-top: 1.5rem;
+  }
+  .project-body .back-btn a {
+    margin: 2rem;
+    color: var(--white);
+    font-family: 'Monda', sans-serif;
+  }
+  .project-body .back-btn a .fa {
+    color: var(--color-accent-sec);
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
+  .project-body .details-container {
+    margin: 1.5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .project-body .details-container .year,
+  .project-body .details-container .tech,
+  .project-body .details-container .pro-desc {
+    margin: 1rem;
+  }
+  .project-body .details-container .year h4,
+  .project-body .details-container .tech h4,
+  .project-body .details-container .pro-desc h4 {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: var(--color-accent-sec);
+  }
+  .project-body .details-container .year p,
+  .project-body .details-container .tech p,
+  .project-body .details-container .pro-desc p {
+    margin-bottom: 5px;
+    font-size: small;
+  }
+  .project-body .details-container .pro-desc {
+    margin-left: 10%;
+  }
+  .project-body .details-container .pro-desc .short-desc {
+    width: 95%;
+  }
+  .project-body .pro-image {
+    background: var(--project-card-tech-border-color);
+    margin-bottom: 2.5rem;
+  }
+  .project-body .pro-image img {
+    width: 90%;
+    height: auto;
+  }
+  .project-body .skills-used {
+    margin: 2rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .project-body .skills-used .skill {
+    background: var(--color-60-dark);
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: 5px;
+  }
+  .project-body .skills-used .skill h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .project-body .pro-screenshots {
+    margin-bottom: 3rem;
+  }
+  .project-body .pro-screenshots div {
+    margin: 4rem 2rem;
+  }
+  .project-body .pro-screenshots div img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .project-body .contact {
+    width: 100%;
+  }
+  .project-body .contact .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project-body .contact form {
+    display: block;
+    margin-left: 2rem;
+    width: 60%;
+    padding: 1rem;
+  }
+  .project-body .contact form .name,
+  .project-body .contact form .email,
+  .project-body .contact form .message {
+    background: transparent;
+    color: var(--color-60-light);
+    border-bottom: solid var(--color-60-light) 0.52px !important;
+    letter-spacing: .1em;
+    font-family: 'Montserrat';
+  }
+  .project-body .contact form .name:hover,
+  .project-body .contact form .email:hover,
+  .project-body .contact form .message:hover {
+    width: 90%;
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+  }
+  .project-body .contact form .title {
+    font-family: "Monda", sans-serif;
     width: 100%;
   }
   .project-body .contact form .pageTitle {

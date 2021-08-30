@@ -2573,9 +2573,6 @@ main section {
   header .navbar .nav-item button {
     visibility: hidden;
   }
-  main {
-    overflow-x: hidden;
-  }
   .landing {
     padding-bottom: 3rem;
   }
