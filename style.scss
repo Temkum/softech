@@ -59,7 +59,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
 }
 
@@ -71,6 +70,7 @@ body {
   transition: 0.2s ease-out;
   height: 100vh;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -83,6 +83,10 @@ p {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5rem;
   font-weight: 200;
+}
+
+li {
+  list-style: none;
 }
 
 h1,
@@ -486,7 +490,7 @@ main {
         justify-content: space-evenly;
 
         .landing-icons {
-          & > svg {
+          &>svg {
             fill: var(--white);
             width: 25px;
             height: 25px;
@@ -1447,242 +1451,12 @@ main {
   }
 }
 
-// PROJECT DETAILS
-/* .project_details--header {
-  nav {
-    margin-top: -100px;
-  }
-} */
-
-#project_body {
-  .back-btn {
-    margin: 100px 100px 0 100px;
-    padding: 1rem;
-    display: inline-flex;
-    cursor: pointer;
-
-    span {
-      .fa {
-        font-size: 1.5rem;
-        color: var(--color-accent-sec);
-      }
-    }
-
-    a {
-      margin-left: 1.5rem;
-      font-weight: bold;
-      visibility: hidden;
-      color: var(--white);
-    }
-
-    &:hover {
-      a {
-        visibility: visible;
-      }
-    }
-  }
-
-  .details-container {
-    background-color: var(--faq-bg-color);
-    // background: transparent;
-    margin: 100px;
-    height: auto;
-    width: auto;
-
-    display: flex;
-    flex-wrap: wrap;
-
-    .year,
-    .tech,
-    .pro-desc {
-      border: turquoise solid;
-      margin: 2rem;
-
-      h4 {
-        margin-bottom: 1rem;
-      }
-
-      p {
-        margin-bottom: 5px;
-      }
-    }
-
-    .pro-desc {
-      width: 30%;
-      margin-left: 300px;
-
-      .btns {
-        margin: 2rem 0;
-
-        button {
-          padding: 1rem 2rem;
-          color: var(--white);
-          background-color: var(--color-illustration);
-          border: 1px solid var(--color-illustration);
-          border-radius: 5px;
-          text-transform: uppercase;
-          font-size: 0.8rem;
-          margin-right: 1rem;
-
-          &:hover {
-            background: transparent;
-          }
-        }
-      }
-    }
-  }
-
-  .pro-details {
-    margin: 100px;
-    height: auto;
-
-    .skills-details {
-      display: flex;
-      margin: 50px;
-
-      .skill {
-        background-color: var(--faq-bg-color);
-        padding: 1rem;
-        margin: 1rem;
-
-        h4 {
-          margin-bottom: 1.5rem;
-        }
-      }
-    }
-  }
-
-  .pro-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: var(--color-60-medium-light);
-  }
-
-  .pro-screenshots {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-
-    div {
-      img {
-        margin-bottom: 100px;
-      }
-    }
-  }
-}
-
-/*** contact me **/
-.contact {
-  height: 600px;
-
-  form {
-    // background-color: var(--color-60-dark);
-
-    color: #fff;
-    border-radius: 5px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 0px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    animation: bounce 1.5s infinite;
-  }
-
-  /* .card-item__bg{
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    display: block;
-    position: relative;
-    margin: 30px auto;
-    transform: translate(0px, 50px);
-    z-index: 5;
-  } */
-
-  /* form animation starts */
-  ::-webkit-input-placeholder {
-    font-size: 1.3em;
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .name,
-  .email,
-  .message {
-    background: transparent;
-    color: var(--color-60-light);
-    border-bottom: solid var(--color-60-light) 0.52px !important;
-
-    &:hover {
-      width: 380px;
-      transition: ease 0.5s;
-    }
-  }
-
-  .title {
-    display: block;
-    font-family: "Monda", sans-serif;
-    margin: 10px auto 5px;
-    width: 300px;
-  }
-
-  .pageTitle {
-    font-size: 1.5em;
-    margin-top: 20px;
-    font-weight: bold;
-  }
-
-  .formEntry {
-    display: block;
-    margin: 30px auto;
-    min-width: 300px;
-    padding: 10px;
-    border-radius: 2px;
-    border: none;
-    color: var(--white);
-
-    transition: all 0.5s ease 0s;
-  }
-
-  .submit {
-    width: 200px;
-    color: white;
-    background-color: var(--color-accent-sec);
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-
-  .submit:hover {
-    // box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
-    transform: translateY(-3px);
-    width: 300px;
-    // border-top: 5px solid #0e3750;
-    border-radius: 2px;
-    border: solid var(--color-accent-sec) 0.8px;
-    background: transparent;
-  }
-
-  @keyframes bounce {
-    0% {
-      tranform: translate(0, 4px);
-    }
-    50% {
-      transform: translate(0, 8px);
-    }
-  }
-}
 
 /*** MEDIA QUERIES ***/
 
 /*** Desktops and laptops ****/
 @media only screen and (min-width: 1025px) {
+
   // Footer
   .footer {
     .about-softech {
@@ -1702,7 +1476,7 @@ main {
       .icons {
         margin-top: 2rem;
 
-        & > a {
+        &>a {
           margin-right: 2rem;
         }
       }
@@ -1715,7 +1489,7 @@ main {
         display: inline-flex;
         flex-direction: column;
 
-        & > li {
+        &>li {
           margin: 0.7rem 0.2rem;
         }
       }
@@ -1853,7 +1627,7 @@ main {
       }
     }
 
-    .landing-icons > svg {
+    .landing-icons>svg {
       fill: var(--white);
       width: 25px;
       height: 25px;
@@ -1878,6 +1652,7 @@ main {
 
   // Benefits
   .flex-container {
+
     .benefit-1,
     .benefit-2,
     .benefit-3,
@@ -1985,7 +1760,7 @@ main {
       .icons {
         margin-top: 2rem;
 
-        & > a {
+        &>a {
           margin-right: 2rem;
         }
       }
@@ -1998,7 +1773,7 @@ main {
         display: inline-flex;
         flex-direction: column;
 
-        & > li {
+        &>li {
           margin: 0.7rem 0.2rem;
         }
       }
@@ -2033,7 +1808,7 @@ main {
       }
     }
 
-    .landing-icons > svg {
+    .landing-icons>svg {
       fill: var(--white);
       width: 25px;
       height: 25px;
@@ -2229,7 +2004,7 @@ main {
       .icons {
         margin-top: 2rem;
 
-        & > a {
+        &>a {
           margin-right: 2rem;
         }
       }
@@ -2242,7 +2017,7 @@ main {
         display: inline-flex;
         flex-direction: column;
 
-        & > li {
+        &>li {
           margin: 0 0.2rem;
         }
       }
@@ -2306,7 +2081,7 @@ main {
         }
       }
 
-      .landing-icons > svg {
+      .landing-icons>svg {
         fill: var(--white);
         width: 25px;
         height: 25px;
@@ -2386,6 +2161,7 @@ main {
 
   // Techs used
   .tech-used {
+
     .frontend,
     .backend,
     .general {
@@ -2495,7 +2271,7 @@ main {
       .icons {
         margin-top: 2.5rem;
 
-        & > a {
+        &>a {
           margin-right: 2rem;
         }
       }
@@ -2509,7 +2285,7 @@ main {
         display: inline-flex;
         flex-direction: row;
 
-        & > li {
+        &>li {
           margin: 0 1rem;
         }
       }
@@ -2576,7 +2352,7 @@ main {
       }
     }
 
-    .landing-icons > svg {
+    .landing-icons>svg {
       fill: var(--white);
       width: 25px;
       height: 25px;
@@ -2652,6 +2428,7 @@ main {
 
   // Techs used
   .tech-used {
+
     .frontend,
     .backend,
     .general {
@@ -2770,7 +2547,7 @@ main {
       .icons {
         margin-top: 2.5rem;
 
-        & > a {
+        &>a {
           margin-right: 2rem;
         }
       }
@@ -2781,7 +2558,7 @@ main {
         width: 100%;
         display: inline-flex;
 
-        & > li {
+        &>li {
           margin: 0 0.8rem;
         }
       }
@@ -2794,6 +2571,15 @@ main {
   header {
     // width: 500px;
 
+    nav {
+      .nav-img {
+        a {
+          margin-left: 1rem;
+
+        }
+      }
+    }
+
     .navbar {
       .nav-item {
         button {
@@ -2801,6 +2587,10 @@ main {
         }
       }
     }
+  }
+
+  main {
+    overflow-x: hidden;
   }
 
   .landing {
@@ -2847,7 +2637,7 @@ main {
           }
         }
 
-        .landing-icons > svg {
+        .landing-icons>svg {
           fill: var(--white);
           width: 25px;
           height: 25px;
@@ -2924,6 +2714,7 @@ main {
 
   // Techs used
   .tech-used {
+
     .frontend,
     .backend,
     .general {
@@ -3040,7 +2831,7 @@ main {
       .txt {
         p {
           width: 420px;
-          font-size: 1.1rem !important;
+          font-size: 1.2rem !important;
           line-height: 1.7rem;
         }
       }
@@ -3058,7 +2849,7 @@ main {
         display: inline-flex;
         flex-direction: row;
 
-        & > li {
+        &>li {
           margin: 0 0.8rem;
         }
       }
@@ -3069,4 +2860,5 @@ main {
       margin-top: 3rem;
     }
   }
+
 }
