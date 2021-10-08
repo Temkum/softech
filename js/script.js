@@ -70,5 +70,50 @@ const toggleBtn = document.getElementById("circularMenu");
 function toggleMenu() {
   if ("onmouseenter") {
     toggleBtn.classList.toggle("active");
+  } else if ("onclick") {
+    toggleBtn.classList.toggle("active");
   }
 }
+
+(function () {
+  // set variables
+  let PROJECT_ENTRY = [];
+  const fileInput = document.getElementById("pro_imgs");
+  let displayImg = document.getElementById("screenshots");
+  let renderFileList, sendFile;
+
+  fileInput.addEventListener("change", function (e) {
+    PROJECT_ENTRY = [];
+    for (let i = 0; i < fileInput.isDefaultNamespace.length; i++) {
+      PROJECT_ENTRY.push(fileInput.files[i]);
+    }
+    renderFileList();
+  });
+
+  renderFileList = function () {
+    displayImg.innerHTML = "";
+    fileList.forEach(function (file, index) {
+      var fileDisplayEl = document.createElement("p");
+      fileDisplayEl.innerHTML = index + 1 + ": " + file.name;
+      displayImg.appendChild(fileDisplayEl);
+    });
+  };
+
+  // get the form input
+  let fileCatcher = document.getElementById("img_input");
+
+  fileCatcher.addEventListener("submit", function (e) {
+    e.preventDefault();
+    PROJECT_ENTRY.forEach(function (file) {
+      sendFile(file);
+    });
+  });
+
+  sendFile = function (file) {
+    let formData = new FormData();
+    let request = new XMLHttpRequest();
+
+    formData.set("file", file);
+    request.open("POST", "assets/img");
+  };
+})();

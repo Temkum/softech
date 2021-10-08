@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details Input</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:ital,wght@0,200;0,400;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- main style -->
+    <!-- <link rel="stylesheet" href="css/theme.css" type="text/css"> -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- theme -->
+    <link rel="stylesheet" href="" id="theme-style" />
+  </head>
+  <body>
+    <!-- project card form -->
+    <div id="form" class="form-group">
+      <form action="" enctype="multipart/form-data" id="img_input">
+        <!-- tech used -->
+        <input
+          type="text"
+          name="tags"
+          id="tag"
+          placeholder="Enter technology used"
+          class="form-field"
+        />
+        <!-- project title -->
+        <input type="text" name="title" placeholder="Enter project title" />
+        <!-- year created -->
+        <input
+          type="text"
+          name="year"
+          id="year_created"
+          placeholder="Year added"
+        />
+        <!-- description -->
+        <input
+          type="text"
+          name="description"
+          id="description"
+          placeholder="Enter short description"
+        />
+        <!-- demo link -->
+        <input
+          type="text"
+          name="pro-link"
+          id="pro_link"
+          placeholder="Project /demo /code link"
+        />
+
+        <!-- skills applied -->
+        <div class="tech-applied">
+          <input
+            type="text"
+            name="skill"
+            id="skill_applied"
+            placeholder="Skill applied"
+          />
+          <input
+            type="text"
+            name="skill1"
+            id="skill_applied"
+            placeholder="Skill applied 2"
+          />
+          <input
+            type="text"
+            name="skill2"
+            id="skill_applied"
+            placeholder="Skill applied 3"
+          />
+        </div>
+
+        <div class="main-img">
+          <input
+            type="text"
+            name="btn-title"
+            id="demo_title"
+            placeholder="Enter Button title"
+          />
+          <label for="">Main project image</label>
+          <input type="file" name="pro-img" id="pro_img" />
+        </div>
+
+        <div class="main-img">
+          <label for="screenshort">Project screenshots</label>
+          <input type="file" name="pro-img[]" id="pro_imgs" multiple="true" />
+        </div>
+
+        <button type="submit" value="">Add Project</button>
+      </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

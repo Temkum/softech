@@ -1207,7 +1207,7 @@ main {
         display: flex;
 
         .screen-body-item {
-          flex: 1;
+          // flex: 1;
           padding: 50px;
 
           .app-title {
@@ -1280,6 +1280,8 @@ main {
             font-size: 1rem;
             cursor: pointer;
             outline: none;
+            width: 100%;
+            margin-top: 1rem;
             padding: 0.8rem 1.8rem;
             border-radius: 5px;
 
@@ -1597,6 +1599,7 @@ main {
 @media screen and (max-width: 1024px) {
   section {
     height: 100vh;
+    overflow-x: hidden;
   }
 
   .landing {
@@ -1789,9 +1792,9 @@ main {
 
 // tablet
 @media only screen and (max-width: 768px) {
-  /* header {
-    display: none;
-  } */
+  body {
+    overflow-x: hidden !important;
+  }
 
   .landing {
     height: auto;
@@ -2028,6 +2031,9 @@ main {
 
 /***** landscape on larger screens mobile devices *****/
 @media screen and (max-width: 650px) and (min-width: 520px) {
+  body {
+    overflow-x: hidden;
+  }
   section {
     width: 650px;
   }
@@ -2300,6 +2306,10 @@ main {
 
 /***** landscape view - mobile devices *****/
 @media screen and (max-width: 520px) {
+  body {
+    overflow-x: hidden;
+  }
+
   section {
     width: 520px !important;
   }
@@ -2567,6 +2577,9 @@ main {
 
 /******** mobile devices **********/
 @media screen and (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     // width: 500px;
 
@@ -2854,6 +2867,34 @@ main {
     .endnote {
       width: 100%;
       margin-top: 3rem;
+    }
+  }
+}
+
+// DYNAMIC FORMS
+#form {
+  display: flex;
+  margin: 2rem;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    border: #0edfb5 solid 1px;
+    width: max-content;
+    padding: 1rem;
+
+    input {
+      margin: 1rem;
+      padding: 1rem;
+    }
+
+    button {
+      padding: 1rem;
+      background: green;
+      color: #fff;
+      border-radius: 5px;
+      text-transform: uppercase;
     }
   }
 }

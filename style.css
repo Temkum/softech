@@ -71,6 +71,7 @@ body {
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -282,6 +283,7 @@ main section {
   position: fixed;
   bottom: 1em;
   right: 1em;
+  z-index: 100;
 }
 
 .circular-menu .floating-btn {
@@ -455,7 +457,7 @@ main section {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-image: url("assets/img/bg1.png");
   background-repeat: no-repeat;
@@ -595,11 +597,11 @@ main section {
 }
 
 .get-results .project-link button:hover {
-  border-color: var(--success-color);
-  background-color: var(--color-accent-sec);
+  border-color: transparent;
+  background-color: var(--success-color-dark);
   color: var(--white);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.2ms;
+  transition: 0.2ms;
   cursor: pointer;
 }
 
@@ -1066,7 +1068,6 @@ main section {
 
 .tech-support {
   background-color: var(--initial-color-overlay);
-  background-color: var(--bg-transparent);
   background-image: url("assets/img/bg1.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -1152,7 +1153,6 @@ main section {
 }
 
 .tech-support .support .report-form .form button {
-  float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
   font-family: "Montserrat", sans-serif;
@@ -1162,6 +1162,9 @@ main section {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 5px;
 }
 
 .tech-support .support .report-form .form button:hover {
@@ -1175,6 +1178,7 @@ main section {
   border-bottom: 2px solid #bebed2;
   margin-top: 5px;
   color: var(--white);
+  width: 100%;
 }
 
 .tech-support .support .report-form .form div {
@@ -1438,9 +1442,6 @@ main section {
 }
 
 .contact-me .container .screen .screen-body .screen-body-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   padding: 50px;
 }
 
@@ -1533,6 +1534,8 @@ main section {
   font-size: 1rem;
   cursor: pointer;
   outline: none;
+  width: 100%;
+  margin-top: 1rem;
   padding: 0.8rem 1.8rem;
   border-radius: 5px;
 }
@@ -1772,6 +1775,7 @@ main section {
 @media screen and (max-width: 1024px) {
   section {
     height: 100vh;
+    overflow-x: hidden;
   }
   .landing {
     -webkit-box-align: center;
@@ -1936,9 +1940,9 @@ main section {
 }
 
 @media only screen and (max-width: 768px) {
-  /* header {
-    display: none;
-  } */
+  body {
+    overflow-x: hidden !important;
+  }
   .landing {
     height: auto;
     padding-bottom: 2rem;
@@ -2130,6 +2134,9 @@ main section {
 
 /***** landscape on larger screens mobile devices *****/
 @media screen and (max-width: 650px) and (min-width: 520px) {
+  body {
+    overflow-x: hidden;
+  }
   section {
     width: 650px;
   }
@@ -2351,6 +2358,9 @@ main section {
 
 /***** landscape view - mobile devices *****/
 @media screen and (max-width: 520px) {
+  body {
+    overflow-x: hidden;
+  }
   section {
     width: 520px !important;
   }
@@ -2567,6 +2577,9 @@ main section {
 
 /******** mobile devices **********/
 @media screen and (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+  }
   header nav .nav-img a {
     margin-left: 1rem;
   }
@@ -2705,6 +2718,8 @@ main section {
   .faq h1 {
     width: 100%;
     font-size: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
   }
   .faq .question {
     width: 420px !important;
@@ -2716,6 +2731,7 @@ main section {
   .faq .question .drop-content {
     text-align: justify;
     margin-top: 0.7rem;
+    padding: 1rem 1rem !important;
   }
   .contact-me {
     padding-top: 2rem;
@@ -2784,5 +2800,40 @@ main section {
     width: 100%;
     margin-top: 3rem;
   }
+}
+
+#form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+  padding-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#form form {
+  border: #0edfb5 solid 1px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem;
+}
+
+#form form input {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#form form button {
+  padding: 1rem;
+  background: green;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
