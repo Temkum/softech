@@ -1,4 +1,4 @@
-// set theme to local storage
+// load theme from local storage
 let theme = localStorage.getItem("theme");
 
 if (theme == null) {
@@ -29,6 +29,7 @@ function setTheme(mode) {
   if (mode == "purple") {
     document.getElementById("theme-style").href = "css/purple.css";
   }
+  // set theme to local storage
   localStorage.setItem("theme", mode);
 }
 
@@ -60,5 +61,14 @@ function openQuestion(e) {
     e.target.className = e.target.className.replace("show", "");
   } else {
     e.target.className += " show";
+  }
+}
+
+// toggle float menu
+const toggleBtn = document.getElementById("circularMenu");
+
+function toggleMenu() {
+  if ("onmouseenter") {
+    toggleBtn.classList.toggle("active");
   }
 }

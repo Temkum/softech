@@ -71,6 +71,7 @@ body {
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
@@ -267,6 +268,7 @@ main {
   position: fixed;
   bottom: 1em;
   right: 1em;
+  z-index: 100;
 }
 
 .circular-menu .floating-btn {
@@ -371,7 +373,6 @@ main {
 }
 
 /**  The other theme for this menu ** */
-
 .circular-menu.circular-menu-left {
   right: auto;
   left: 1em;
@@ -411,7 +412,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 
   background-image: url("assets/img/bg1.png");
@@ -490,7 +491,7 @@ main {
         justify-content: space-evenly;
 
         .landing-icons {
-          &>svg {
+          & > svg {
             fill: var(--white);
             width: 25px;
             height: 25px;
@@ -539,10 +540,10 @@ main {
       padding: 1rem 1.5rem;
 
       &:hover {
-        border-color: var(--success-color);
-        background-color: var(--color-accent-sec);
+        border-color: transparent;
+        background-color: var(--success-color-dark);
         color: var(--white);
-        transition: 0.2s;
+        transition: 0.2ms;
         cursor: pointer;
       }
     }
@@ -941,7 +942,7 @@ main {
 //TECH SUPPORT
 .tech-support {
   background-color: var(--initial-color-overlay);
-  background-color: var(--bg-transparent);
+  // background-color: var(--bg-transparent);
 
   background-image: url("assets/img/bg1.png");
   background-repeat: no-repeat;
@@ -1018,7 +1019,6 @@ main {
         }
 
         button {
-          float: right;
           padding: 8px 12px;
           margin: 8px 0 0;
           font-family: "Montserrat", sans-serif;
@@ -1027,6 +1027,9 @@ main {
           color: var(--card-text-color);
           cursor: pointer;
           transition: all 0.3s;
+          width: 100%;
+          margin-top: 1rem;
+          border-radius: 5px;
 
           &:hover {
             background: #78788c;
@@ -1040,6 +1043,7 @@ main {
           border-bottom: 2px solid #bebed2;
           margin-top: 5px;
           color: var(--white);
+          width: 100%;
         }
 
         div {
@@ -1451,12 +1455,10 @@ main {
   }
 }
 
-
 /*** MEDIA QUERIES ***/
 
 /*** Desktops and laptops ****/
 @media only screen and (min-width: 1025px) {
-
   // Footer
   .footer {
     .about-softech {
@@ -1476,7 +1478,7 @@ main {
       .icons {
         margin-top: 2rem;
 
-        &>a {
+        & > a {
           margin-right: 2rem;
         }
       }
@@ -1489,7 +1491,7 @@ main {
         display: inline-flex;
         flex-direction: column;
 
-        &>li {
+        & > li {
           margin: 0.7rem 0.2rem;
         }
       }
@@ -1627,7 +1629,7 @@ main {
       }
     }
 
-    .landing-icons>svg {
+    .landing-icons > svg {
       fill: var(--white);
       width: 25px;
       height: 25px;
@@ -1652,7 +1654,6 @@ main {
 
   // Benefits
   .flex-container {
-
     .benefit-1,
     .benefit-2,
     .benefit-3,
@@ -1760,7 +1761,7 @@ main {
       .icons {
         margin-top: 2rem;
 
-        &>a {
+        & > a {
           margin-right: 2rem;
         }
       }
@@ -1773,7 +1774,7 @@ main {
         display: inline-flex;
         flex-direction: column;
 
-        &>li {
+        & > li {
           margin: 0.7rem 0.2rem;
         }
       }
@@ -1808,7 +1809,7 @@ main {
       }
     }
 
-    .landing-icons>svg {
+    .landing-icons > svg {
       fill: var(--white);
       width: 25px;
       height: 25px;
@@ -2004,7 +2005,7 @@ main {
       .icons {
         margin-top: 2rem;
 
-        &>a {
+        & > a {
           margin-right: 2rem;
         }
       }
@@ -2017,7 +2018,7 @@ main {
         display: inline-flex;
         flex-direction: column;
 
-        &>li {
+        & > li {
           margin: 0 0.2rem;
         }
       }
@@ -2081,7 +2082,7 @@ main {
         }
       }
 
-      .landing-icons>svg {
+      .landing-icons > svg {
         fill: var(--white);
         width: 25px;
         height: 25px;
@@ -2161,7 +2162,6 @@ main {
 
   // Techs used
   .tech-used {
-
     .frontend,
     .backend,
     .general {
@@ -2271,7 +2271,7 @@ main {
       .icons {
         margin-top: 2.5rem;
 
-        &>a {
+        & > a {
           margin-right: 2rem;
         }
       }
@@ -2285,7 +2285,7 @@ main {
         display: inline-flex;
         flex-direction: row;
 
-        &>li {
+        & > li {
           margin: 0 1rem;
         }
       }
@@ -2352,7 +2352,7 @@ main {
       }
     }
 
-    .landing-icons>svg {
+    .landing-icons > svg {
       fill: var(--white);
       width: 25px;
       height: 25px;
@@ -2428,7 +2428,6 @@ main {
 
   // Techs used
   .tech-used {
-
     .frontend,
     .backend,
     .general {
@@ -2547,7 +2546,7 @@ main {
       .icons {
         margin-top: 2.5rem;
 
-        &>a {
+        & > a {
           margin-right: 2rem;
         }
       }
@@ -2558,7 +2557,7 @@ main {
         width: 100%;
         display: inline-flex;
 
-        &>li {
+        & > li {
           margin: 0 0.8rem;
         }
       }
@@ -2575,7 +2574,6 @@ main {
       .nav-img {
         a {
           margin-left: 1rem;
-
         }
       }
     }
@@ -2633,7 +2631,7 @@ main {
           }
         }
 
-        .landing-icons>svg {
+        .landing-icons > svg {
           fill: var(--white);
           width: 25px;
           height: 25px;
@@ -2710,7 +2708,6 @@ main {
 
   // Techs used
   .tech-used {
-
     .frontend,
     .backend,
     .general {
@@ -2761,11 +2758,13 @@ main {
     }
   }
 
-  // Faq
+  // FAQ
   .faq {
     h1 {
       width: 100%;
       font-size: 2rem;
+      padding: 2rem 1rem;
+      text-align: center;
     }
 
     .question {
@@ -2779,6 +2778,7 @@ main {
       .drop-content {
         text-align: justify;
         margin-top: 0.7rem;
+        padding: 1rem 1rem !important;
       }
     }
   }
@@ -2845,7 +2845,7 @@ main {
         display: inline-flex;
         flex-direction: row;
 
-        &>li {
+        & > li {
           margin: 0 0.8rem;
         }
       }
@@ -2856,5 +2856,4 @@ main {
       margin-top: 3rem;
     }
   }
-
 }
