@@ -77,7 +77,7 @@ function toggleMenu() {
   }
 }
 
-(function () {
+/* (function () {
   // set variables
   let PROJECT_ENTRY = [];
   const fileInput = document.getElementById("pro_imgs");
@@ -118,4 +118,9 @@ function toggleMenu() {
     formData.set("file", file);
     request.open("POST", "assets/img");
   };
-})();
+})(); */
+
+// get current date for footer
+const current_date = new Date().getFullYear();
+
+document.getElementById("current_year").innerHTML = current_date;
