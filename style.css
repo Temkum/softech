@@ -622,32 +622,32 @@ main section {
   margin: 4.5rem 0;
 }
 
-.services .help-1,
-.services .help-2 {
+.services .service-1,
+.services .service-2 {
   width: 70%;
 }
 
-.services .help-1 .child-2,
-.services .help-1 .child-1,
-.services .help-2 .child-2,
-.services .help-2 .child-1 {
+.services .service-1 .child-2,
+.services .service-1 .child-1,
+.services .service-2 .child-2,
+.services .service-2 .child-1 {
   margin: 3rem 0;
 }
 
-.services .help-1 .child-1,
-.services .help-2 .child-1 {
+.services .service-1 .child-1,
+.services .service-2 .child-1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.services .help-1 .child-1 p,
-.services .help-2 .child-1 p {
+.services .service-1 .child-1 p,
+.services .service-2 .child-1 p {
   width: 600px;
 }
 
-.services .help-1 .child-1 h3,
-.services .help-2 .child-1 h3 {
+.services .service-1 .child-1 h3,
+.services .service-2 .child-1 h3 {
   width: 100%;
 }
 
@@ -1569,11 +1569,6 @@ main section {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*** MEDIA QUERIES ***/
-  /*** Desktops and laptops ****/
-  /***** landscape on larger screens mobile devices *****/
-  /***** landscape view - mobile devices *****/
-  /******** mobile devices **********/
 }
 
 .footer .about-softech,
@@ -1649,1095 +1644,187 @@ main section {
   background: rgba(255, 255, 255, 0.144);
 }
 
-@media only screen and (min-width: 1025px) {
-  .footer .footer .about-softech {
-    width: 450px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+/* **************************
+  MEDIA QUERIES
+  *************************************/
+/******** mobile devices **********/
+@media screen and (min-width: 320px) {
+  body {
+    min-width: 500px !important;
   }
-  .footer .footer .about-softech .txt p {
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+  header nav {
+    height: 5rem;
   }
-  .footer .footer .about-softech .icons {
-    margin-top: 2rem;
+  header nav .nav-img {
+    margin-left: auto;
   }
-  .footer .footer .about-softech .icons > a {
-    margin-right: 2rem;
+  header .navbar .nav-item button {
+    visibility: hidden;
   }
-  .footer .footer .quick-links {
-    width: 100px;
-  }
-  .footer .footer .quick-links .nav-items {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .footer .quick-links .nav-items > li {
-    margin: 0.7rem 0.2rem;
-  }
-  .footer .footer .endnote {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: space-between;
-        -ms-flex-align: space-between;
-            align-items: space-between;
-    width: 100%;
-    margin: 3rem;
-  }
-  .footer .footer .endnote .futer-txt {
-    margin-right: 5rem;
-  }
-  .footer .services {
-    width: 100%;
-  }
-  .footer .services h1 {
-    margin-bottom: 3rem;
-  }
-  .footer .services .center-item {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .footer .services .help-1,
-  .footer .services .help-2 {
-    width: 700px;
-  }
-  .footer .services .help-1 .child-2,
-  .footer .services .help-1 .child-1,
-  .footer .services .help-2 .child-2,
-  .footer .services .help-2 .child-1 {
-    margin: 3rem 0;
-  }
-  .footer .services .help-1 .child-1,
-  .footer .services .help-2 .child-1 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 520px;
-  }
-  .footer .services .help-1 .child-1 p,
-  .footer .services .help-2 .child-1 p {
-    width: 400px;
-  }
-  .footer .services .help-1 .child-1 h3,
-  .footer .services .help-2 .child-1 h3 {
-    width: 100%;
-  }
-  .footer .services .help-1 .child-2 {
-    margin-left: 5rem;
-  }
-  .footer .services .help-2 {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .footer .services .help-2 .child-1 {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .services .help-2 .child-2 {
-    margin-right: 5rem;
-  }
-  .footer .services .child-1 {
-    width: 100%;
-  }
-  .footer .services .child-1 p {
-    width: 420px;
-    font-size: 1.2rem;
-  }
-  .footer .services .child-1 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .footer .services .child-2 img {
-    width: 400px;
-    height: 350px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .footer section {
+  .landing {
+    padding-bottom: 3rem;
     height: 100vh;
-    overflow-x: hidden;
   }
-  .footer .landing {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer .landing .what-i-do h1 {
-    font-size: 5rem;
-    line-height: 4.5rem;
-    margin-top: 3rem;
-  }
-  .footer .landing .what-i-do p {
-    width: 75%;
-    font-size: 0.9rem;
-  }
-  .footer .landing .landing-img {
-    display: block;
-    margin-left: 1.2rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .footer .landing .landing-img .landing-pic img {
-    width: 350px;
-    height: 300px;
-  }
-  .footer .landing .landing-icons > svg {
-    fill: var(--white);
-    width: 25px;
-    height: 25px;
-  }
-  .footer .get-results {
-    height: auto;
-  }
-  .footer .get-results .results-body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .get-results .results-body p {
-    font-size: 1.3rem;
-    width: 500px;
-    line-height: 2rem;
-    margin-bottom: 0.2rem;
-  }
-  .footer .flex-container .benefit-1,
-  .footer .flex-container .benefit-2,
-  .footer .flex-container .benefit-3,
-  .footer .flex-container .benefit-4,
-  .footer .flex-container .benefit-5,
-  .footer .flex-container .benefit-6 {
-    width: 200px;
-  }
-  .footer .services {
-    width: 100%;
-  }
-  .footer .services h1 {
-    margin-bottom: 3rem;
-  }
-  .footer .services .center-item {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .footer .services .help-1 .child-2,
-  .footer .services .help-1 .child-1,
-  .footer .services .help-2 .child-2,
-  .footer .services .help-2 .child-1 {
-    margin: 3rem 0;
-  }
-  .footer .services .help-1 .child-1,
-  .footer .services .help-2 .child-1 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 520px;
-  }
-  .footer .services .help-1 .child-1 p,
-  .footer .services .help-2 .child-1 p {
-    width: 300px;
-  }
-  .footer .services .help-1 .child-1 h3,
-  .footer .services .help-2 .child-1 h3 {
-    width: 100%;
-  }
-  .footer .services .help-2 {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .footer .services .help-2 .child-1 {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .services .help-2 .child-2 {
-    margin-right: 5rem;
-  }
-  .footer .services .child-1 {
-    width: 100%;
-  }
-  .footer .services .child-1 p {
-    width: 420px;
-    font-size: 1.2rem;
-  }
-  .footer .services .child-1 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .footer .services .child-2 img {
-    width: 250px;
-    height: 250px;
-  }
-  .footer .footer .about-softech {
-    width: 450px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
-  .footer .footer .about-softech .txt p {
-    font-size: 1rem;
-    line-height: 1.3rem;
-  }
-  .footer .footer .about-softech .icons {
-    margin-top: 2rem;
-  }
-  .footer .footer .about-softech .icons > a {
-    margin-right: 2rem;
-  }
-  .footer .footer .quick-links {
-    width: 100px;
-  }
-  .footer .footer .quick-links .nav-items {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .footer .quick-links .nav-items > li {
-    margin: 0.7rem 0.2rem;
-  }
-  .footer .footer .endnote {
-    width: 100%;
-    margin: 3rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .footer body {
-    overflow-x: hidden !important;
-  }
-  .footer .landing {
-    height: auto;
-    padding-bottom: 2rem;
-    -ms-flex-line-pack: start;
-        align-content: flex-start;
-  }
-  .footer .landing .landing-info .hero .what-i-do p {
-    width: 75%;
-    font-size: 0.9rem;
-  }
-  .footer .landing .landing-icons > svg {
-    fill: var(--white);
-    width: 25px;
-    height: 25px;
-  }
-  .footer .landing .landing-img {
-    display: none;
-  }
-  .footer .get-results h1 {
-    font-size: 2.5rem;
-  }
-  .footer .get-results .results-body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .get-results .results-body p {
-    font-size: 1.1rem;
-    line-height: 2rem;
-    width: 400px;
-    margin-bottom: 0.1rem;
-  }
-  .footer .services h1 {
-    margin-bottom: 3rem;
-  }
-  .footer .services .center-item {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .footer .services .help-1 .child-2,
-  .footer .services .help-1 .child-1,
-  .footer .services .help-2 .child-2,
-  .footer .services .help-2 .child-1 {
-    margin: 3rem 0;
-  }
-  .footer .services .help-1 .child-1,
-  .footer .services .help-2 .child-1 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 520px;
-  }
-  .footer .services .help-1 .child-1 p,
-  .footer .services .help-2 .child-1 p {
-    width: 300px;
-  }
-  .footer .services .help-1 .child-1 h3,
-  .footer .services .help-2 .child-1 h3 {
-    width: 100%;
-  }
-  .footer .services .help-2 {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .footer .services .help-2 .child-1 {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .services .help-2 .child-2 {
-    margin-right: 5rem;
-  }
-  .footer .services .child-1 {
-    width: 100%;
-  }
-  .footer .services .child-1 p {
-    width: 420px;
-    font-size: 1.2rem;
-  }
-  .footer .services .child-1 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .footer .services .child-2 img {
-    width: 250px;
-    height: 250px;
-  }
-  .footer .tech-support h1 {
-    font-size: 2.5rem;
-  }
-  .footer .tech-support .support .details {
-    margin: -1.5rem;
-  }
-  .footer .tech-support .support .details p {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  .footer .faq h1 {
-    width: 100%;
-    font-size: 2.5rem;
-  }
-  .footer .faq .question {
-    width: 600px !important;
-    margin: 0.7rem;
-  }
-  .footer .faq .question .faq-question {
-    font-size: 0.7rem;
-  }
-  .footer .faq .question .drop-content {
-    margin-top: 0.7rem;
-  }
-  .footer .contact-me {
-    padding-top: 2rem;
-  }
-  .footer .contact-me h1 {
-    margin-top: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 2.3rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    width: 100%;
-  }
-  .footer .contact-me .container {
-    width: 600px;
-  }
-  .footer .contact-me .container .screen .screen-body .screen-body-item {
-    padding: 2rem;
-  }
-  .footer .footer {
-    width: 750px;
-  }
-  .footer .footer .endnote {
-    width: 100%;
-    margin-top: 3rem;
-  }
-  .footer .footer .about-softech {
-    width: 450px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
-  .footer .footer .about-softech .txt p {
-    font-size: 1rem;
-    line-height: 1.7rem;
-  }
-  .footer .footer .about-softech .icons {
-    margin-top: 2rem;
-  }
-  .footer .footer .about-softech .icons > a {
-    margin-right: 2rem;
-  }
-  .footer .footer .quick-links {
-    width: 100px;
-  }
-  .footer .footer .quick-links .nav-items {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .footer .quick-links .nav-items > li {
-    margin: 0 0.2rem;
-  }
-}
-
-@media screen and (max-width: 650px) and (min-width: 520px) {
-  .footer body {
-    overflow-x: hidden;
-  }
-  .footer section {
-    width: 650px;
-  }
-  .footer header {
-    width: 650px;
-  }
-  .footer .nav-item button {
-    visibility: hidden;
-  }
-  .footer .landing {
-    padding-bottom: 3rem;
-  }
-  .footer .landing .landing-info {
-    width: 520px;
-    margin: 0.5rem 0.5rem;
-  }
-  .footer .landing .landing-info .hero {
-    width: 520px;
-    margin: 0.5rem 1rem;
-  }
-  .footer .landing .landing-info .hero .what-i-do {
-    width: 520px;
-  }
-  .footer .landing .landing-info .hero .what-i-do h1 {
-    font-size: 5rem;
-    line-height: 5rem;
-    margin-top: 3rem;
-  }
-  .footer .landing .landing-info .hero .what-i-do p {
-    width: 60%;
-    margin: 2rem 0;
-    line-height: 2.5rem;
-    font-size: 1.1rem;
-  }
-  .footer .landing .landing-info .cta-container .cta-btns {
-    width: 60%;
-    margin: 0.5rem 1rem;
-    margin-right: 4rem;
-  }
-  .footer .landing .landing-info .cta-container .cta-btns button {
-    padding: 1.5rem 3.5rem;
-    font-size: 1.1rem;
-  }
-  .footer .landing .landing-info .landing-icons > svg {
-    fill: var(--white);
-    width: 25px;
-    height: 25px;
-  }
-  .footer .landing .landing-info .landing-img {
-    display: none;
-  }
-  .footer .get-results h1 {
-    font-size: 2.5rem;
-  }
-  .footer .get-results .results-body {
-    margin: 0 1.8rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .get-results .results-body p {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    width: 400px;
-    margin-bottom: 0.1rem;
-  }
-  .footer .services h1 {
-    margin-bottom: 3rem;
-  }
-  .footer .services .help-1 {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .services .help-1 .child-1 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 530px;
-  }
-  .footer .services .help-1 .child-1 p {
-    text-align: center;
-    width: 520px;
-  }
-  .footer .services .help-1 .child-1 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer .services .help-1 .child-2 {
-    margin-top: -0.8rem !important;
-  }
-  .footer .services .help-1 .child-2 img {
-    width: 400px;
-    height: 400px;
-  }
-  .footer .services .help-2 .child-1 {
-    width: 600px;
-  }
-  .footer .services .help-2 .child-1 h3 {
-    margin-left: -2.5rem;
-  }
-  .footer .tech-used .frontend .icon,
-  .footer .tech-used .backend .icon,
-  .footer .tech-used .general .icon {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 150px;
-    height: 150px;
-    font-size: 4rem;
-  }
-  .footer .tech-used .frontend .icon p,
-  .footer .tech-used .backend .icon p,
-  .footer .tech-used .general .icon p {
-    font-size: 1.2rem;
-  }
-  .footer .tech-used .frontend .icon svg,
-  .footer .tech-used .backend .icon svg,
-  .footer .tech-used .general .icon svg {
-    width: 60px;
-    height: 60px;
-  }
-  .footer .tech-used .frontend .icon svg path,
-  .footer .tech-used .backend .icon svg path,
-  .footer .tech-used .general .icon svg path {
-    fill: var(--color-accent-sec-lighter);
-  }
-  .footer .tech-support h1 {
-    font-size: 2.5rem;
-  }
-  .footer .tech-support .support .details {
-    margin: -1.7rem;
-  }
-  .footer .tech-support .support .details p {
-    font-size: 1.2rem;
-  }
-  .footer .faq h1 {
-    width: 100%;
-    font-size: 2rem;
-  }
-  .footer .faq .question {
-    width: 560px !important;
-    margin: 0.7rem;
-  }
-  .footer .faq .question .faq-question {
-    font-size: 0.7rem;
-  }
-  .footer .faq .question .drop-content {
-    margin-top: 0.7rem;
-  }
-  .footer .contact-me {
-    padding-top: 2rem;
-  }
-  .footer .contact-me h1 {
-    margin-top: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 2rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    width: 100%;
-  }
-  .footer .contact-me .container {
-    padding: 20px;
-    width: 600px;
-  }
-  .footer .contact-me .container .screen .screen-body .screen-body-item {
-    padding: 2rem;
-  }
-  .footer .footer {
-    width: 600px;
-  }
-  .footer .footer .about-softech {
-    width: 100%;
-  }
-  .footer .footer .about-softech .txt p {
-    font-size: 1.3rem;
-    line-height: 1.7rem;
-  }
-  .footer .footer .about-softech .icons {
-    margin-top: 2.5rem;
-  }
-  .footer .footer .about-softech .icons > a {
-    margin-right: 2rem;
-  }
-  .footer .footer .quick-links {
-    width: 100%;
-  }
-  .footer .footer .quick-links .nav-items {
-    width: 100%;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .footer .footer .quick-links .nav-items > li {
-    margin: 0 1rem;
-  }
-  .footer .footer .endnote {
-    width: 100%;
-    margin-top: 3rem;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .footer body {
-    overflow-x: hidden;
-  }
-  .footer section {
-    width: 520px !important;
-  }
-  .footer header {
-    width: 520px;
-  }
-  .footer .nav-item button {
-    visibility: hidden;
-  }
-  .footer .landing {
-    padding-bottom: 3rem;
-  }
-  .footer .landing .landing-info {
-    width: 100%;
-    margin: 0.5rem 0.5rem;
-  }
-  .footer .landing .landing-info .hero {
-    margin: 0.5rem 1rem;
-  }
-  .footer .landing .landing-info .hero .what-i-do h1 {
-    font-size: 4.5rem;
-    line-height: 5rem;
-    margin-top: 2rem;
-  }
-  .footer .landing .landing-info .hero .what-i-do p {
-    width: 60%;
-    margin: 2rem 0;
-    line-height: 2.5rem;
-    font-size: 1rem;
-  }
-  .footer .landing .landing-info .cta-container .cta-btns {
-    width: 60%;
-    margin: 0.5rem 1rem;
-    margin-right: 4rem;
-  }
-  .footer .landing .landing-info .cta-container .cta-btns button {
-    padding: 1.5rem 3.5rem;
-    font-size: 1.1rem;
-  }
-  .footer .landing .landing-icons > svg {
-    fill: var(--white);
-    width: 25px;
-    height: 25px;
-  }
-  .footer .landing .landing-img {
-    display: none;
-  }
-  .footer .get-results h1 {
-    font-size: 2.5rem;
-  }
-  .footer .get-results .results-body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .get-results .results-body p {
-    font-size: 1.1rem;
-    line-height: 2rem;
-    width: 400px;
-  }
-  .footer .services h1 {
-    margin-bottom: 1rem;
-  }
-  .footer .services .help-1 {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .services .help-1 .child-1 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 500px;
-  }
-  .footer .services .help-1 .child-1 p {
-    text-align: center;
-    width: 490px;
-    padding: 0 1rem;
-  }
-  .footer .services .help-1 .child-1 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer .services .help-1 .child-2 {
-    margin-top: -0.9rem !important;
-  }
-  .footer .services .help-1 .child-2 img {
-    width: 370px;
-    height: 370px;
-  }
-  .footer .services .help-2 .child-1 h3 {
-    margin-left: 1rem;
-  }
-  .footer .tech-used .frontend .icon,
-  .footer .tech-used .backend .icon,
-  .footer .tech-used .general .icon {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 150px;
-    height: 150px;
-    font-size: 4rem;
-  }
-  .footer .tech-used .frontend .icon p,
-  .footer .tech-used .backend .icon p,
-  .footer .tech-used .general .icon p {
-    font-size: 1.2rem;
-  }
-  .footer .tech-used .frontend .icon svg,
-  .footer .tech-used .backend .icon svg,
-  .footer .tech-used .general .icon svg {
-    width: 60px;
-    height: 60px;
-  }
-  .footer .tech-used .frontend .icon svg path,
-  .footer .tech-used .backend .icon svg path,
-  .footer .tech-used .general .icon svg path {
-    fill: var(--color-accent-sec-lighter);
-  }
-  .footer .tech-support h1 {
-    font-size: 2.1rem;
-  }
-  .footer .tech-support .support .details {
-    margin: -1.7rem;
-  }
-  .footer .tech-support .support .details p {
-    text-align: center;
-  }
-  .footer .faq h1 {
-    width: 100%;
-    font-size: 1.7rem;
-  }
-  .footer .faq .question {
-    width: 470px !important;
-    margin: 0.7rem;
-  }
-  .footer .faq .question .faq-question {
-    font-size: 0.7rem;
-  }
-  .footer .faq .question .drop-content {
-    text-align: justify;
-    margin-top: 0.7rem;
-  }
-  .footer .contact-me {
-    padding-top: 2rem;
-  }
-  .footer .contact-me h1 {
-    margin-top: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 2rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    width: 100%;
-  }
-  .footer .contact-me .container {
-    padding: 20px;
-    width: 500px;
-  }
-  .footer .contact-me .container .screen .screen-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .contact-me .container .screen .screen-body .screen-body-item {
-    padding: 3rem;
-  }
-  .footer .footer {
-    width: 500px;
-  }
-  .footer .footer .endnote {
-    width: 100%;
-    margin-top: 3rem;
-  }
-  .footer .footer .about-softech {
-    width: 100%;
-  }
-  .footer .footer .about-softech .txt p {
-    font-size: 1.3rem;
-    line-height: 1.7rem;
-  }
-  .footer .footer .about-softech .icons {
-    margin-top: 2.5rem;
-  }
-  .footer .footer .about-softech .icons > a {
-    margin-right: 2rem;
-  }
-  .footer .footer .quick-links .nav-items {
-    width: 100%;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-  .footer .footer .quick-links .nav-items > li {
-    margin: 0 0.8rem;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .footer body {
-    overflow-x: hidden;
-  }
-  .footer header nav .nav-img a {
-    margin-left: 1rem;
-  }
-  .footer header .navbar .nav-item button {
-    visibility: hidden;
-  }
-  .footer .landing {
-    padding-bottom: 3rem;
-  }
-  .footer .landing .landing-info {
+  .landing .landing-info {
     width: 100%;
     margin: 0.5rem 0.5rem;
     font-size: 0.5rem;
   }
-  .footer .landing .landing-info .hero {
+  .landing .landing-info .hero {
     width: 100%;
     margin: 0.5rem 1rem;
     font-size: 2rem;
   }
-  .footer .landing .landing-info .hero .what-i-do {
+  .landing .landing-info .hero .what-i-do {
     width: 80%;
   }
-  .footer .landing .landing-info .hero .what-i-do h1 {
+  .landing .landing-info .hero .what-i-do h1 {
     font-size: 5.4rem;
     line-height: 5rem;
     margin-top: 4rem;
   }
-  .footer .landing .landing-info .hero .what-i-do p {
-    width: 90%;
+  .landing .landing-info .hero .what-i-do p {
+    width: 95%;
     margin: 2rem 0;
     line-height: 2.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
-  .footer .landing .landing-info .cta-container .cta-btns {
+  .landing .landing-info .cta-container .cta-btns {
     width: 60%;
     margin: 0.5rem 1rem;
     margin-right: 4rem;
   }
-  .footer .landing .landing-info .cta-container .cta-btns .btn-lg {
+  .landing .landing-info .cta-container .cta-btns .btn-lg {
     font-size: 1rem;
   }
-  .footer .landing .landing-info .cta-container .landing-icons > svg {
-    fill: var(--white);
-    width: 25px;
-    height: 25px;
-  }
-  .footer .landing .landing-info .cta-container .landing-img {
+  .landing .landing-img {
     display: none;
   }
-  .footer .get-results .results-body {
+  .get-results .results-body {
     margin: 0 1.8rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer .get-results .results-body p {
-    width: 350px;
+  .get-results .results-body p {
+    width: 370px;
     line-height: 1.8rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
-  .footer .services h1 {
+  .services h1 {
     margin-bottom: 1rem;
   }
-  .footer .services .help-1 {
-    width: 420px;
+  .services .services-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .footer .services .help-1 .child-1 {
+    -ms-flex-line-pack: center;
+        align-content: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .footer .services .help-1 .child-1 p {
-    text-align: center;
-    width: 490px;
     padding: 0 1rem;
   }
-  .footer .services .help-1 .child-1 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+  .services .services-grid .service-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 420px;
+  }
+  .services .services-grid .service-1 .child-1 h3 {
+    text-align: center;
+  }
+  .services .services-grid .service-1 .child-1 p {
+    width: 490px;
+    padding: 0 1.3rem;
+    text-align: center;
+  }
+  .services .services-grid .service-1 .child-2 {
+    margin-top: -0.9rem !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
+  }
+  .services .services-grid .service-1 .child-2 img {
+    width: 370px;
+    height: 370px;
+    margin-left: 60px;
+  }
+  .tech-used .frontend .icon,
+  .tech-used .backend .icon,
+  .tech-used .general .icon {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+  }
+  .tech-used .frontend .icon p,
+  .tech-used .backend .icon p,
+  .tech-used .general .icon p {
+    font-size: 1rem;
+  }
+  .tech-used .frontend .icon svg,
+  .tech-used .backend .icon svg,
+  .tech-used .general .icon svg {
+    width: 30px;
+    height: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footer .services .help-1 .child-2 {
-    margin-top: -0.9rem !important;
-  }
-  .footer .services .help-1 .child-2 img {
-    width: 370px;
-    height: 370px;
-  }
-  .footer .services .help-2 .child-1 h3 {
-    margin-left: 0.5rem;
-  }
-  .footer .tech-used .frontend .icon,
-  .footer .tech-used .backend .icon,
-  .footer .tech-used .general .icon {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 150px;
-    height: 150px;
-    font-size: 4rem;
-  }
-  .footer .tech-used .frontend .icon p,
-  .footer .tech-used .backend .icon p,
-  .footer .tech-used .general .icon p {
-    font-size: 1.2rem;
-  }
-  .footer .tech-used .frontend .icon svg,
-  .footer .tech-used .backend .icon svg,
-  .footer .tech-used .general .icon svg {
-    width: 60px;
-    height: 60px;
-  }
-  .footer .tech-used .frontend .icon svg path,
-  .footer .tech-used .backend .icon svg path,
-  .footer .tech-used .general .icon svg path {
+  .tech-used .frontend .icon svg path,
+  .tech-used .backend .icon svg path,
+  .tech-used .general .icon svg path {
     fill: var(--color-accent-sec-lighter);
   }
-  .footer .tech-support h1 {
+  .tech-support h1 {
     font-size: 1.9rem;
   }
-  .footer .tech-support .support .details {
+  .tech-support .support .details {
     margin: -1.7rem;
   }
-  .footer .tech-support .support .details p {
+  .tech-support .support .details p {
     text-align: center;
   }
-  .footer .tech-support .support .form button {
+  .tech-support .support .form button {
     width: 100%;
   }
-  .footer .faq h1 {
+  .faq h1 {
     width: 100%;
     font-size: 2rem;
     padding: 2rem 1rem;
     text-align: center;
   }
-  .footer .faq .question {
+  .faq .question {
     width: 420px !important;
     margin: 1rem;
   }
-  .footer .faq .question .faq-question {
+  .faq .question .faq-question {
     font-size: 0.7rem;
   }
-  .footer .faq .question .drop-content {
+  .faq .question .drop-content {
     text-align: justify;
     margin-top: 0.7rem;
     padding: 1rem 1rem !important;
   }
-  .footer .contact-me {
+  .contact-me {
     padding-top: 2rem;
   }
-  .footer .contact-me h1 {
+  .contact-me h1 {
     margin-top: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2753,38 +1840,38 @@ main section {
     text-align: center;
     width: 100%;
   }
-  .footer .contact-me .container {
+  .contact-me .container {
     padding: 20px;
     width: 435px;
   }
-  .footer .contact-me .container .screen {
+  .contact-me .container .screen {
     width: auto;
   }
-  .footer .contact-me .container .screen .screen-body {
+  .contact-me .container .screen .screen-body {
     padding: 0;
   }
-  .footer .contact-me .container .screen .screen-body .screen-body-item {
+  .contact-me .container .screen .screen-body .screen-body-item {
     padding: 3rem;
   }
-  .footer .footer {
+  .footer {
     width: 420px;
     margin: 1rem;
   }
-  .footer .footer .about-softech {
+  .footer .about-softech {
     width: 100%;
   }
-  .footer .footer .about-softech .txt p {
+  .footer .about-softech .txt p {
     width: 420px;
     font-size: 1.2rem;
     line-height: 1.7rem;
   }
-  .footer .footer .about-softech .icons {
+  .footer .about-softech .icons {
     margin-top: 2.5rem;
   }
-  .footer .footer .quick-links {
+  .footer .quick-links {
     width: 100%;
   }
-  .footer .footer .quick-links .nav-items {
+  .footer .quick-links .nav-items {
     width: 100%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -2794,16 +1881,28 @@ main section {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .footer .footer .quick-links .nav-items > li {
+  .footer .quick-links .nav-items > li {
     margin: 0 0.8rem;
   }
-  .footer .footer .endnote {
+  .footer .endnote {
     width: 100%;
     margin-top: 3rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer .endnote a {
+    color: white;
+  }
+  .footer .endnote .futer-txt {
+    margin-left: 1.5rem;
   }
 }
 
-.footer #form {
+/*** Desktops and laptops ****/
+/***** landscape on larger screens mobile devices *****/
+/***** landscape view - mobile devices *****/
+#form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2817,7 +1916,7 @@ main section {
           justify-content: center;
 }
 
-.footer #form form {
+#form form {
   border: #0edfb5 solid 1px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -2825,12 +1924,12 @@ main section {
   padding: 1rem;
 }
 
-.footer #form form input {
+#form form input {
   margin: 1rem;
   padding: 1rem;
 }
 
-.footer #form form button {
+#form form button {
   padding: 1rem;
   background: green;
   color: #fff;

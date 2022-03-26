@@ -564,8 +564,8 @@ main {
     margin: 4.5rem 0;
   }
 
-  .help-1,
-  .help-2 {
+  .service-1,
+  .service-2 {
     width: 70%;
 
     .child-2,
@@ -574,8 +574,8 @@ main {
     }
   }
 
-  .help-1,
-  .help-2 {
+  .service-1,
+  .service-2 {
     .child-1 {
       justify-content: center;
       // width: 70%;
@@ -1306,6 +1306,7 @@ main {
     }
   }
 
+
   /* @media screen and (max-width: 650px) {
     .screen-body {
       padding: 40px;
@@ -1458,1453 +1459,1462 @@ main {
       }
     }
   }
+}
 
-  /*** MEDIA QUERIES ***/
+/* **************************
+  MEDIA QUERIES
+  *************************************/
 
-  /*** Desktops and laptops ****/
-  @media only screen and (min-width: 1025px) {
+/******** mobile devices **********/
+@media screen and (min-width: 320px) {
+  body {
+    // overflow-x: hidden;
+    min-width: 500px !important;
+  }
 
-    // Footer
-    .footer {
-      .about-softech {
-        width: 450px;
-        justify-content: start;
-        align-items: start;
-      }
+  header {
+    nav {
+      height: 5rem;
 
-      .about-softech {
-        .txt {
-          p {
-            font-size: 0.9rem;
-            line-height: 1.5rem;
-          }
-        }
-
-        .icons {
-          margin-top: 2rem;
-
-          &>a {
-            margin-right: 2rem;
-          }
-        }
-      }
-
-      .quick-links {
-        width: 100px;
-
-        .nav-items {
-          display: inline-flex;
-          flex-direction: column;
-
-          &>li {
-            margin: 0.7rem 0.2rem;
-          }
-        }
-      }
-
-      .endnote {
-        display: flex;
-        justify-content: center;
-        align-items: space-between;
-        width: 100%;
-        margin: 3rem;
-
-        .futer-txt {
-          margin-right: 5rem;
-        }
+      .nav-img {
+        margin-left: auto;
       }
     }
 
-    // services
-    .services {
-      width: 100%;
-
-      h1 {
-        margin-bottom: 3rem;
-      }
-
-      .center-item {
-        justify-content: space-around;
-      }
-
-      .help-1,
-      .help-2 {
-        width: 700px;
-
-        .child-2,
-        .child-1 {
-          margin: 3rem 0;
-        }
-      }
-
-      .help-1,
-      .help-2 {
-        .child-1 {
-          justify-content: center;
-          width: 520px;
-
-          p {
-            // text-align: center;
-            width: 400px;
-          }
-
-          h3 {
-            width: 100%;
-          }
-        }
-      }
-
-      .help-1 {
-        .child-2 {
-          margin-left: 5rem;
-        }
-      }
-
-      .help-2 {
-        flex-direction: row-reverse;
-
-        .child-1 {
-          display: inline-flex;
-          flex-direction: column;
-          // margin-left: 5rem;
-        }
-
-        .child-2 {
-          margin-right: 5rem;
-        }
-      }
-
-      .child-1 {
-        width: 100%;
-
-        p {
-          width: 420px;
-          font-size: 1.2rem;
-        }
-
-        h3 {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
-          justify-content: start;
-        }
-      }
-
-      .child-2 {
-        img {
-          width: 400px;
-          height: 350px;
+    .navbar {
+      .nav-item {
+        button {
+          visibility: hidden;
         }
       }
     }
   }
 
-  // laptop
-  @media screen and (max-width: 1024px) {
-    section {
-      height: 100vh;
-      overflow-x: hidden;
+  .landing {
+    padding-bottom: 3rem;
+    height: 100vh;
+
+    .landing-info {
+      width: 100%;
+      margin: 0.5rem 0.5rem;
+      font-size: 0.5rem;
+
+      .hero {
+        width: 100%;
+        margin: 0.5rem 1rem;
+        font-size: 2rem;
+
+        .what-i-do {
+          width: 80%;
+
+          h1 {
+            font-size: 5.4rem;
+            line-height: 5rem;
+            margin-top: 4rem;
+          }
+
+          p {
+            width: 95%;
+            margin: 2rem 0;
+            line-height: 2.5rem;
+            font-size: 1.3rem;
+          }
+        }
+      }
+
+      .cta-container {
+        .cta-btns {
+          width: 60%;
+          margin: 0.5rem 1rem;
+          margin-right: 4rem;
+
+          .btn-lg {
+            // padding: 1.5rem 1.5rem;
+            font-size: 1rem;
+          }
+        }
+
+      }
     }
 
-    .landing {
-      align-items: center;
+    .landing-img {
+      display: none;
+    }
+  }
+
+  // results section
+  .get-results {
+    .results-body {
+      margin: 0 1.8rem;
+      flex-direction: column;
+
+      p {
+        width: 370px;
+        line-height: 1.8rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  // services
+  .services {
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .services-grid {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
       justify-content: center;
+      padding: 0 1rem;
 
-      .what-i-do {
-        h1 {
-          font-size: 5rem;
-          line-height: 4.5rem;
-          margin-top: 3rem;
-        }
-
-        p {
-          width: 75%;
-          font-size: 0.9rem;
-        }
-      }
-
-      .landing-img {
-        display: block;
-        margin-left: 1.2rem;
-        object-fit: cover;
-
-        .landing-pic {
-          img {
-            width: 350px;
-            height: 300px;
-          }
-        }
-      }
-
-      .landing-icons>svg {
-        fill: var(--white);
-        width: 25px;
-        height: 25px;
-      }
-    }
-
-    // results section
-    .get-results {
-      height: auto;
-
-      .results-body {
-        flex-direction: column;
-
-        p {
-          font-size: 1.3rem;
-          width: 500px;
-          line-height: 2rem;
-          margin-bottom: 0.2rem;
-        }
-      }
-    }
-
-    // Benefits
-    .flex-container {
-
-      .benefit-1,
-      .benefit-2,
-      .benefit-3,
-      .benefit-4,
-      .benefit-5,
-      .benefit-6 {
-        width: 200px;
-      }
-    }
-
-    // services
-    .services {
-      width: 100%;
-
-      h1 {
-        margin-bottom: 3rem;
-      }
-
-      .center-item {
-        justify-content: space-around;
-      }
-
-      .help-1,
-      .help-2 {
-        // width: 680px;
-
-        .child-2,
-        .child-1 {
-          margin: 3rem 0;
-        }
-      }
-
-      .help-1,
-      .help-2 {
-        .child-1 {
-          justify-content: center;
-          width: 520px;
-
-          p {
-            // text-align: center;
-            width: 300px;
-          }
-
-          h3 {
-            width: 100%;
-          }
-        }
-      }
-
-      .help-2 {
-        flex-direction: row-reverse;
-
-        .child-1 {
-          display: inline-flex;
-          flex-direction: column;
-          // margin-left: 5rem;
-        }
-
-        .child-2 {
-          margin-right: 5rem;
-        }
-      }
-
-      .child-1 {
-        width: 100%;
-
-        p {
-          width: 420px;
-          font-size: 1.2rem;
-        }
-
-        h3 {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
-          justify-content: start;
-        }
-      }
-
-      .child-2 {
-        img {
-          width: 250px;
-          height: 250px;
-        }
-      }
-    }
-
-    // Footer
-    .footer {
-      // width: 750px;
-
-      .about-softech {
-        width: 450px;
-        justify-content: start;
-        align-items: start;
-      }
-
-      .about-softech {
-        .txt {
-          p {
-            font-size: 1rem;
-            line-height: 1.3rem;
-          }
-        }
-
-        .icons {
-          margin-top: 2rem;
-
-          &>a {
-            margin-right: 2rem;
-          }
-        }
-      }
-
-      .quick-links {
-        width: 100px;
-
-        .nav-items {
-          display: inline-flex;
-          flex-direction: column;
-
-          &>li {
-            margin: 0.7rem 0.2rem;
-          }
-        }
-      }
-
-      .endnote {
-        width: 100%;
-        margin: 3rem;
-      }
-    }
-  }
-
-  // tablet
-  @media only screen and (max-width: 768px) {
-    body {
-      overflow-x: hidden !important;
-    }
-
-    .landing {
-      height: auto;
-      padding-bottom: 2rem;
-      align-content: flex-start;
-
-      .landing-info {
-        .hero {
-          .what-i-do {
-            p {
-              width: 75%;
-              font-size: 0.9rem;
-            }
-          }
-        }
-      }
-
-      .landing-icons>svg {
-        fill: var(--white);
-        width: 25px;
-        height: 25px;
-      }
-
-      .landing-img {
-        display: none;
-      }
-    }
-
-    // results section
-    .get-results {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      .results-body {
-        flex-direction: column;
-
-        p {
-          font-size: 1.1rem;
-          line-height: 2rem;
-          width: 400px;
-          margin-bottom: 0.1rem;
-        }
-      }
-    }
-
-    // services
-    .services {
-      h1 {
-        margin-bottom: 3rem;
-      }
-
-      .center-item {
-        justify-content: space-around;
-      }
-
-      .help-1,
-      .help-2 {
-        // width: 680px;
-
-        .child-2,
-        .child-1 {
-          margin: 3rem 0;
-        }
-      }
-
-      .help-1,
-      .help-2 {
-        .child-1 {
-          justify-content: center;
-          width: 520px;
-
-          p {
-            // text-align: center;
-            width: 300px;
-          }
-
-          h3 {
-            width: 100%;
-          }
-        }
-      }
-
-      .help-2 {
-        flex-direction: row-reverse;
-
-        .child-1 {
-          display: inline-flex;
-          flex-direction: column;
-          // margin-left: 5rem;
-        }
-
-        .child-2 {
-          margin-right: 5rem;
-        }
-      }
-
-      .child-1 {
-        width: 100%;
-
-        p {
-          width: 420px;
-          font-size: 1.2rem;
-        }
-
-        h3 {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
-          justify-content: start;
-        }
-      }
-
-      .child-2 {
-        img {
-          width: 250px;
-          height: 250px;
-        }
-      }
-    }
-
-    // Tech support
-    .tech-support {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      .support {
-        .details {
-          margin: -1.5rem;
-
-          p {
-            font-size: 1.2rem;
-            text-align: center;
-          }
-        }
-      }
-    }
-
-    // Faq
-    .faq {
-      h1 {
-        width: 100%;
-        font-size: 2.5rem;
-      }
-
-      .question {
-        width: 600px !important;
-        margin: 0.7rem;
-
-        .faq-question {
-          font-size: 0.7rem;
-        }
-
-        .drop-content {
-          margin-top: 0.7rem;
-        }
-      }
-    }
-
-    // Contact me
-    .contact-me {
-      padding-top: 2rem;
-
-      h1 {
-        margin-top: 3rem;
+      .service-1 {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2.3rem;
-        padding-bottom: 3rem;
-        text-align: center;
-        width: 100%;
-      }
-
-      .container {
-        width: 600px;
-
-        .screen {
-          .screen-body {
-            .screen-body-item {
-              padding: 2rem;
-            }
-          }
-        }
-      }
-    }
-
-    // Footer
-    .footer {
-      width: 750px;
-
-      .endnote {
-        width: 100%;
-        margin-top: 3rem;
-      }
-
-      .about-softech {
-        width: 450px;
-        justify-content: start;
-        align-items: start;
-      }
-
-      .about-softech {
-        .txt {
-          p {
-            font-size: 1rem;
-            line-height: 1.7rem;
-          }
-        }
-
-        .icons {
-          margin-top: 2rem;
-
-          &>a {
-            margin-right: 2rem;
-          }
-        }
-      }
-
-      .quick-links {
-        width: 100px;
-
-        .nav-items {
-          display: inline-flex;
-          flex-direction: column;
-
-          &>li {
-            margin: 0 0.2rem;
-          }
-        }
-      }
-    }
-  }
-
-  /***** landscape on larger screens mobile devices *****/
-  @media screen and (max-width: 650px) and (min-width: 520px) {
-    body {
-      overflow-x: hidden;
-    }
-
-    section {
-      width: 650px;
-    }
-
-    header {
-      width: 650px;
-    }
-
-    .nav-item button {
-      visibility: hidden;
-    }
-
-    .landing {
-      padding-bottom: 3rem;
-
-      .landing-info {
-        width: 520px;
-        margin: 0.5rem 0.5rem;
-
-        .hero {
-          width: 520px;
-          margin: 0.5rem 1rem;
-
-          .what-i-do {
-            width: 520px;
-
-            h1 {
-              font-size: 5rem;
-              line-height: 5rem;
-              margin-top: 3rem;
-            }
-
-            p {
-              width: 60%;
-              margin: 2rem 0;
-              line-height: 2.5rem;
-              font-size: 1.1rem;
-            }
-          }
-        }
-
-        .cta-container {
-          .cta-btns {
-            width: 60%;
-            margin: 0.5rem 1rem;
-            margin-right: 4rem;
-
-            button {
-              padding: 1.5rem 3.5rem;
-              font-size: 1.1rem;
-            }
-          }
-        }
-
-        .landing-icons>svg {
-          fill: var(--white);
-          width: 25px;
-          height: 25px;
-        }
-
-        .landing-img {
-          display: none;
-        }
-      }
-    }
-
-    // results section
-    .get-results {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      .results-body {
-        margin: 0 1.8rem;
         flex-direction: column;
-
-        p {
-          font-size: 1.2rem;
-          line-height: 2rem;
-          width: 400px;
-          margin-bottom: 0.1rem;
-        }
-      }
-    }
-
-    // services
-    .services {
-      h1 {
-        margin-bottom: 3rem;
-      }
-
-      .help-1 {
-        width: 100%;
-        flex-direction: column;
-
-        .child-1 {
-          justify-content: center;
-          width: 530px;
-
-          p {
-            text-align: center;
-            width: 520px;
-          }
-
-          h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            justify-content: center;
-          }
-        }
-
-        .child-2 {
-          margin-top: -0.8rem !important;
-
-          img {
-            width: 400px;
-            height: 400px;
-          }
-        }
-      }
-
-      .help-2 {
-        .child-1 {
-          width: 600px;
-
-          h3 {
-            margin-left: -2.5rem;
-          }
-        }
-      }
-    }
-
-    // Techs used
-    .tech-used {
-
-      .frontend,
-      .backend,
-      .general {
-        .icon {
-          flex-wrap: wrap;
-          width: 150px;
-          height: 150px;
-          font-size: 4rem;
-
-          p {
-            font-size: 1.2rem;
-          }
-
-          svg {
-            width: 60px;
-            height: 60px;
-
-            path {
-              fill: var(--color-accent-sec-lighter);
-            }
-          }
-        }
-      }
-    }
-
-    // Tech support
-    .tech-support {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      .support {
-        .details {
-          margin: -1.7rem;
-
-          p {
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
-
-    // Faq
-    .faq {
-      h1 {
-        width: 100%;
-        font-size: 2rem;
-      }
-
-      .question {
-        width: 560px !important;
-        margin: 0.7rem;
-
-        .faq-question {
-          font-size: 0.7rem;
-        }
-
-        .drop-content {
-          margin-top: 0.7rem;
-        }
-      }
-    }
-
-    // Contact me
-    .contact-me {
-      padding-top: 2rem;
-
-      h1 {
-        margin-top: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        padding-bottom: 3rem;
-        text-align: center;
-        width: 100%;
-      }
-
-      .container {
-        padding: 20px;
-        width: 600px;
-
-        .screen {
-          .screen-body {
-            .screen-body-item {
-              padding: 2rem;
-            }
-          }
-        }
-      }
-    }
-
-    // Footer
-    .footer {
-      width: 600px;
-
-      .about-softech {
-        width: 100%;
-
-        .txt {
-          p {
-            font-size: 1.3rem;
-            line-height: 1.7rem;
-          }
-        }
-
-        .icons {
-          margin-top: 2.5rem;
-
-          &>a {
-            margin-right: 2rem;
-          }
-        }
-      }
-
-      .quick-links {
-        width: 100%;
-
-        .nav-items {
-          width: 100%;
-          display: inline-flex;
-          flex-direction: row;
-
-          &>li {
-            margin: 0 1rem;
-          }
-        }
-      }
-
-      .endnote {
-        width: 100%;
-        margin-top: 3rem;
-      }
-    }
-  }
-
-  /***** landscape view - mobile devices *****/
-  @media screen and (max-width: 520px) {
-    body {
-      overflow-x: hidden;
-    }
-
-    section {
-      width: 520px !important;
-    }
-
-    header {
-      width: 520px;
-    }
-
-    .nav-item button {
-      visibility: hidden;
-    }
-
-    .landing {
-      padding-bottom: 3rem;
-
-      .landing-info {
-        width: 100%;
-        margin: 0.5rem 0.5rem;
-
-        .hero {
-          margin: 0.5rem 1rem;
-
-          .what-i-do {
-            h1 {
-              font-size: 4.5rem;
-              line-height: 5rem;
-              margin-top: 2rem;
-            }
-
-            p {
-              width: 60%;
-              margin: 2rem 0;
-              line-height: 2.5rem;
-              font-size: 1rem;
-            }
-          }
-        }
-
-        .cta-container {
-          .cta-btns {
-            width: 60%;
-            margin: 0.5rem 1rem;
-            margin-right: 4rem;
-
-            button {
-              padding: 1.5rem 3.5rem;
-              font-size: 1.1rem;
-            }
-          }
-        }
-      }
-
-      .landing-icons>svg {
-        fill: var(--white);
-        width: 25px;
-        height: 25px;
-      }
-
-      .landing-img {
-        display: none;
-      }
-    }
-
-    // results section
-    .get-results {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      .results-body {
-        flex-direction: column;
-
-        p {
-          font-size: 1.1rem;
-          line-height: 2rem;
-          width: 400px;
-        }
-      }
-    }
-
-    // services
-    .services {
-      h1 {
-        margin-bottom: 1rem;
-      }
-
-      .help-1 {
-        width: 100%;
-        flex-direction: column;
-
-        .child-1 {
-          justify-content: center;
-          width: 500px;
-
-          p {
-            text-align: center;
-            width: 490px;
-            padding: 0 1rem;
-          }
-
-          h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            justify-content: center;
-          }
-        }
-
-        .child-2 {
-          margin-top: -0.9rem !important;
-
-          img {
-            width: 370px;
-            height: 370px;
-          }
-        }
-      }
-
-      .help-2 {
-        .child-1 {
-          h3 {
-            margin-left: 1rem;
-          }
-        }
-      }
-    }
-
-    // Techs used
-    .tech-used {
-
-      .frontend,
-      .backend,
-      .general {
-        .icon {
-          flex-wrap: wrap;
-          width: 150px;
-          height: 150px;
-          font-size: 4rem;
-
-          p {
-            font-size: 1.2rem;
-          }
-
-          svg {
-            width: 60px;
-            height: 60px;
-
-            path {
-              fill: var(--color-accent-sec-lighter);
-            }
-          }
-        }
-      }
-    }
-
-    // Tech support
-    .tech-support {
-      h1 {
-        font-size: 2.1rem;
-      }
-
-      .support {
-        .details {
-          margin: -1.7rem;
-
-          p {
-            text-align: center;
-          }
-        }
-      }
-    }
-
-    // Faq
-    .faq {
-      h1 {
-        width: 100%;
-        font-size: 1.7rem;
-      }
-
-      .question {
-        width: 470px !important;
-        margin: 0.7rem;
-
-        .faq-question {
-          font-size: 0.7rem;
-        }
-
-        .drop-content {
-          text-align: justify;
-          margin-top: 0.7rem;
-        }
-      }
-    }
-
-    // Contact me
-    .contact-me {
-      padding-top: 2rem;
-
-      h1 {
-        margin-top: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        padding-bottom: 3rem;
-        text-align: center;
-        width: 100%;
-      }
-
-      .container {
-        padding: 20px;
-        width: 500px;
-
-        .screen {
-          .screen-body {
-            display: flex;
-            flex-direction: column;
-
-            .screen-body-item {
-              padding: 3rem;
-            }
-          }
-        }
-      }
-    }
-
-    // Footer
-    .footer {
-      width: 500px;
-
-      .endnote {
-        width: 100%;
-        margin-top: 3rem;
-      }
-
-      .about-softech {
-        width: 100%;
-
-        .txt {
-          p {
-            font-size: 1.3rem;
-            line-height: 1.7rem;
-          }
-        }
-
-        .icons {
-          margin-top: 2.5rem;
-
-          &>a {
-            margin-right: 2rem;
-          }
-        }
-      }
-
-      .quick-links {
-        .nav-items {
-          width: 100%;
-          display: inline-flex;
-
-          &>li {
-            margin: 0 0.8rem;
-          }
-        }
-      }
-    }
-  }
-
-  /******** mobile devices **********/
-  @media screen and (max-width: 425px) {
-    body {
-      overflow-x: hidden;
-    }
-
-    header {
-      // width: 500px;
-
-      nav {
-        .nav-img {
-          a {
-            margin-left: 1rem;
-          }
-        }
-      }
-
-      .navbar {
-        .nav-item {
-          button {
-            visibility: hidden;
-          }
-        }
-      }
-    }
-
-    .landing {
-      padding-bottom: 3rem;
-      // min-height: 100vh;
-
-      .landing-info {
-        width: 100%;
-        margin: 0.5rem 0.5rem;
-        font-size: 0.5rem;
-
-        .hero {
-          width: 100%;
-          margin: 0.5rem 1rem;
-          font-size: 2rem;
-
-          .what-i-do {
-            width: 80%;
-
-            h1 {
-              font-size: 5.4rem;
-              line-height: 5rem;
-              margin-top: 4rem;
-            }
-
-            p {
-              width: 90%;
-              margin: 2rem 0;
-              line-height: 2.5rem;
-              font-size: 1.2rem;
-            }
-          }
-        }
-
-        .cta-container {
-          .cta-btns {
-            width: 60%;
-            margin: 0.5rem 1rem;
-            margin-right: 4rem;
-
-            .btn-lg {
-              // padding: 1.5rem 1.5rem;
-              font-size: 1rem;
-            }
-          }
-
-          .landing-icons>svg {
-            fill: var(--white);
-            width: 25px;
-            height: 25px;
-          }
-
-          .landing-img {
-            display: none;
-          }
-        }
-      }
-    }
-
-    // results section
-    .get-results {
-      .results-body {
-        margin: 0 1.8rem;
-        flex-direction: column;
-
-        p {
-          width: 350px;
-          line-height: 1.8rem;
-          font-size: 1.1rem;
-        }
-      }
-    }
-
-    // services
-    .services {
-      h1 {
-        margin-bottom: 1rem;
-      }
-
-      .help-1 {
         width: 420px;
-        flex-direction: column;
 
         .child-1 {
-          justify-content: center;
-          // width: 500px;
-
-          p {
-            text-align: center;
-            width: 490px;
-            padding: 0 1rem;
-          }
 
           h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            justify-content: center;
+            // display: flex;
+            // justify-content: center;
+            text-align: center;
+          }
+
+          p {
+            width: 490px;
+            padding: 0 1.3rem;
+            text-align: center;
           }
         }
 
         .child-2 {
           margin-top: -0.9rem !important;
+          display: flex;
+          justify-content: center;
+          padding: 1rem;
 
           img {
             width: 370px;
             height: 370px;
-          }
-        }
-      }
-
-      .help-2 {
-        .child-1 {
-          // width: 570px;
-
-          h3 {
-            margin-left: 0.5rem;
+            margin-left: 60px;
           }
         }
       }
     }
+  }
 
-    // Techs used
-    .tech-used {
+  // Techs used
+  .tech-used {
 
-      .frontend,
-      .backend,
-      .general {
-        .icon {
-          flex-wrap: wrap;
-          width: 150px;
-          height: 150px;
-          font-size: 4rem;
+    .frontend,
+    .backend,
+    .general {
+      .icon {
+        flex-wrap: wrap;
+        width: 100px;
+        height: 100px;
+        font-size: 1.5rem;
 
-          p {
-            font-size: 1.2rem;
-          }
-
-          svg {
-            width: 60px;
-            height: 60px;
-
-            path {
-              fill: var(--color-accent-sec-lighter);
-            }
-          }
-        }
-      }
-    }
-
-    // Tech support
-    .tech-support {
-      h1 {
-        // width: 600px;
-        // margin-left: 3rem;
-        font-size: 1.9rem;
-      }
-
-      .support {
-        .details {
-          margin: -1.7rem;
-
-          p {
-            text-align: center;
-          }
+        p {
+          font-size: 1rem;
         }
 
-        .form {
-          button {
-            width: 100%;
+        svg {
+          width: 30px;
+          height: 30px;
+          justify-content: center;
+
+          path {
+            fill: var(--color-accent-sec-lighter);
           }
         }
       }
     }
+  }
 
-    // FAQ
-    .faq {
-      h1 {
-        width: 100%;
-        font-size: 2rem;
-        padding: 2rem 1rem;
-        text-align: center;
+  // Tech support
+  .tech-support {
+    h1 {
+      // width: 600px;
+      // margin-left: 3rem;
+      font-size: 1.9rem;
+    }
+
+    .support {
+      .details {
+        margin: -1.7rem;
+
+        p {
+          text-align: center;
+        }
       }
 
-      .question {
-        width: 420px !important;
-        margin: 1rem;
-
-        .faq-question {
-          font-size: 0.7rem;
-        }
-
-        .drop-content {
-          text-align: justify;
-          margin-top: 0.7rem;
-          padding: 1rem 1rem !important;
+      .form {
+        button {
+          width: 100%;
         }
       }
     }
+  }
 
-    // Contact me
-    .contact-me {
-      padding-top: 2rem;
-
-      h1 {
-        margin-top: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.8rem;
-        padding-bottom: 3rem;
-        text-align: center;
-        width: 100%;
-      }
-
-      .container {
-        padding: 20px;
-        width: 435px;
-
-        .screen {
-          width: auto;
-
-          .screen-body {
-            padding: 0;
-
-            .screen-body-item {
-              padding: 3rem;
-            }
-          }
-        }
-      }
+  // FAQ
+  .faq {
+    h1 {
+      width: 100%;
+      font-size: 2rem;
+      padding: 2rem 1rem;
+      text-align: center;
     }
 
-    // Footer
-    .footer {
-      width: 420px;
+    .question {
+      width: 420px !important;
       margin: 1rem;
 
-      .about-softech {
-        width: 100%;
-
-        .txt {
-          p {
-            width: 420px;
-            font-size: 1.2rem;
-            line-height: 1.7rem;
-          }
-        }
-
-        .icons {
-          margin-top: 2.5rem;
-        }
+      .faq-question {
+        font-size: 0.7rem;
       }
 
-      .quick-links {
-        width: 100%;
-
-        .nav-items {
-          width: 100%;
-          display: inline-flex;
-          flex-direction: row;
-
-          &>li {
-            margin: 0 0.8rem;
-          }
-        }
-      }
-
-      .endnote {
-        width: 100%;
-        margin-top: 3rem;
+      .drop-content {
+        text-align: justify;
+        margin-top: 0.7rem;
+        padding: 1rem 1rem !important;
       }
     }
   }
 
-  // DYNAMIC FORMS
-  #form {
-    display: flex;
-    margin: 2rem;
+  // Contact me
+  .contact-me {
     padding-top: 2rem;
-    align-items: center;
-    justify-content: center;
 
-    form {
-      border: #0edfb5 solid 1px;
-      width: max-content;
+    h1 {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      padding-bottom: 3rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    .container {
+      padding: 20px;
+      width: 435px;
+
+      .screen {
+        width: auto;
+
+        .screen-body {
+          padding: 0;
+
+          .screen-body-item {
+            padding: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    width: 420px;
+    margin: 1rem;
+
+    .about-softech {
+      width: 100%;
+
+      .txt {
+        p {
+          width: 420px;
+          font-size: 1.2rem;
+          line-height: 1.7rem;
+        }
+      }
+
+      .icons {
+        margin-top: 2.5rem;
+      }
+    }
+
+    .quick-links {
+      width: 100%;
+
+      .nav-items {
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+
+        &>li {
+          margin: 0 0.8rem;
+        }
+      }
+    }
+
+    .endnote {
+      width: 100%;
+      margin-top: 3rem;
+      justify-content: space-evenly;
+
+      a {
+        color: white;
+      }
+
+      .futer-txt {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+/*** Desktops and laptops ****/
+// @media only screen and (min-width: 1025px) {
+
+//   // Footer
+//   .footer {
+//     .about-softech {
+//       width: 450px;
+//       justify-content: start;
+//       align-items: start;
+//     }
+
+//     .about-softech {
+//       .txt {
+//         p {
+//           font-size: 0.9rem;
+//           line-height: 1.5rem;
+//         }
+//       }
+
+//       .icons {
+//         margin-top: 2rem;
+
+//         &>a {
+//           margin-right: 2rem;
+//         }
+//       }
+//     }
+
+//     .quick-links {
+//       width: 100px;
+
+//       .nav-items {
+//         display: inline-flex;
+//         flex-direction: column;
+
+//         &>li {
+//           margin: 0.7rem 0.2rem;
+//         }
+//       }
+//     }
+
+//     .endnote {
+//       display: flex;
+//       justify-content: center;
+//       align-items: space-between;
+//       width: 100%;
+//       margin: 3rem;
+
+//       .futer-txt {
+//         margin-right: 5rem;
+//       }
+//     }
+//   }
+
+//   // services
+//   .services {
+//     width: 100%;
+
+//     h1 {
+//       margin-bottom: 3rem;
+//     }
+
+//     .center-item {
+//       justify-content: space-around;
+//     }
+
+//     .service-1,
+//     .service-2 {
+//       width: 700px;
+
+//       .child-2,
+//       .child-1 {
+//         margin: 3rem 0;
+//       }
+//     }
+
+//     .service-1,
+//     .service-2 {
+//       .child-1 {
+//         justify-content: center;
+//         width: 520px;
+
+//         p {
+//           // text-align: center;
+//           width: 400px;
+//         }
+
+//         h3 {
+//           width: 100%;
+//         }
+//       }
+//     }
+
+//     .service-1 {
+//       .child-2 {
+//         margin-left: 5rem;
+//       }
+//     }
+
+//     .service-2 {
+//       flex-direction: row-reverse;
+
+//       .child-1 {
+//         display: inline-flex;
+//         flex-direction: column;
+//         // margin-left: 5rem;
+//       }
+
+//       .child-2 {
+//         margin-right: 5rem;
+//       }
+//     }
+
+//     .child-1 {
+//       width: 100%;
+
+//       p {
+//         width: 420px;
+//         font-size: 1.2rem;
+//       }
+
+//       h3 {
+//         font-size: 1.4rem;
+//         margin-bottom: 1rem;
+//         justify-content: start;
+//       }
+//     }
+
+//     .child-2 {
+//       img {
+//         width: 400px;
+//         height: 350px;
+//       }
+//     }
+//   }
+// }
+
+// laptop
+// @media screen and (min-width: 1024px) {
+//   section {
+//     height: 100vh;
+//     overflow-x: hidden;
+//   }
+
+//   .landing {
+//     align-items: center;
+//     justify-content: center;
+
+//     .what-i-do {
+//       h1 {
+//         font-size: 5rem;
+//         line-height: 4.5rem;
+//         margin-top: 3rem;
+//       }
+
+//       p {
+//         width: 75%;
+//         font-size: 0.9rem;
+//       }
+//     }
+
+//     .landing-img {
+//       display: block;
+//       margin-left: 1.2rem;
+//       object-fit: cover;
+
+//       .landing-pic {
+//         img {
+//           width: 350px;
+//           height: 300px;
+//         }
+//       }
+//     }
+
+//     .landing-icons>svg {
+//       fill: var(--white);
+//       width: 25px;
+//       height: 25px;
+//     }
+//   }
+
+//   // results section
+//   .get-results {
+//     height: auto;
+
+//     .results-body {
+//       flex-direction: column;
+
+//       p {
+//         font-size: 1.3rem;
+//         width: 500px;
+//         line-height: 2rem;
+//         margin-bottom: 0.2rem;
+//       }
+//     }
+//   }
+
+//   // Benefits
+//   .flex-container {
+
+//     .benefit-1,
+//     .benefit-2,
+//     .benefit-3,
+//     .benefit-4,
+//     .benefit-5,
+//     .benefit-6 {
+//       width: 200px;
+//     }
+//   }
+
+//   // services
+//   .services {
+//     width: 100%;
+
+//     h1 {
+//       margin-bottom: 3rem;
+//     }
+
+//     .center-item {
+//       justify-content: space-around;
+//     }
+
+//     .service-1,
+//     .service-2 {
+//       // width: 680px;
+
+//       .child-2,
+//       .child-1 {
+//         margin: 3rem 0;
+//       }
+//     }
+
+//     .service-1,
+//     .service-2 {
+//       .child-1 {
+//         justify-content: center;
+//         width: 520px;
+
+//         p {
+//           // text-align: center;
+//           width: 300px;
+//         }
+
+//         h3 {
+//           width: 100%;
+//         }
+//       }
+//     }
+
+//     .service-2 {
+//       flex-direction: row-reverse;
+
+//       .child-1 {
+//         display: inline-flex;
+//         flex-direction: column;
+//         // margin-left: 5rem;
+//       }
+
+//       .child-2 {
+//         margin-right: 5rem;
+//       }
+//     }
+
+//     .child-1 {
+//       width: 100%;
+
+//       p {
+//         width: 420px;
+//         font-size: 1.2rem;
+//       }
+
+//       h3 {
+//         font-size: 1.4rem;
+//         margin-bottom: 1rem;
+//         justify-content: start;
+//       }
+//     }
+
+//     .child-2 {
+//       img {
+//         width: 250px;
+//         height: 250px;
+//       }
+//     }
+//   }
+
+//   // Footer
+//   .footer {
+//     // width: 750px;
+
+//     .about-softech {
+//       width: 450px;
+//       justify-content: start;
+//       align-items: start;
+//     }
+
+//     .about-softech {
+//       .txt {
+//         p {
+//           font-size: 1rem;
+//           line-height: 1.3rem;
+//         }
+//       }
+
+//       .icons {
+//         margin-top: 2rem;
+
+//         &>a {
+//           margin-right: 2rem;
+//         }
+//       }
+//     }
+
+//     .quick-links {
+//       width: 100px;
+
+//       .nav-items {
+//         display: inline-flex;
+//         flex-direction: column;
+
+//         &>li {
+//           margin: 0.7rem 0.2rem;
+//         }
+//       }
+//     }
+
+//     .endnote {
+//       width: 100%;
+//       margin: 3rem;
+//     }
+//   }
+// }
+
+// tablet
+// @media only screen and (min-width: 768px) {
+//   body {
+//     overflow-x: hidden !important;
+//   }
+
+//   .landing {
+//     height: auto;
+//     padding-bottom: 2rem;
+//     align-content: flex-start;
+
+//     .landing-info {
+//       .hero {
+//         .what-i-do {
+//           p {
+//             width: 75%;
+//             font-size: 0.9rem;
+//           }
+//         }
+//       }
+//     }
+
+//     .landing-icons>svg {
+//       fill: var(--white);
+//       width: 25px;
+//       height: 25px;
+//     }
+
+//     .landing-img {
+//       display: none;
+//     }
+//   }
+
+//   // results section
+//   .get-results {
+//     h1 {
+//       font-size: 2.5rem;
+//     }
+
+//     .results-body {
+//       flex-direction: column;
+
+//       p {
+//         font-size: 1.1rem;
+//         line-height: 2rem;
+//         width: 400px;
+//         margin-bottom: 0.1rem;
+//       }
+//     }
+//   }
+
+//   // services
+//   .services {
+//     h1 {
+//       margin-bottom: 3rem;
+//     }
+
+//     .center-item {
+//       justify-content: space-around;
+//     }
+
+//     .service-1,
+//     .service-2 {
+//       // width: 680px;
+
+//       .child-2,
+//       .child-1 {
+//         margin: 3rem 0;
+//       }
+//     }
+
+//     .service-1,
+//     .service-2 {
+//       .child-1 {
+//         justify-content: center;
+//         width: 520px;
+
+//         p {
+//           // text-align: center;
+//           width: 300px;
+//         }
+
+//         h3 {
+//           width: 100%;
+//         }
+//       }
+//     }
+
+//     .service-2 {
+//       flex-direction: row-reverse;
+
+//       .child-1 {
+//         display: inline-flex;
+//         flex-direction: column;
+//         // margin-left: 5rem;
+//       }
+
+//       .child-2 {
+//         margin-right: 5rem;
+//       }
+//     }
+
+//     .child-1 {
+//       width: 100%;
+
+//       p {
+//         width: 420px;
+//         font-size: 1.2rem;
+//       }
+
+//       h3 {
+//         font-size: 1.4rem;
+//         margin-bottom: 1rem;
+//         justify-content: start;
+//       }
+//     }
+
+//     .child-2 {
+//       img {
+//         width: 250px;
+//         height: 250px;
+//       }
+//     }
+//   }
+
+//   // Tech support
+//   .tech-support {
+//     h1 {
+//       font-size: 2.5rem;
+//     }
+
+//     .support {
+//       .details {
+//         margin: -1.5rem;
+
+//         p {
+//           font-size: 1.2rem;
+//           text-align: center;
+//         }
+//       }
+//     }
+//   }
+
+//   // Faq
+//   .faq {
+//     h1 {
+//       width: 100%;
+//       font-size: 2.5rem;
+//     }
+
+//     .question {
+//       width: 600px !important;
+//       margin: 0.7rem;
+
+//       .faq-question {
+//         font-size: 0.7rem;
+//       }
+
+//       .drop-content {
+//         margin-top: 0.7rem;
+//       }
+//     }
+//   }
+
+//   // Contact me
+//   .contact-me {
+//     padding-top: 2rem;
+
+//     h1 {
+//       margin-top: 3rem;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       font-size: 2.3rem;
+//       padding-bottom: 3rem;
+//       text-align: center;
+//       width: 100%;
+//     }
+
+//     .container {
+//       width: 600px;
+
+//       .screen {
+//         .screen-body {
+//           .screen-body-item {
+//             padding: 2rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   // Footer
+//   .footer {
+//     width: 750px;
+
+//     .endnote {
+//       width: 100%;
+//       margin-top: 3rem;
+//     }
+
+//     .about-softech {
+//       width: 450px;
+//       justify-content: start;
+//       align-items: start;
+//     }
+
+//     .about-softech {
+//       .txt {
+//         p {
+//           font-size: 1rem;
+//           line-height: 1.7rem;
+//         }
+//       }
+
+//       .icons {
+//         margin-top: 2rem;
+
+//         &>a {
+//           margin-right: 2rem;
+//         }
+//       }
+//     }
+
+//     .quick-links {
+//       width: 100px;
+
+//       .nav-items {
+//         display: inline-flex;
+//         flex-direction: column;
+
+//         &>li {
+//           margin: 0 0.2rem;
+//         }
+//       }
+//     }
+//   }
+// }
+
+/***** landscape on larger screens mobile devices *****/
+// @media screen and (min-width: 650px) and (min-width: 520px) {
+//   body {
+//     overflow-x: hidden;
+//   }
+
+//   section {
+//     width: 650px;
+//   }
+
+//   header {
+//     width: 650px;
+//   }
+
+//   .nav-item button {
+//     visibility: hidden;
+//   }
+
+//   .landing {
+//     padding-bottom: 3rem;
+
+//     .landing-info {
+//       width: 520px;
+//       margin: 0.5rem 0.5rem;
+
+//       .hero {
+//         width: 520px;
+//         margin: 0.5rem 1rem;
+
+//         .what-i-do {
+//           width: 520px;
+
+//           h1 {
+//             font-size: 5rem;
+//             line-height: 5rem;
+//             margin-top: 3rem;
+//           }
+
+//           p {
+//             width: 60%;
+//             margin: 2rem 0;
+//             line-height: 2.5rem;
+//             font-size: 1.1rem;
+//           }
+//         }
+//       }
+
+//       .cta-container {
+//         .cta-btns {
+//           width: 60%;
+//           margin: 0.5rem 1rem;
+//           margin-right: 4rem;
+
+//           button {
+//             padding: 1.5rem 3.5rem;
+//             font-size: 1.1rem;
+//           }
+//         }
+//       }
+
+//       .landing-icons>svg {
+//         fill: var(--white);
+//         width: 25px;
+//         height: 25px;
+//       }
+
+//       .landing-img {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   // results section
+//   .get-results {
+//     h1 {
+//       font-size: 2.5rem;
+//     }
+
+//     .results-body {
+//       margin: 0 1.8rem;
+//       flex-direction: column;
+
+//       p {
+//         font-size: 1.2rem;
+//         line-height: 2rem;
+//         width: 400px;
+//         margin-bottom: 0.1rem;
+//       }
+//     }
+//   }
+
+//   // services
+//   .services {
+//     h1 {
+//       margin-bottom: 3rem;
+//     }
+
+//     .service-1 {
+//       width: 100%;
+//       flex-direction: column;
+
+//       .child-1 {
+//         justify-content: center;
+//         width: 530px;
+
+//         p {
+//           text-align: center;
+//           width: 520px;
+//         }
+
+//         h3 {
+//           font-size: 1.4rem;
+//           margin-bottom: 1rem;
+//           justify-content: center;
+//         }
+//       }
+
+//       .child-2 {
+//         margin-top: -0.8rem !important;
+
+//         img {
+//           width: 400px;
+//           height: 400px;
+//         }
+//       }
+//     }
+
+//     .service-2 {
+//       .child-1 {
+//         width: 600px;
+
+//         h3 {
+//           margin-left: -2.5rem;
+//         }
+//       }
+//     }
+//   }
+
+//   // Techs used
+//   .tech-used {
+
+//     .frontend,
+//     .backend,
+//     .general {
+//       .icon {
+//         flex-wrap: wrap;
+//         width: 150px;
+//         height: 150px;
+//         font-size: 4rem;
+
+//         p {
+//           font-size: 1.2rem;
+//         }
+
+//         svg {
+//           width: 60px;
+//           height: 60px;
+
+//           path {
+//             fill: var(--color-accent-sec-lighter);
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   // Tech support
+//   .tech-support {
+//     h1 {
+//       font-size: 2.5rem;
+//     }
+
+//     .support {
+//       .details {
+//         margin: -1.7rem;
+
+//         p {
+//           font-size: 1.2rem;
+//         }
+//       }
+//     }
+//   }
+
+//   // Faq
+//   .faq {
+//     h1 {
+//       width: 100%;
+//       font-size: 2rem;
+//     }
+
+//     .question {
+//       width: 560px !important;
+//       margin: 0.7rem;
+
+//       .faq-question {
+//         font-size: 0.7rem;
+//       }
+
+//       .drop-content {
+//         margin-top: 0.7rem;
+//       }
+//     }
+//   }
+
+//   // Contact me
+//   .contact-me {
+//     padding-top: 2rem;
+
+//     h1 {
+//       margin-top: 3rem;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       font-size: 2rem;
+//       padding-bottom: 3rem;
+//       text-align: center;
+//       width: 100%;
+//     }
+
+//     .container {
+//       padding: 20px;
+//       width: 600px;
+
+//       .screen {
+//         .screen-body {
+//           .screen-body-item {
+//             padding: 2rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   // Footer
+//   .footer {
+//     width: 600px;
+
+//     .about-softech {
+//       width: 100%;
+
+//       .txt {
+//         p {
+//           font-size: 1.3rem;
+//           line-height: 1.7rem;
+//         }
+//       }
+
+//       .icons {
+//         margin-top: 2.5rem;
+
+//         &>a {
+//           margin-right: 2rem;
+//         }
+//       }
+//     }
+
+//     .quick-links {
+//       width: 100%;
+
+//       .nav-items {
+//         width: 100%;
+//         display: inline-flex;
+//         flex-direction: row;
+
+//         &>li {
+//           margin: 0 1rem;
+//         }
+//       }
+//     }
+
+//     .endnote {
+//       width: 100%;
+//       margin-top: 3rem;
+//     }
+//   }
+// }
+
+/***** landscape view - mobile devices *****/
+// @media screen and (min-width: 520px) {
+//   body {
+//     overflow-x: hidden;
+//   }
+
+//   section {
+//     width: 520px !important;
+//   }
+
+//   header {
+//     width: 520px;
+//   }
+
+//   .nav-item button {
+//     visibility: hidden;
+//   }
+
+//   .landing {
+//     padding-bottom: 3rem;
+
+//     .landing-info {
+//       width: 100%;
+//       margin: 0.5rem 0.5rem;
+
+//       .hero {
+//         margin: 0.5rem 1rem;
+
+//         .what-i-do {
+//           h1 {
+//             font-size: 4.5rem;
+//             line-height: 5rem;
+//             margin-top: 2rem;
+//           }
+
+//           p {
+//             width: 60%;
+//             margin: 2rem 0;
+//             line-height: 2.5rem;
+//             font-size: 1rem;
+//           }
+//         }
+//       }
+
+//       .cta-container {
+//         .cta-btns {
+//           width: 60%;
+//           margin: 0.5rem 1rem;
+//           margin-right: 4rem;
+
+//           button {
+//             padding: 1.5rem 3.5rem;
+//             font-size: 1.1rem;
+//           }
+//         }
+//       }
+//     }
+
+//     .landing-icons>svg {
+//       fill: var(--white);
+//       width: 25px;
+//       height: 25px;
+//     }
+
+//     .landing-img {
+//       display: none;
+//     }
+//   }
+
+//   // results section
+//   .get-results {
+//     h1 {
+//       font-size: 2.5rem;
+//     }
+
+//     .results-body {
+//       flex-direction: column;
+
+//       p {
+//         font-size: 1.1rem;
+//         line-height: 2rem;
+//         width: 400px;
+//       }
+//     }
+//   }
+
+//   // services
+//   .services {
+//     h1 {
+//       margin-bottom: 1rem;
+//     }
+
+//     .service-1 {
+//       width: 100%;
+//       flex-direction: column;
+
+//       .child-1 {
+//         justify-content: center;
+//         width: 500px;
+
+//         p {
+//           text-align: center;
+//           width: 490px;
+//           padding: 0 1rem;
+//         }
+
+//         h3 {
+//           font-size: 1.4rem;
+//           margin-bottom: 1rem;
+//           justify-content: center;
+//         }
+//       }
+
+//       .child-2 {
+//         margin-top: -0.9rem !important;
+
+//         img {
+//           width: 370px;
+//           height: 370px;
+//         }
+//       }
+//     }
+
+//     .service-2 {
+//       .child-1 {
+//         h3 {
+//           margin-left: 1rem;
+//         }
+//       }
+//     }
+//   }
+
+//   // Techs used
+//   .tech-used {
+
+//     .frontend,
+//     .backend,
+//     .general {
+//       .icon {
+//         flex-wrap: wrap;
+//         width: 150px;
+//         height: 150px;
+//         font-size: 4rem;
+
+//         p {
+//           font-size: 1.2rem;
+//         }
+
+//         svg {
+//           width: 60px;
+//           height: 60px;
+
+//           path {
+//             fill: var(--color-accent-sec-lighter);
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   // Tech support
+//   .tech-support {
+//     h1 {
+//       font-size: 2.1rem;
+//     }
+
+//     .support {
+//       .details {
+//         margin: -1.7rem;
+
+//         p {
+//           text-align: center;
+//         }
+//       }
+//     }
+//   }
+
+//   // Faq
+//   .faq {
+//     h1 {
+//       width: 100%;
+//       font-size: 1.7rem;
+//     }
+
+//     .question {
+//       width: 470px !important;
+//       margin: 0.7rem;
+
+//       .faq-question {
+//         font-size: 0.7rem;
+//       }
+
+//       .drop-content {
+//         text-align: justify;
+//         margin-top: 0.7rem;
+//       }
+//     }
+//   }
+
+//   // Contact me
+//   .contact-me {
+//     padding-top: 2rem;
+
+//     h1 {
+//       margin-top: 3rem;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       font-size: 2rem;
+//       padding-bottom: 3rem;
+//       text-align: center;
+//       width: 100%;
+//     }
+
+//     .container {
+//       padding: 20px;
+//       width: 500px;
+
+//       .screen {
+//         .screen-body {
+//           display: flex;
+//           flex-direction: column;
+
+//           .screen-body-item {
+//             padding: 3rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   // Footer
+//   .footer {
+//     width: 500px;
+
+//     .endnote {
+//       width: 100%;
+//       margin-top: 3rem;
+//     }
+
+//     .about-softech {
+//       width: 100%;
+
+//       .txt {
+//         p {
+//           font-size: 1.3rem;
+//           line-height: 1.7rem;
+//         }
+//       }
+
+//       .icons {
+//         margin-top: 2.5rem;
+
+//         &>a {
+//           margin-right: 2rem;
+//         }
+//       }
+//     }
+
+//     .quick-links {
+//       .nav-items {
+//         width: 100%;
+//         display: inline-flex;
+
+//         &>li {
+//           margin: 0 0.8rem;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// DYNAMIC FORMS
+#form {
+  display: flex;
+  margin: 2rem;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    border: #0edfb5 solid 1px;
+    width: max-content;
+    padding: 1rem;
+
+    input {
+      margin: 1rem;
       padding: 1rem;
+    }
 
-      input {
-        margin: 1rem;
-        padding: 1rem;
-      }
-
-      button {
-        padding: 1rem;
-        background: green;
-        color: #fff;
-        border-radius: 5px;
-        text-transform: uppercase;
-      }
+    button {
+      padding: 1rem;
+      background: green;
+      color: #fff;
+      border-radius: 5px;
+      text-transform: uppercase;
     }
   }
 }
