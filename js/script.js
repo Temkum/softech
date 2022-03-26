@@ -71,7 +71,9 @@ function toggleMenu() {
   if ("onmouseenter") {
     toggleBtn.classList.toggle("active");
   } else if ("onclick") {
-    toggleBtn.classList.toggle("active");
+    toggleBtn.classList.addClass("active");
+  } else {
+    toggleBtn.classList.removeClass("active");
   }
 }
 
