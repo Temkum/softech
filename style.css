@@ -1650,6 +1650,7 @@ main section {
 /******** mobile devices **********/
 @media screen and (min-width: 320px) {
   body {
+    overflow-x: hidden;
     min-width: 500px !important;
   }
   header nav {
@@ -1896,6 +1897,86 @@ main section {
   }
   .footer .endnote .futer-txt {
     margin-left: 1.5rem;
+  }
+}
+
+/******** medium devices **********/
+@media screen and (min-width: 426px) {
+  body {
+    min-width: 500px !important;
+  }
+  header nav .nav-img {
+    margin-left: 2rem;
+    margin-top: .4rem;
+  }
+  header .navbar .nav-item button {
+    visibility: visible;
+  }
+  .landing .landing-info .hero {
+    width: 100%;
+    margin: 0.5rem 1rem;
+    font-size: 2rem;
+  }
+  .landing .landing-info .hero .what-i-do {
+    width: 80%;
+  }
+  .landing .landing-info .hero .what-i-do h1 {
+    font-size: 5rem;
+  }
+  .landing .landing-info .hero .what-i-do p {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .landing .landing-info .cta-container .cta-btns {
+    width: 50%;
+  }
+  .landing .landing-info .cta-container .cta-btns a .btn-lg {
+    padding: 1.5rem 1.5rem;
+    width: 80%;
+  }
+  .get-results h1 {
+    font-size: 3rem;
+  }
+  .get-results .results-body {
+    margin: 0 1.5rem;
+  }
+  .get-results .results-body p {
+    width: 426px;
+    font-size: 1.1rem;
+  }
+  .services .services-grid .service-1 {
+    width: 500px;
+  }
+  .services .services-grid .service-1 .child-1 p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .services .services-grid .service-1 .child-2 img {
+    height: 300px;
+    width: 300px;
+  }
+  .faq h1 {
+    font-size: 1.7rem;
+    margin-top: 3rem;
+  }
+  .footer .icons a {
+    margin: 1.5rem;
+  }
+  .footer .endnote {
+    width: 100%;
+    margin-top: 3rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer .endnote a {
+    color: white;
+  }
+  .footer .endnote .futer-txt {
+    margin-left: 1.5rem;
+  }
+  .footer .icons {
+    color: red;
   }
 }
 

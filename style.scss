@@ -1468,7 +1468,7 @@ main {
 /******** mobile devices **********/
 @media screen and (min-width: 320px) {
   body {
-    // overflow-x: hidden;
+    overflow-x: hidden;
     min-width: 500px !important;
   }
 
@@ -1765,6 +1765,155 @@ main {
       .futer-txt {
         margin-left: 1.5rem;
       }
+    }
+  }
+}
+
+/******** medium devices **********/
+@media screen and (min-width: 426px) {
+  body {
+    min-width: 500px !important;
+  }
+
+  header {
+    nav {
+      .nav-img {
+        margin-left: 2rem;
+        margin-top: .4rem;
+      }
+    }
+
+    .navbar {
+      .nav-item {
+        button {
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .landing {
+
+    .landing-info {
+
+      .hero {
+        width: 100%;
+        margin: 0.5rem 1rem;
+        font-size: 2rem;
+
+        .what-i-do {
+          width: 80%;
+
+          h1 {
+            font-size: 5rem;
+          }
+
+          p {
+            width: 70%;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .cta-container {
+        .cta-btns {
+          width: 50%;
+
+          a {
+            .btn-lg {
+              padding: 1.5rem 1.5rem;
+              width: 80%;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  // results section
+  .get-results {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .results-body {
+      margin: 0 1.5rem;
+
+      p {
+        width: 426px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  // services
+  .services {
+
+    .services-grid {
+
+      .service-1 {
+        width: 500px;
+
+        .child-1 {
+
+          p {
+            text-align: center;
+            font-size: 1.2rem;
+          }
+        }
+
+        .child-2 {
+          img {
+            height: 300px;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  // Techs used
+
+  // Tech support
+
+  // Projects
+
+  // FAQ
+  .faq {
+    h1 {
+      font-size: 1.7rem;
+      margin-top: 3rem;
+    }
+
+  }
+
+  // Contact me
+
+  // Footer
+  .footer {
+    .icons {
+      a {
+        margin: 1.5rem;
+      }
+    }
+
+    .endnote {
+      width: 100%;
+      margin-top: 3rem;
+      justify-content: space-evenly;
+
+      a {
+        color: white;
+      }
+
+      .futer-txt {
+        margin-left: 1.5rem;
+      }
+    }
+
+    .icons {
+      color: red;
     }
   }
 }
