@@ -68,8 +68,6 @@ body {
   font-family: "Roboto Mono", sans-serif;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
-  height: 100vh;
-  width: 100vw;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -1670,6 +1668,7 @@ main section {
     width: 100%;
     margin: 0.5rem 0.5rem;
     font-size: 0.5rem;
+    height: var(--height-100);
   }
   .landing .landing-info .hero {
     width: 100%;
