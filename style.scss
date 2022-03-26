@@ -263,7 +263,7 @@ main {
   section {
     margin: 0;
     padding: 0;
-    height: auto;
+    height: 100%;
     overflow: hidden;
   }
 }
@@ -1771,9 +1771,6 @@ main {
 
 /******** medium devices **********/
 @media screen and (min-width: 426px) {
-  body {
-    min-width: 500px !important;
-  }
 
   header {
     nav {
@@ -1793,6 +1790,7 @@ main {
   }
 
   .landing {
+    height: 100%;
 
     .landing-info {
 
@@ -1805,7 +1803,7 @@ main {
           width: 80%;
 
           h1 {
-            font-size: 5rem;
+            font-size: 4rem;
           }
 
           p {

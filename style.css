@@ -280,7 +280,7 @@ main img {
 main section {
   margin: 0;
   padding: 0;
-  height: auto;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -1902,15 +1902,15 @@ main section {
 
 /******** medium devices **********/
 @media screen and (min-width: 426px) {
-  body {
-    min-width: 500px !important;
-  }
   header nav .nav-img {
     margin-left: 2rem;
     margin-top: .4rem;
   }
   header .navbar .nav-item button {
     visibility: visible;
+  }
+  .landing {
+    height: 100%;
   }
   .landing .landing-info .hero {
     width: 100%;
@@ -1921,7 +1921,7 @@ main section {
     width: 80%;
   }
   .landing .landing-info .hero .what-i-do h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .landing .landing-info .hero .what-i-do p {
     width: 70%;
